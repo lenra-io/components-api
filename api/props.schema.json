@@ -1,0 +1,7 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/props.schema.json",
+    "title": "Props",
+    "description": "Parameters passed to the listener",
+    "type": "object"
+}

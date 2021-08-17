@@ -14,3 +14,4 @@ plugins:
       - path: api/
         name: lenra-api-${nextRelease.gitTag}.zip
         label: JSON Schema
+      # TODO: add Licence and README ?

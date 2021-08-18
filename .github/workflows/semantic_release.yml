@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: "12"
       - name: Setup node deps
-        run: npm i conventional-changelog-conventionalcommits @semantic-release/exec -D
+        run: npm i conventional-changelog-conventionalcommits -D
       - name: Compress tar.gz
         run: tar czvf lenra-api.tar.gz api/
       - name: Compress zip

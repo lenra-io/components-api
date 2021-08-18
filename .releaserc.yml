@@ -9,14 +9,10 @@ plugins:
     - preset: conventionalcommits
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
-  - - "@semantic-release/exec"
-    - prepareCmd: tar czvf lenra-api-${nextRelease.version}.tar.gz api/ && zip -r lenra-api-${nextRelease.version}.zip api/
   - - "@semantic-release/github"
     - assets:
       - path: lenra-api.zip
-        # name: lenra-api-${nextRelease.gitTag}.zip
+        name: lenra-api-${nextRelease.gitTag}.zip
       - path: lenra-api.tar.gz
-        # name: lenra-api-${nextRelease.gitTag}.tar.gz
-      - path: lenra-api-${nextRelease.gitTag}.zip
-      - path: lenra-api-${nextRelease.gitTag}.tar.gz
+        name: lenra-api-${nextRelease.gitTag}.tar.gz
       # TODO: add Licence and README ?

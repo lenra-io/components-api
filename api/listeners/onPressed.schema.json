@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/onclick.schema.json",
-    "title": "Onclick Listener",
+    "$id": "https://lenra.io/onPressed.schema.json",
+    "title": "onPressed Listener",
     "description": "Listener that generate an event when the user click on the component",
     "type": "object",
     "properties": {

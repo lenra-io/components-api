@@ -10,8 +10,8 @@
             "type": "string",
             "pattern": "^button$"
         },
-        "value": {
-            "description": "the value displayed in the element",
+        "text": {
+            "description": "the text displayed in the element",
             "type": "string"
         },
         "disabled": {
@@ -22,15 +22,34 @@
             "additionalProperties": false,
             "minProperties": 1,
             "properties": {
-                "onClick": {
-                    "$ref": "listeners/onclick.schema.json"
+                "onPressed": {
+                    "$ref": "listeners/onPressed.schema.json"
                 }
             }
+        },
+        "size": {
+            "description": "Size of the button component",
+            "type": "string",
+            "enum": [
+                "Small",
+                "Medium",
+                "Large"
+            ]
+        },
+        "lenraType": {
+            "description": "LenraComponentType of the the Button",
+            "type": "string",
+            "enum": [
+                "Primary",
+                "Secondary",
+                "Tertiary"
+            ]
         }
     },
     "required": [
         "type",
-        "value"
+        "text",
+        "onPressed"
     ],
     "additionalProperties": false
 }

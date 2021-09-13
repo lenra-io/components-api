@@ -6,17 +6,38 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "The type of the element",
+            "description": "The identifier of the component",
             "type": "string",
             "pattern": "^button$"
         },
-        "value": {
-            "description": "the value displayed in the element",
+        "text": {
+            "description": "The value of the text inside the button",
             "type": "string"
         },
         "disabled": {
-            "description": "Whether the button should be disabled or not",
-            "type": "boolean"
+            "description": "The button is disabled if true",
+            "type": "boolean",
+            "default": false
+        },
+        "size": {
+            "description": "The size of the button",
+            "type": "string",
+            "enum": [
+                "small",
+                "medium",
+                "large"
+            ],
+            "default": "medium"
+        },
+        "mainStyle": {
+            "description": "The main style of the button",
+            "type": "string",
+            "enum": [
+                "primary",
+                "secondary",
+                "tertiary"
+            ],
+            "default": "primary"
         },
         "listeners": {
             "additionalProperties": false,

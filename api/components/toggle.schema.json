@@ -16,15 +16,18 @@
         },
         "activeColor": {
             "description": "The activeColor of the element",
-            "type": "string"
+            "type": "string",
+            "default": "lenraFunGreenBase"
         },
         "inactiveColor": {
             "description": "The inactiveColor of the element",
-            "type": "string"
+            "type": "string",
+            "default": "greyNature"
         },
         "disabledColor": {
             "description": "The disabledColor of the element",
-            "type": "string"
+            "type": "string",
+            "default": "greyLight"
         },
         "label": {
             "description": "The label of the element",
@@ -32,15 +35,18 @@
         },
         "labelColor": {
             "description": "The labelColor of the element",
-            "type": "string"
+            "type": "string",
+            "default": "blackMoon"
         },
         "disabledLabelColor": {
             "description": "The disabledLabelColor of the element",
-            "type": "string"
+            "type": "string",
+            "default": "greyNature"
         },
         "disabled": {
             "description": "Whether the element is disabled or not",
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
         },
         "listeners": {
             "additionalProperties": false,

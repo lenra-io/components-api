@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/menu_item.schema.json",
+    "title": "MenuItem",
+    "description": "Element of type MenuItem",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^menu_item$"
+        },
+        "text": {
+            "description": "The text of the element",
+            "type": "string"
+        },
+        "isSelected": {
+            "description": "Whether the element is selected or not.",
+            "type": "boolean",
+            "default": false
+        },
+        "disabled": {
+            "description": "Whether the element should be disabled or not.",
+            "type": "boolean",
+            "default": false
+        },
+        "icon": {
+            "description": "The icon of the element.",
+            "type": "object"
+        },
+        "listeners": {
+            "additionalProperties": false,
+            "minProperties": 1,
+            "properties": {
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
+                }
+            }
+        }
+    },
+    "required": [
+        "type",
+        "text"
+    ],
+    "additionalProperties": false
+}

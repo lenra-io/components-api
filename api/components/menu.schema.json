@@ -22,5 +22,5 @@
         "type",
         "children"
     ],
-    "additionalProperties": true
+    "additionalProperties": false
 }

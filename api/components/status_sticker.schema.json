@@ -12,7 +12,8 @@
         },
         "color": {
             "description": "the color of the element",
-            "type": "string"
+            "type": "string",
+            "enum": ["success", "warning", "error", "pending"]
         }
     },
     "required": [

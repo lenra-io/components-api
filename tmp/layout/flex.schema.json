@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/flex.schema.json",
+    "title": "Flex",
+    "description": "Element of type Flex",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^flex$"
+        },
+        "children": {
+            "type": "array",
+            "description": "Listeners on the element",
+            "items": {
+                "type": "object"
+            }
+        },
+        "direction": {
+            "type": "string",
+            "description": "'row' or 'col' which will define the Axis for placing children. Defaults to row.",
+            "pattern": "^row$|^col$"
+        },
+        "spacing": {
+            "description": "The spacing of the element",
+            "type": "number"
+        },
+        "fillParent": {
+            "description": "Whether the element fills the parent or not",
+            "type": "boolean"
+        },
+        "mainAxisAlignment": {
+            "description": "'start', 'end', 'center', 'spaceBetween', 'spaceAround' or 'spaceEvenly' which will define the main axis alignment of children. Defaults to start.",
+            "type": "string",
+            "pattern": "^start$|^end$|^center$|^spaceBetween$|^spaceAround$|^spaceEvenly$"
+        },
+        "crossAxisAlignment": {
+            "description": "'start', 'end', 'center', 'stretch' or 'baseline' which will define the cross axis alignement of children. Defaults to start.",
+            "type": "string",
+            "pattern": "^start$|^end$|^center$|^stretch$|^baseline$"
+        },
+        "scroll": {
+            "description": "Whether the element should be scrollable or not.",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "type",
+        "children"
+    ],
+    "additionalProperties": true
+}

@@ -22,8 +22,8 @@
             "additionalProperties": false,
             "minProperties": 1,
             "properties": {
-                "onClick": {
-                    "$ref": "listeners/onclick.schema.json"
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
                 }
             }
         }

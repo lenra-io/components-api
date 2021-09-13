@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/style_container.schema.json",
+    "$id": "https://lenra.io/styled_container.schema.json",
     "title": "StyledContainer",
     "description": "Element of type StyledContainer",
     "type": "object",

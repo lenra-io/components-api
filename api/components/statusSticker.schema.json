@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/status_sticker.schema.json",
+    "title": "StatusSticker",
+    "description": "Element of type StatusSticker",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^statusSticker$"
+        },
+        "status": {
+            "description": "the status of the element",
+            "type": "string",
+            "enum": ["success", "warning", "error", "pending"]
+        }
+    },
+    "required": [
+        "type",
+        "status"
+    ],
+    "additionalProperties": false
+}

@@ -20,24 +20,10 @@
             "default": false
         },
         "size": {
-            "description": "The size of the button",
-            "type": "string",
-            "enum": [
-                "small",
-                "medium",
-                "large"
-            ],
-            "default": "medium"
+            "$ref": "size.schema.json"
         },
         "mainStyle": {
-            "description": "The main style of the button",
-            "type": "string",
-            "enum": [
-                "primary",
-                "secondary",
-                "tertiary"
-            ],
-            "default": "primary"
+            "$ref": "style.schema.json"
         },
         "listeners": {
             "additionalProperties": false,

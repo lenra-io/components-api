@@ -14,34 +14,9 @@
             "description": "the value of the element",
             "type": "boolean"
         },
-        "activeColor": {
-            "description": "The activeColor of the element",
-            "type": "string",
-            "default": "lenraFunGreenBase"
-        },
-        "inactiveColor": {
-            "description": "The inactiveColor of the element",
-            "type": "string",
-            "default": "greyNature"
-        },
-        "disabledColor": {
-            "description": "The disabledColor of the element",
-            "type": "string",
-            "default": "greyLight"
-        },
         "label": {
             "description": "The label of the element",
             "type": "string"
-        },
-        "labelColor": {
-            "description": "The labelColor of the element",
-            "type": "string",
-            "default": "blackMoon"
-        },
-        "disabledLabelColor": {
-            "description": "The disabledLabelColor of the element",
-            "type": "string",
-            "default": "greyNature"
         },
         "disabled": {
             "description": "Whether the element is disabled or not",
@@ -52,8 +27,8 @@
             "additionalProperties": false,
             "minProperties": 1,
             "properties": {
-                "onClick": {
-                    "$ref": "listeners/onclick.schema.json"
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
                 }
             }
         }
@@ -62,5 +37,5 @@
         "type",
         "value"
     ],
-    "additionalProperties": true
+    "additionalProperties": false
 }

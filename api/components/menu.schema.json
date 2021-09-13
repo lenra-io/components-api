@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/menu.schema.json",
+    "title": "Menu",
+    "description": "Element of type Menu",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^menu$"
+        },
+        "children": {
+            "type": "array",
+            "description": "Listeners on the element",
+            "items": {
+                "type": "object"
+            }
+        }
+    },
+    "required": [
+        "type",
+        "children"
+    ],
+    "additionalProperties": false
+}

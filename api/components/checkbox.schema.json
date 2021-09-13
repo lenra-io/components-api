@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "The type of the element",
+            "description": "The identifier of the component",
             "type": "string",
             "pattern": "^checkbox$"
         },
@@ -15,19 +15,20 @@
             "type": "boolean"
         },
         "label": {
-            "description": "The text showed aside of the checkbox",
+            "description": "The value of the text next to the checkbox",
             "type": "string"
         },
         "disabled": {
-            "description": "Whether the checkbox should be disabled or not",
-            "type": "boolean"
+            "description": "If true, the checkbox is disabled",
+            "type": "boolean",
+            "default": false
         },
         "listeners": {
             "additionalProperties": false,
             "minProperties": 1,
             "properties": {
-                "onChange": {
-                    "$ref": "listeners/onchange.schema.json"
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
                 }
             }
         }

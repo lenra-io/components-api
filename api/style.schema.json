@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft-04/schema#",
     "$id": "https://lenra.io/style.schema.json",
     "title": "Style",
-    "description": "The style to use",
+    "description": "The style to use, the component will be changed according to the theme.",
     "type": "string",
     "enum": [
         "primary",

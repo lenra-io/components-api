@@ -41,6 +41,18 @@ The `label` key must describe a text that is displayed next to the component.
 }
 ```
 
+## The `text` key : 
+The `text` key must describe a text that is displayed inside the component.
+
+```json
+{
+    "type": "button",
+    [...]
+    "text": "My Button"
+}
+```
+
+
 
 ## The listeners
 

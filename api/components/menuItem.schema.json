@@ -8,7 +8,7 @@
         "type": {
             "description": "The type of the element",
             "type": "string",
-            "pattern": "^menu_item$"
+            "pattern": "^menuItem$"
         },
         "text": {
             "description": "The text of the element",

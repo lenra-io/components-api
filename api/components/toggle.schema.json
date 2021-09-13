@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/toggle.schema.json",
+    "title": "Toggle",
+    "description": "Element of type Toggle",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^toggle$"
+        },
+        "value": {
+            "description": "the value of the element",
+            "type": "boolean"
+        },
+        "label": {
+            "description": "The label of the element",
+            "type": "string"
+        },
+        "disabled": {
+            "description": "Whether the element is disabled or not",
+            "type": "boolean",
+            "default": false
+        },
+        "listeners": {
+            "additionalProperties": false,
+            "minProperties": 1,
+            "properties": {
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
+                }
+            }
+        }
+    },
+    "required": [
+        "type",
+        "value"
+    ],
+    "additionalProperties": false
+}

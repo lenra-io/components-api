@@ -10,15 +10,15 @@
             "type": "string",
             "pattern": "^statusSticker$"
         },
-        "color": {
-            "description": "the color of the element",
+        "status": {
+            "description": "the status of the element",
             "type": "string",
             "enum": ["success", "warning", "error", "pending"]
         }
     },
     "required": [
         "type",
-        "color"
+        "status"
     ],
     "additionalProperties": false
 }

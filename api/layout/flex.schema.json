@@ -6,43 +6,65 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "The type of the element",
+            "description": "The identifier of the component",
             "type": "string",
             "pattern": "^flex$"
         },
         "children": {
+            "description": "The children",
             "type": "array",
-            "description": "Listeners on the element",
             "items": {
                 "type": "object"
             }
         },
         "direction": {
+            "description": "The direction of the flex (column/row)",
             "type": "string",
-            "description": "'row' or 'col' which will define the Axis for placing children. Defaults to row.",
-            "pattern": "^row$|^col$"
-        },
-        "spacing": {
-            "description": "The spacing of the element",
-            "type": "number"
-        },
-        "fillParent": {
-            "description": "Whether the element fills the parent or not",
-            "type": "boolean"
+            "enum": [
+                "row",
+                "col"
+            ],
+            "default": "row"
         },
         "mainAxisAlignment": {
-            "description": "'start', 'end', 'center', 'spaceBetween', 'spaceAround' or 'spaceEvenly' which will define the main axis alignment of children. Defaults to start.",
+            "description": "The alignment along the main axis",
             "type": "string",
-            "pattern": "^start$|^end$|^center$|^spaceBetween$|^spaceAround$|^spaceEvenly$"
+            "enum": [
+                "start",
+                "end",
+                "center",
+                "spaceBetween",
+                "spaceAround",
+                "spaceEvenly"
+            ],
+            "default": "start"
         },
         "crossAxisAlignment": {
-            "description": "'start', 'end', 'center', 'stretch' or 'baseline' which will define the cross axis alignement of children. Defaults to start.",
+            "description": "The alignment along the cross axis",
             "type": "string",
-            "pattern": "^start$|^end$|^center$|^stretch$|^baseline$"
+            "enum": [
+                "start",
+                "end",
+                "center",
+                "stretch",
+                "baseline"
+            ],
+            "default": "start"
+        },
+        "spacing": {
+            "description": "The multiplier of the base size for the minimal spacing",
+            "type": "number",
+            "default": 0
+        },
+        "fillParent": {
+            "description": "if true the flex will fill the main axis. Otherwise it will take the children size.",
+            "type": "boolean",
+            "default": false
         },
         "scroll": {
-            "description": "Whether the element should be scrollable or not.",
-            "type": "boolean"
+            "description": "If true the flex will scroll if there is too many item in the Main Axis.",
+            "type": "boolean",
+            "default": false
         }
     },
     "required": [

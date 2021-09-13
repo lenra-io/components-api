@@ -27,8 +27,8 @@
             "additionalProperties": false,
             "minProperties": 1,
             "properties": {
-                "onChange": {
-                    "$ref": "listeners/onchange.schema.json"
+                "onPressed": {
+                    "$ref": "listeners/onpressed.schema.json"
                 }
             }
         }

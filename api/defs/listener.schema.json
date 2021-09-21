@@ -1,16 +1,18 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "root.schema.json",
-    "title": "Ui",
-    "description": "The main json object that represents the Lenra UI",
+    "$id": "listener.schema.json",
+    "title": "Basic Listener",
     "type": "object",
     "properties": {
-        "root": {
-            "type": "component"
+        "action": {
+            "$ref": "defs/action.schema.json"
+        },
+        "props": {
+            "$ref": "defs/props.schema.json"
         }
     },
     "required": [
-        "root"
+        "action"
     ],
     "additionalProperties": false
 }

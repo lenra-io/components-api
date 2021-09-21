@@ -1,20 +1,21 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/flex.schema.json",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "flex.schema.json",
     "title": "Flex",
     "description": "Element of type Flex",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The identifier of the component",
-            "type": "string",
-            "pattern": "^flex$"
+            "enum": [
+                "flex"
+            ]
         },
         "children": {
             "description": "The children",
             "type": "array",
             "items": {
-                "type": "object"
+                "type": "component"
             }
         },
         "direction": {

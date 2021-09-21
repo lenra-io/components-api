@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/text.schema.json",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "text.schema.json",
     "title": "Text",
     "description": "Element of type Text",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^text$"
+            "enum": [
+                "text"
+            ]
         },
         "value": {
             "description": "the value displayed in the element",

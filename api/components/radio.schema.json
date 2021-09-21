@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/radio.schema.json",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "radio.schema.json",
     "title": "Radio",
     "description": "Element of type Radio",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^radio$"
+            "enum": [
+                "radio"
+            ]
         },
         "value": {
             "description": "The value of the radio",
@@ -26,14 +27,8 @@
             "description": "Whether the radio should be disabled or not",
             "type": "boolean"
         },
-        "listeners": {
-            "additionalProperties": false,
-            "minProperties": 1,
-            "properties": {
-                "onChange": {
-                    "$ref": "listeners/onchange.schema.json"
-                }
-            }
+        "onPressed": {
+            "$ref": "defs/listener.schema.json"
         }
     },
     "required": [

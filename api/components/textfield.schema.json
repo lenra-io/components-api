@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
-    "$id": "https://lenra.io/textfield.schema.json",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "textfield.schema.json",
     "title": "TextField",
     "description": "Element of type TextField",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^textfield$"
+            "enum": [
+                "textfield"
+            ]
         },
         "value": {
             "description": "the value displayed in the element",
@@ -31,8 +32,8 @@
             "type": "boolean"
         },
         "disabled": {
-          "description": "Whether the input should be disabled or not",
-          "type": "boolean"  
+            "description": "Whether the input should be disabled or not",
+            "type": "boolean"
         },
         "inRow": {
             "description": "Whether the input and label should be in row or not",
@@ -46,19 +47,13 @@
             "description": "The error message to display whenever the input is incorrect",
             "type": "string"
         },
-        "listeners": {
-            "properties": {
-                "onChange": {
-                    "$ref": "listeners/onchange.schema.json"
-                }
-            },
-            "minProperties": 1,
-            "additionalProperties": false
+        "onChange": {
+            "$ref": "defs/listener.schema.json"
         }
     },
     "required": [
         "type",
         "value"
     ],
-    "additionalProperties": true
+    "additionalProperties": false
 }

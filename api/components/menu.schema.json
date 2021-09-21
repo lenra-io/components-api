@@ -1,20 +1,21 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/menu.schema.json",
     "title": "Menu",
     "description": "Element of type Menu",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^menu$"
+            "enum": [
+                "menu"
+            ]
         },
         "children": {
             "type": "array",
-            "description": "Listeners on the element",
+            "description": "The menu items",
             "items": {
-                "type": "object"
+                "type": "component"
             }
         }
     },

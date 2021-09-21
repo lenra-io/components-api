@@ -1,19 +1,25 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/status_sticker.schema.json",
     "title": "StatusSticker",
     "description": "Element of type StatusSticker",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^statusSticker$"
+            "enum": [
+                "statusSticker"
+            ]
         },
         "status": {
             "description": "the status of the element",
             "type": "string",
-            "enum": ["success", "warning", "error", "pending"]
+            "enum": [
+                "success",
+                "warning",
+                "error",
+                "pending"
+            ]
         }
     },
     "required": [

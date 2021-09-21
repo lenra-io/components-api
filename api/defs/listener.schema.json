@@ -1,0 +1,18 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "https://lenra.io/listener.schema.json",
+    "title": "Basic Listener",
+    "type": "object",
+    "properties": {
+        "action": {
+            "$ref": "defs/action.schema.json"
+        },
+        "props": {
+            "$ref": "defs/props.schema.json"
+        }
+    },
+    "required": [
+        "action"
+    ],
+    "additionalProperties": false
+}

@@ -1,13 +1,12 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/root.schema.json",
     "title": "Ui",
     "description": "The main json object that represents the Lenra UI",
     "type": "object",
     "properties": {
         "root": {
-            "description": "The first element of the ui. It can be any component.",
-            "type": "object"
+            "type": "component"
         }
     },
     "required": [

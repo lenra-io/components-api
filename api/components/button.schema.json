@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/button.schema.json",
     "title": "Button",
     "description": "Element of type Button",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The identifier of the component",
-            "type": "string",
-            "pattern": "^button$"
+            "enum": [
+                "button"
+            ]
         },
         "text": {
             "description": "The value of the text inside the button",
@@ -20,19 +21,13 @@
             "default": false
         },
         "size": {
-            "$ref": "size.schema.json"
+            "$ref": "defs/size.schema.json"
         },
         "mainStyle": {
-            "$ref": "style.schema.json"
+            "$ref": "defs/style.schema.json"
         },
-        "listeners": {
-            "additionalProperties": false,
-            "minProperties": 1,
-            "properties": {
-                "onPressed": {
-                    "$ref": "listeners/onpressed.schema.json"
-                }
-            }
+        "onPressed": {
+            "$ref": "defs/listener.schema.json"
         }
     },
     "required": [

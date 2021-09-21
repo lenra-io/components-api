@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/toggle.schema.json",
     "title": "Toggle",
     "description": "Element of type Toggle",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^toggle$"
+            "enum": [
+                "toggle"
+            ]
         },
         "value": {
             "description": "the value of the element",
@@ -23,14 +24,8 @@
             "type": "boolean",
             "default": false
         },
-        "listeners": {
-            "additionalProperties": false,
-            "minProperties": 1,
-            "properties": {
-                "onPressed": {
-                    "$ref": "listeners/onpressed.schema.json"
-                }
-            }
+        "onPressed": {
+            "$ref": "defs/listener.schema.json"
         }
     },
     "required": [

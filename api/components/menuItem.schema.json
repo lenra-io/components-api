@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/menu_item.schema.json",
     "title": "MenuItem",
     "description": "Element of type MenuItem",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^menuItem$"
+            "enum": [
+                "menuItem"
+            ]
         },
         "text": {
             "description": "The text of the element",
@@ -25,16 +26,10 @@
             "default": false
         },
         "icon": {
-            "$ref": "icon.schema.json"
+            "$ref": "defs/icon.schema.json"
         },
-        "listeners": {
-            "additionalProperties": false,
-            "minProperties": 1,
-            "properties": {
-                "onPressed": {
-                    "$ref": "listeners/onpressed.schema.json"
-                }
-            }
+        "onPressed": {
+            "$ref": "defs/listener.schema.json"
         }
     },
     "required": [

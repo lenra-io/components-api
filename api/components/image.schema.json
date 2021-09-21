@@ -1,14 +1,15 @@
 {
-    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "https://lenra.io/image.schema.json",
     "title": "Image",
     "description": "Element of type Image",
-    "type": "object",
+    "type": "component",
     "properties": {
         "type": {
             "description": "The type of the element",
-            "type": "string",
-            "pattern": "^image$"
+            "enum": [
+                "image"
+            ]
         },
         "path": {
             "description": "The image path from the resources folder",

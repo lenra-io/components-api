@@ -32,7 +32,7 @@
     },
     "required": [
         "type",
-        "value"
+        "text"
     ],
     "additionalProperties": false
 }

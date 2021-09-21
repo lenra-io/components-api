@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/props.schema.json",
+    "$id": "props.schema.json",
     "title": "Props",
     "description": "Parameters passed to the listener",
     "type": "object"

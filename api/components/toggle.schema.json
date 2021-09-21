@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/toggle.schema.json",
+    "$id": "toggle.schema.json",
     "title": "Toggle",
     "description": "Element of type Toggle",
     "type": "component",

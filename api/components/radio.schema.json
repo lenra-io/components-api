@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/radio.schema.json",
+    "$id": "radio.schema.json",
     "title": "Radio",
     "description": "Element of type Radio",
     "type": "component",

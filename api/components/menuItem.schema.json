@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/menu_item.schema.json",
+    "$id": "menu_item.schema.json",
     "title": "MenuItem",
     "description": "Element of type MenuItem",
     "type": "component",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/image.schema.json",
+    "$id": "image.schema.json",
     "title": "Image",
     "description": "Element of type Image",
     "type": "component",

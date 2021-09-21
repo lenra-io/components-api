@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/style.schema.json",
+    "$id": "style.schema.json",
     "title": "Style",
     "description": "The style to use, the component will be changed according to the theme.",
     "type": "string",

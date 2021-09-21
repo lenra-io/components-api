@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/root.schema.json",
+    "$id": "root.schema.json",
     "title": "Ui",
     "description": "The main json object that represents the Lenra UI",
     "type": "object",

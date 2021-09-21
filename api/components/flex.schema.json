@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "https://lenra.io/flex.schema.json",
+    "$id": "flex.schema.json",
     "title": "Flex",
     "description": "Element of type Flex",
     "type": "component",

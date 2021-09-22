@@ -16,9 +16,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "12"
+          node-version: "14"
       - name: Setup node deps
-        run: npm i conventional-changelog-conventionalcommits -D
+        run: npm i conventional-changelog-conventionalcommits@4 -D
       - name: Compress tar.gz
         run: tar czvf lenra-api.tar.gz api/
       - name: Compress zip
@@ -26,4 +26,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release@v17.4.7
+        run: npx semantic-release@18

@@ -2,13 +2,16 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "listener.schema.json",
     "title": "Basic Listener",
-    "type": "object",
+    "type": "listener",
     "properties": {
         "action": {
-            "$ref": "defs/action.schema.json"
+            "description": "The action name to call",
+            "type": "string",
+            "pattern": "^[a-zA-Z_$][a-zA-Z_$0-9]*$"
         },
         "props": {
-            "$ref": "defs/props.schema.json"
+            "description": "Parameters passed to the listener",
+            "type": "object"
         }
     },
     "required": [

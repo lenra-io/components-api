@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "styledContainer.schema.json",
+    "title": "StyledContainer",
+    "description": "Element of type StyledContainer",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "styledContainer"
+            ]
+        },
+        "child": {
+            "type": "component"
+        },
+        "border": {
+            "$ref": "defs/border.schema.json"
+        },
+        "borderRadius": {
+            "$ref": "defs/borderRadius.schema.json"
+        },
+        "boxShadow": {
+            "$ref": "defs/boxShadow.schema.json"
+        }
+    },
+    "required": [
+        "type",
+        "child"
+    ],
+    "additionalProperties": false
+}

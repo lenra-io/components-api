@@ -4,48 +4,19 @@
     "title": "Border",
     "description": "Element of type Border",
     "type": "object",
-    "oneOf": [
-        {
-            "properties": {
-                "top": {
-                    "$ref": "defs/borderSide.schema.json"
-                },
-                "left": {
-                    "$ref": "defs/borderSide.schema.json"
-                },
-                "bottom": {
-                    "$ref": "defs/borderSide.schema.json"
-                },
-                "right": {
-                    "$ref": "defs/borderSide.schema.json"
-                }
-            },
-            "additionalProperties": false
+    "properties": {
+        "top": {
+            "$ref": "defs/borderSide.schema.json"
         },
-        {
-            "properties": {
-                "all": {
-                    "$ref": "defs/borderSide.schema.json"
-                }
-            },
-            "additionalProperties": false
+        "left": {
+            "$ref": "defs/borderSide.schema.json"
         },
-        {
-            "properties": {
-                "symmetric": {
-                    "type": "object",
-                    "properties": {
-                        "vertical": {
-                            "$ref": "defs/borderSide.schema.json"
-                        },
-                        "horizontal": {
-                            "$ref": "defs/borderSide.schema.json"
-                        }
-                    },
-                    "additionalProperties": false
-                }
-            },
-            "additionalProperties": false
+        "bottom": {
+            "$ref": "defs/borderSide.schema.json"
+        },
+        "right": {
+            "$ref": "defs/borderSide.schema.json"
         }
-    ]
+    },
+    "additionalProperties": false
 }

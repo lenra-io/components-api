@@ -4,73 +4,21 @@
     "title": "BorderRadius",
     "description": "Element of type BorderRadius",
     "type": "object",
-    "oneOf": [
-        {
-            "properties": {
-                "circular": {
-                    "$ref": "#/definitions/radiusType"
-                }
-            },
-            "additionalProperties": false
+    "properties": {
+        "topLeft": {
+            "$ref": "#/definitions/radiusType"
         },
-        {
-            "properties": {
-                "only": {
-                    "type": "object",
-                    "properties": {
-                        "topLeft": {
-                            "$ref": "#/definitions/radiusType"
-                        },
-                        "topRight": {
-                            "$ref": "#/definitions/radiusType"
-                        },
-                        "bottomLeft": {
-                            "$ref": "#/definitions/radiusType"
-                        },
-                        "bottomRight": {
-                            "$ref": "#/definitions/radiusType"
-                        }
-                    },
-                    "additionalProperties": false
-                }
-            },
-            "additionalProperties": false
+        "topRight": {
+            "$ref": "#/definitions/radiusType"
         },
-        {
-            "properties": {
-                "vertical": {
-                    "type": "object",
-                    "properties": {
-                        "top": {
-                            "$ref": "#/definitions/radiusType"
-                        },
-                        "bottom": {
-                            "$ref": "#/definitions/radiusType"
-                        }
-                    },
-                    "additionalProperties": false
-                }
-            },
-            "additionalProperties": false
+        "bottomLeft": {
+            "$ref": "#/definitions/radiusType"
         },
-        {
-            "properties": {
-                "horizontal": {
-                    "type": "object",
-                    "properties": {
-                        "left": {
-                            "$ref": "#/definitions/radiusType"
-                        },
-                        "right": {
-                            "$ref": "#/definitions/radiusType"
-                        }
-                    },
-                    "additionalProperties": false
-                }
-            },
-            "additionalProperties": false
+        "bottomRight": {
+            "$ref": "#/definitions/radiusType"
         }
-    ],
+    },
+    "additionalProperties": false,
     "definitions": {
         "radiusType": {
             "type": "number",

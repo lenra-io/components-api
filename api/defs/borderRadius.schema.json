@@ -21,8 +21,17 @@
     "additionalProperties": false,
     "definitions": {
         "radiusType": {
-            "type": "number",
-            "default": 0
+            "type": "object",
+            "properties": {
+                "x": {
+                    "type": "number",
+                    "default": 0
+                },
+                "y": {
+                    "type": "number",
+                    "default": 0
+                }
+            }
         }
     }
 }

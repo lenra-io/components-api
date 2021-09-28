@@ -19,6 +19,9 @@
         },
         "borderRadius": {
             "$ref": "defs/borderRadius.schema.json"
+        },
+        "boxShadow": {
+            "$ref": "defs/boxShadow.schema.json"
         }
     },
     "required": [

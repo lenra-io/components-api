@@ -15,7 +15,7 @@
             "type": "component"
         },
         "color": {
-            "$ref": "defs/colors.schema.json"
+            "$ref": "defs/color.schema.json"
         },
         "border": {
             "$ref": "defs/border.schema.json"

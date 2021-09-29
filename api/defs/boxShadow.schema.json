@@ -6,9 +6,7 @@
     "type": "object",
     "properties": {
         "color": {
-            "description": "The color of the Shadow",
-            "type": "string",
-            "default": "#000000"
+            "$ref": "defs/color.schema.json"
         },
         "blurRadius": {
             "description": "The blur radius",

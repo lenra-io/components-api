@@ -14,6 +14,9 @@
         "child": {
             "type": "component"
         },
+        "color": {
+            "$ref": "defs/color.schema.json"
+        },
         "border": {
             "$ref": "defs/border.schema.json"
         },

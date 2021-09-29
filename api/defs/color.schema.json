@@ -4,6 +4,5 @@
     "title": "Color",
     "description": "Color type",
     "type": "string",
-    "pattern": "^#([a-fA-F0-9]{6}$",
-    "additionalProperties": false
+    "pattern": "^#[a-fA-F0-9]{6}$"
 }

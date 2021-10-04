@@ -4,6 +4,11 @@
     "title": "Icon",
     "description": "The Icon to use",
     "type": "component",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "value"
+    ],
     "properties": {
         "type": {
             "description": "The type of the element",
@@ -12,7 +17,7 @@
             ]
         },
         "size": {
-            "description": "The size of the Icon",
+            "description": "The size of the Icon, factor of Lenra theme's baseSize",
             "type": "number",
             "default": "1"
         },
@@ -7340,5 +7345,4 @@
             ]
         }
     }
-    
 }

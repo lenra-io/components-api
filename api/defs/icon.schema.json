@@ -22,7 +22,8 @@
             "default": "1"
         },
         "color": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "defs/color.schema.json",
+            "default": "#000000"
         },
         "value": {
             "description": "The value of the Icon",

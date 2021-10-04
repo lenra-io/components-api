@@ -28,6 +28,12 @@
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"
+        },
+        "leftIcon": {
+            "$ref": "defs/icon.schema.json"
+        },
+        "rightIcon": {
+            "$ref": "defs/icon.schema.json"
         }
     },
     "required": [

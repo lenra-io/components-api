@@ -47,7 +47,7 @@
             "description": "The error message to display whenever the input is incorrect",
             "type": "string"
         },
-        "onChange": {
+        "onChanged": {
             "$ref": "defs/listener.schema.json"
         }
     },

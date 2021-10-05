@@ -66,6 +66,9 @@
             "description": "If true the flex will scroll if there is too many item in the Main Axis.",
             "type": "boolean",
             "default": false
+        },
+        "padding": {
+            "$ref": "defs/padding.schema.json"
         }
     },
     "required": [

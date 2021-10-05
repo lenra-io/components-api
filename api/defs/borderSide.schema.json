@@ -11,9 +11,7 @@
             "default": 1.0
         },
         "color": {
-            "description": "The color of the Border",
-            "type": "string",
-            "default": "#000000"
+            "$ref": "defs/color.schema.json"
         }
     },
     "additionalProperties": false

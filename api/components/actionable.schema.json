@@ -17,19 +17,19 @@
         "onPressed": {
             "$ref": "defs/listener.schema.json"
         },
-        "onDoublePress": {
+        "onDoublePressed": {
             "$ref": "defs/listener.schema.json"
         },
-        "onLongPress": {
+        "onLongPressed": {
             "$ref": "defs/listener.schema.json"
         },
-        "onPressDown": {
+        "onPressedDown": {
             "$ref": "defs/listener.schema.json"
         },
-        "onPressCancel": {
+        "onPressedCancel": {
             "$ref": "defs/listener.schema.json"
         },
-        "onHover": {
+        "onHovered": {
             "$ref": "defs/listener.schema.json"
         },
         "onFocusChange": {

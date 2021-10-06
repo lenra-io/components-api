@@ -23,19 +23,10 @@
         "onLongPressed": {
             "$ref": "defs/listener.schema.json"
         },
-        "onPressedDown": {
-            "$ref": "defs/listener.schema.json"
-        },
         "onPressedCancel": {
             "$ref": "defs/listener.schema.json"
         },
         "onHovered": {
-            "$ref": "defs/listener.schema.json"
-        },
-        "onFocusChanged": {
-            "$ref": "defs/listener.schema.json"
-        },
-        "onHighlightChanged": {
             "$ref": "defs/listener.schema.json"
         }
     },

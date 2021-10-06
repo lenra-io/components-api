@@ -32,10 +32,10 @@
         "onHovered": {
             "$ref": "defs/listener.schema.json"
         },
-        "onFocusChange": {
+        "onFocusChanged": {
             "$ref": "defs/listener.schema.json"
         },
-        "onHighlightChange": {
+        "onHighlightChanged": {
             "$ref": "defs/listener.schema.json"
         }
     },

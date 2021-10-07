@@ -1,0 +1,38 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "actionable.schema.json",
+    "title": "Actionable",
+    "description": "Element of type Actionable",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "actionable"
+            ]
+        },
+        "child": {
+            "type": "component"
+        },
+        "onPressed": {
+            "$ref": "defs/listener.schema.json"
+        },
+        "onDoublePressed": {
+            "$ref": "defs/listener.schema.json"
+        },
+        "onLongPressed": {
+            "$ref": "defs/listener.schema.json"
+        },
+        "onPressedCancel": {
+            "$ref": "defs/listener.schema.json"
+        },
+        "onHovered": {
+            "$ref": "defs/listener.schema.json"
+        }
+    },
+    "required": [
+        "type",
+        "child"
+    ],
+    "additionalProperties": false
+}

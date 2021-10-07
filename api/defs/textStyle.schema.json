@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "textStyle.schema.json",
+    "title": "TextStyle",
+    "description": "The style to use, the component will be changed according to the theme.",
+    "type": "string",
+    "enum": [
+        "headline1",
+        "headline2",
+        "headline3",
+        "headline4",
+        "headlineBody",
+        "bodyText",
+        "blueBodyText",
+        "subtext",
+        "disabledBodyText",
+        "underDescriptionText",
+        "errorText"
+    ],
+    "default": "bodyText"
+}

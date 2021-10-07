@@ -14,6 +14,9 @@
         "value": {
             "description": "the value displayed in the element",
             "type": "string"
+        },
+        "style": {
+            "$ref": "defs/textStyle.schema.json"
         }
     },
     "required": [

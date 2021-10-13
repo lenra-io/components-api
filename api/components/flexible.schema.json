@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "flexible.schema.json",
+    "title": "Flexible",
+    "description": "Element of type Flexible",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "enum": [
+                "flexible"
+            ]
+        },
+        "flex": {
+            "description": "How a flexible child is inscribed into the available space.",
+            "type": "integer",
+            "default": 1
+        },
+        "fit": {
+            "$ref": "defs/flexFit.schema.json"
+        },
+        "child": {
+            "type": "component"
+        }
+    },
+    "required": [
+        "type",
+        "child"
+    ],
+    "additionalProperties": false
+}

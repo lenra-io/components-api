@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://lenra.io/progress.schema.json",
+    "title": "Progress",
+    "description": "Element of type Progress",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "type": "string",
+            "pattern": "^progress$"
+        },
+	"current": {
+            "description": "The percentage value of the progress to fill",
+            "type": "number"
+        },
+        "shape": {
+            "description": "The progress shape to display",
+            "type": "string"
+        },
+        "width": {
+            "description": "The image width",
+            "type": "number"
+        },
+        "height": {
+            "description": "The image height",
+            "type": "number"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

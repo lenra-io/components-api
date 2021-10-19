@@ -25,6 +25,9 @@
         },
         "boxShadow": {
             "$ref": "defs/boxShadow.schema.json"
+        },
+        "padding": {
+            "$ref": "defs/padding.schema.json"
         }
     },
     "required": [

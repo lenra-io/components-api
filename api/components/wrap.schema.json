@@ -48,10 +48,10 @@
             "default": 0
         },
         "alignment": {
-            "$ref": "defs/alignment.schema.json"
+            "$ref": "defs/wrapAlignment.schema.json"
         },
         "runAlignment": {
-            "$ref": "defs/alignment.schema.json"
+            "$ref": "defs/wrapAlignment.schema.json"
         },
         "textDirection": {
             "$ref": "defs/textDirection.schema.json"

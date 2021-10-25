@@ -69,6 +69,15 @@
         },
         "padding": {
             "$ref": "defs/padding.schema.json"
+        },
+        "textDirection": {
+            "$ref": "defs/textDirection.schema.json"
+        },
+        "verticalDirection": {
+            "$ref": "defs/verticalDirection.schema.json"
+        },
+        "textBaseline": {
+            "$ref": "defs/textBaseline.schema.json"
         }
     },
     "required": [

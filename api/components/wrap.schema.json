@@ -1,0 +1,68 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "wrap.schema.json",
+    "title": "Wrap",
+    "description": "Element of type Wrap",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "wrap"
+            ]
+        },
+        "children": {
+            "description": "The children",
+            "type": "array",
+            "items": {
+                "type": "component"
+            }
+        },
+        "direction": {
+            "description": "The direction of the wrap (column/row)",
+            "type": "string",
+            "enum": [
+                "row",
+                "col"
+            ],
+            "default": "row"
+        },
+        "crossAxisAlignment": {
+            "description": "The alignment along the cross axis",
+            "type": "string",
+            "enum": [
+                "start",
+                "end",
+                "center"
+            ],
+            "default": "start"
+        },
+        "spacing": {
+            "description": "The multiplier of the base size for the minimal spacing",
+            "type": "number",
+            "default": 0
+        },
+        "runSpacing": {
+            "description": "The multiplier of the base size for spacing between different line in Wrap",
+            "type": "number",
+            "default": 0
+        },
+        "alignment": {
+            "$ref": "defs/alignment.schema.json"
+        },
+        "runAlignment": {
+            "$ref": "defs/alignment.schema.json"
+        },
+        "textDirection": {
+            "$ref": "defs/textDirection.schema.json"
+        },
+        "verticalDirection": {
+            "$ref": "defs/verticalDirection.schema.json"
+        }
+    },
+    "required": [
+        "type",
+        "children"
+    ],
+    "additionalProperties": false
+}

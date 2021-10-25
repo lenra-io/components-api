@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "alignment.schema.json",
+    "title": "Alignment",
+    "description": "How the objects should be align",
+    "type": "string",
+    "enum": [
+        "start",
+        "end",
+        "center",
+        "spaceBetween",
+        "spaceAround",
+        "spaceEvenly"
+    ],
+    "default": "start"
+}

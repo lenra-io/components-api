@@ -1,0 +1,36 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "stack.schema.json",
+    "title": "Stack",
+    "description": "Element of type Stack",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "stack"
+            ]
+        },
+        "children": {
+            "description": "The children",
+            "type": "array",
+            "items": {
+                "type": "component"
+            }
+        },
+        "alignment": {
+            "$ref": "defs/alignment.schema.json"
+        },
+        "fit": {
+            "$ref": "defs/stackFit.schema.json"
+        },
+        "textDirection": {
+            "$ref": "defs/textDirection.schema.json"
+        }
+    },
+    "required": [
+        "type",
+        "children"
+    ],
+    "additionalProperties": false
+}

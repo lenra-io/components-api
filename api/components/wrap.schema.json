@@ -47,8 +47,8 @@
         "runAlignment": {
             "$ref": "defs/wrapAlignment.schema.json"
         },
-        "textDirection": {
-            "$ref": "defs/textDirection.schema.json"
+        "horizontalDirection": {
+            "$ref": "defs/horizontalDirection.schema.json"
         },
         "verticalDirection": {
             "$ref": "defs/verticalDirection.schema.json"

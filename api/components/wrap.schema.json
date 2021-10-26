@@ -19,13 +19,7 @@
             }
         },
         "direction": {
-            "description": "The direction of the wrap (column/row)",
-            "type": "string",
-            "enum": [
-                "row",
-                "col"
-            ],
-            "default": "row"
+            "$ref": "defs/direction.schema.json"
         },
         "crossAxisAlignment": {
             "description": "The alignment along the cross axis",

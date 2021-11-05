@@ -23,7 +23,8 @@
         },
         "decorationThickness": {
             "description": "thickness of the decoration",
-            "type": "number"
+            "type": "number",
+            "default": 1
         },
         "fontFamily": {
             "description": "The font family of the text",
@@ -38,7 +39,8 @@
         },
         "fontSize": {
             "description": "the size to put on the text",
-            "type": "number"
+            "type": "number",
+            "default": 1
         },
         "fontStyle": {
             "description": "the style to use on the text",
@@ -67,11 +69,13 @@
         },
         "height": {
             "description": "The height of this text",
-            "type": "number"
+            "type": "number",
+            "default": 1
         },
         "letterSpacing": {
             "description": "The amount of space to add between each letter.",
-            "type": "number"
+            "type": "number",
+            "default": 1
         },
         "overflow": {
             "description": "How visual text overflow should be handled",
@@ -96,7 +100,8 @@
         },
         "wordSpacing": {
             "description": "The amount of space to add at each sequence of white-space",
-            "type": "number"
+            "type": "number",
+            "default": 1
         }
     },
     "additionalProperties": false

@@ -17,6 +17,32 @@
         },
         "style": {
             "$ref": "defs/textStyle.schema.json"
+        },
+        "locale": {
+            "description": "the value of the language for the text",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "default": [
+                "en",
+                "EN"
+            ]
+        },
+        "semanticsLabel": {
+            "description": "The value to explain a different semantics",
+            "type": "string"
+        },
+        "spellOut": {
+            "description": "the value true or false to activate the assistive technologies should spell out this text character by character",
+            "type": "boolean"
+        },
+        "children": {
+            "description": "to put some text children after the parent (only text can be children of this text)",
+            "type": "array",
+            "items": {
+                "type": "component"
+            }
         }
     },
     "required": [

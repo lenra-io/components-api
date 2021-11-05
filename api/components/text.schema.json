@@ -19,7 +19,7 @@
             "$ref": "defs/textStyle.schema.json"
         },
         "locale": {
-            "description": "the value of the language for the text",
+            "description": "The value of the language for the text.",
             "type": "array",
             "items": {
                 "type": "string"

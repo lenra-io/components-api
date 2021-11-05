@@ -34,7 +34,7 @@
             "type": "string"
         },
         "spellOut": {
-            "description": "the value true or false to activate the assistive technologies should spell out this text character by character",
+            "description": "Whether the assistive technologies should spell out this text character by character",
             "type": "boolean"
         },
         "children": {

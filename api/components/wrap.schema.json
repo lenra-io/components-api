@@ -37,7 +37,7 @@
             "default": 0
         },
         "runSpacing": {
-            "description": "The multiplier of the base size for spacing between different line in Wrap",
+            "description": "The multiplier of the base size for spacing between different runs in Wrap",
             "type": "number",
             "default": 0
         },

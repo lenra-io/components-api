@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "alignment.schema.json",
+    "$id": "wrapAlignment.schema.json",
     "title": "Alignment",
     "description": "How the objects should be aligned.",
     "type": "string",

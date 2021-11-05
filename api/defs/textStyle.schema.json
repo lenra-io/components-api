@@ -51,7 +51,7 @@
             ]
         },
         "fontWeight": {
-            "description": "to put a weight on the text",
+            "description": "The weight of the text.",
             "type": "string",
             "enum": [
                 "bold",

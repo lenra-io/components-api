@@ -12,7 +12,7 @@
             ]
         },
         "path": {
-            "description": "The image path from the resources folder",
+            "description": "The image path from the resources folder or from the network depending on the value of fromNetwork.",
             "type": "string"
         },
         "width": {

@@ -22,6 +22,30 @@
         "height": {
             "description": "The image height",
             "type": "number"
+        },
+        "fromNetwork": {
+            "description": "Whether the image will be loaded from a network url of from an application's resource path.",
+            "type": "boolean",
+            "default": false
+        },
+        "excludeFromSemantics": {
+            "description": "Whether to exclude this image from semantics.",
+            "type": "boolean",
+            "default": false
+        },
+        "gaplessPlayback": {
+            "description": "Whether the old image (true) or nothing (false) is shown when the image provider changes.",
+            "type": "boolean",
+            "default": false
+        },
+        "isAntiAlias": {
+            "description": "Whether to paint the image with anti-aliasing.",
+            "type": "boolean",
+            "default": false
+        },
+        "semanticLabel": {
+            "description": "A semantic description of the image.",
+            "type": "string"
         }
     },
     "required": [

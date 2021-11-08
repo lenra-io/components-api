@@ -17,13 +17,17 @@
             ]
         },
         "size": {
-            "description": "The size of the Icon, factor of Lenra theme's baseSize",
+            "description": "The size of the Icon",
             "type": "number",
             "default": "1"
         },
         "color": {
             "$ref": "defs/color.schema.json",
             "default": "#000000"
+        },
+        "semanticLabel": {
+            "description": "The semantic label for the Icon.",
+            "type": "string"
         },
         "value": {
             "description": "The value of the Icon",

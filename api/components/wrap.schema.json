@@ -12,7 +12,7 @@
             ]
         },
         "children": {
-            "description": "The children",
+            "description": "The children of the wrap.",
             "type": "array",
             "items": {
                 "type": "component"
@@ -22,7 +22,7 @@
             "$ref": "defs/direction.schema.json"
         },
         "crossAxisAlignment": {
-            "description": "The alignment along the cross axis",
+            "description": "The alignment along the cross axis.",
             "type": "string",
             "enum": [
                 "start",
@@ -32,12 +32,12 @@
             "default": "start"
         },
         "spacing": {
-            "description": "The multiplier of the base size for the minimal spacing",
+            "description": "The spacing between each child of the wrap.",
             "type": "number",
             "default": 0
         },
         "runSpacing": {
-            "description": "The multiplier of the base size for spacing between different runs in Wrap",
+            "description": "The spacing between each run of the wrap.",
             "type": "number",
             "default": 0
         },

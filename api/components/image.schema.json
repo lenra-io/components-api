@@ -15,6 +15,11 @@
             "description": "The image path from the resources folder or from the network depending on the value of fromNetwork.",
             "type": "string"
         },
+        "fromNetwork": {
+            "description": "Whether the image will be loaded from a network url of from an application's resource path.",
+            "type": "boolean",
+            "default": false
+        },
         "width": {
             "description": "The image width",
             "type": "number"
@@ -23,15 +28,79 @@
             "description": "The image height",
             "type": "number"
         },
-        "fromNetwork": {
-            "description": "Whether the image will be loaded from a network url of from an application's resource path.",
-            "type": "boolean",
-            "default": false
+        "alignment": {
+            "description": "How to align the image.",
+            "enum": [
+                "bottomCenter",
+                "bottomLeft",
+                "bottomRight",
+                "center",
+                "centerLeft",
+                "centerRight",
+                "topCenter",
+                "topLeft",
+                "topRight"
+            ],
+            "default": "center"
+        },
+        "centerSlice": {
+            "description": "The center slice for a nine-patch image.",
+            "type": "object",
+            "properties": {
+                "left": {
+                    "description": "The left position of the rectangle.",
+                    "type": "number"
+                },
+                "top": {
+                    "description": "The top position of the rectangle.",
+                    "type": "number"
+                },
+                "width": {
+                    "description": "The width of the rectangle.",
+                    "type": "number"
+                },
+                "height": {
+                    "description": "The height of the rectangle.",
+                    "type": "number"
+                }
+            },
+            "additionalProperties": false
+        },
+        "errorBuilder": {
+            "description": "The error callback when the image encounters an error during loading.",
+            "$ref": "defs/listener.schema.json"
         },
         "excludeFromSemantics": {
             "description": "Whether to exclude this image from semantics.",
             "type": "boolean",
             "default": false
+        },
+        "filterQuality": {
+            "description": "The quality of the image.",
+            "enum": [
+                "high",
+                "medium",
+                "low",
+                "none"
+            ],
+            "default": "low"
+        },
+        "fit":  {
+            "description": "How the image should fit the parent box.",
+            "enum": [
+                "contain",
+                "cover",
+                "fill",
+                "fitHeight",
+                "fitWidth",
+                "none",
+                "scaleDown"
+            ],
+            "default": "contain"
+        },
+        "frameBuilder": {
+            "description": "A callback that handles the creation of the widget that represents the image.",
+            "$ref": "defs/listener.schema.json"
         },
         "gaplessPlayback": {
             "description": "Whether the old image (true) or nothing (false) is shown when the image provider changes.",
@@ -42,6 +111,20 @@
             "description": "Whether to paint the image with anti-aliasing.",
             "type": "boolean",
             "default": false
+        },
+        "loadingBuilder": {
+            "description": "A callback that handles the widget to display while the image is still loading.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "repeat": {
+            "description": "How the image should be painted on the areas that it does not cover.",
+            "enum": [
+                "noRepeat",
+                "repeat",
+                "repeatX",
+                "repeatY"
+            ],
+            "default": "noRepeat"
         },
         "semanticLabel": {
             "description": "A semantic description of the image.",

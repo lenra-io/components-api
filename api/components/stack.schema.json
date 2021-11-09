@@ -12,7 +12,7 @@
             ]
         },
         "children": {
-            "description": "The children",
+            "description": "The children of the Stack.",
             "type": "array",
             "items": {
                 "type": "component"
@@ -23,9 +23,6 @@
         },
         "fit": {
             "$ref": "defs/stackFit.schema.json"
-        },
-        "textDirection": {
-            "$ref": "defs/textDirection.schema.json"
         }
     },
     "required": [

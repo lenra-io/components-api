@@ -20,28 +20,28 @@
             "$ref": "defs/textDecorationStyle.schema.json"
         },
         "decorationThickness": {
-            "description": "thickness of the decoration",
+            "description": "The thickness of the decoration.",
             "type": "number",
             "default": 1
         },
         "fontFamily": {
-            "description": "The font family of the text",
+            "description": "The font family of the text.",
             "type": "string"
         },
         "fontFamilyFallback": {
-            "description": "the list of font families to use if the first font family define cannot be found",
+            "description": "The list of font families to use if the first font family could not be found.",
             "type": "array",
             "items": {
                 "type": "string"
             }
         },
         "fontSize": {
-            "description": "the size to put on the text",
+            "description": "The size of the text.",
             "type": "number",
             "default": 1
         },
         "fontStyle": {
-            "description": "the style to use on the text",
+            "description": "The style of the text.",
             "type": "string",
             "enum": [
                 "italic",
@@ -66,7 +66,7 @@
             ]
         },
         "height": {
-            "description": "The height of this text",
+            "description": "The height of this text.",
             "type": "number",
             "default": 1
         },
@@ -76,7 +76,7 @@
             "default": 1
         },
         "overflow": {
-            "description": "How visual text overflow should be handled",
+            "description": "How visual text overflow should be handled.",
             "type": "string",
             "enum": [
                 "clip",
@@ -86,18 +86,18 @@
             ]
         },
         "shadows": {
-            "description": "A list of Shadows that will be painted underneath the text",
+            "description": "A list of Shadows that will be painted underneath the text.",
             "type": "array",
             "items": {
                 "$ref": "boxShadow.schema.json"
             }
         },
         "textBaseline": {
-            "description": "The common baseline that should be aligned between this text and its parent text",
+            "description": "The common baseline that should be aligned between this text and its parent text.",
             "$ref": "textBaseline.schema.json"
         },
         "wordSpacing": {
-            "description": "The amount of space to add at each sequence of white-space",
+            "description": "The amount of space to add at each sequence of white-space.",
             "type": "number",
             "default": 1
         }

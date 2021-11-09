@@ -70,7 +70,7 @@
         "padding": {
             "$ref": "defs/padding.schema.json"
         },
-        "textDirection": {
+        "horizontalDirection": {
             "$ref": "defs/textDirection.schema.json"
         },
         "verticalDirection": {

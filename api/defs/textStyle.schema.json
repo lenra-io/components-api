@@ -2,24 +2,22 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "textStyle.schema.json",
     "title": "TextStyle",
-    "description": "The style to use, the component will be changed according to the theme.",
+    "description": "The style of the Text.",
     "type": "object",
     "properties": {
         "color": {
-            "description": "color for the text",
-            "type": "integer"
+            "description": "The color of the text.",
+            "$ref": "defs/color.schema.json"
         },
         "decoration": {
-            "description": "allows you to underline or strike out the text",
-            "type": "string"
+            "$ref": "defs/textDecoration.schema.json"
         },
         "decorationColor": {
-            "description": "Color for the description",
-            "type": "integer"
+            "description": "The color of the decoration.",
+            "$ref": "defs/color.schema.json"
         },
         "decorationStyle": {
-            "description": "the style for the line of the decoration",
-            "type": "string"
+            "$ref": "defs/textDecorationStyle.schema.json"
         },
         "decorationThickness": {
             "description": "thickness of the decoration",

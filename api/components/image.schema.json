@@ -30,41 +30,11 @@
         },
         "alignment": {
             "description": "How to align the image.",
-            "enum": [
-                "bottomCenter",
-                "bottomLeft",
-                "bottomRight",
-                "center",
-                "centerLeft",
-                "centerRight",
-                "topCenter",
-                "topLeft",
-                "topRight"
-            ],
-            "default": "center"
+            "$ref": "defs/alignment.schema.json"
         },
         "centerSlice": {
             "description": "The center slice for a nine-patch image.",
-            "type": "object",
-            "properties": {
-                "left": {
-                    "description": "The left position of the rectangle.",
-                    "type": "number"
-                },
-                "top": {
-                    "description": "The top position of the rectangle.",
-                    "type": "number"
-                },
-                "width": {
-                    "description": "The width of the rectangle.",
-                    "type": "number"
-                },
-                "height": {
-                    "description": "The height of the rectangle.",
-                    "type": "number"
-                }
-            },
-            "additionalProperties": false
+            "$ref": "defs/rect.schema.json"
         },
         "errorBuilder": {
             "description": "The error callback when the image encounters an error during loading.",
@@ -77,26 +47,11 @@
         },
         "filterQuality": {
             "description": "The quality of the image.",
-            "enum": [
-                "high",
-                "medium",
-                "low",
-                "none"
-            ],
-            "default": "low"
+            "$ref": "defs/filterQuality.schema.json"
         },
         "fit":  {
             "description": "How the image should fit the parent box.",
-            "enum": [
-                "contain",
-                "cover",
-                "fill",
-                "fitHeight",
-                "fitWidth",
-                "none",
-                "scaleDown"
-            ],
-            "default": "contain"
+            "$ref": "defs/boxFit.schema.json"
         },
         "frameBuilder": {
             "description": "A callback that handles the creation of the widget that represents the image.",
@@ -117,14 +72,7 @@
             "$ref": "defs/listener.schema.json"
         },
         "repeat": {
-            "description": "How the image should be painted on the areas that it does not cover.",
-            "enum": [
-                "noRepeat",
-                "repeat",
-                "repeatX",
-                "repeatY"
-            ],
-            "default": "noRepeat"
+            "$ref": "defs/imageRepeat.schema.json"
         },
         "semanticLabel": {
             "description": "A semantic description of the image.",

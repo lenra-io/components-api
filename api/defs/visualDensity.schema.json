@@ -7,8 +7,6 @@
     "enum": [
         "comfortable",
         "compact",
-        "maximumDensity",
-        "minimumDensity",
         "standard"
     ],
     "additionalProperties": false

@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "inputBorder.schema.json",
+    "title": "InputBorder",
+    "description": "Element of type InputBorder",
+    "type": "object",
+    "properties": {
+        "borderSide": {
+            "$ref": "defs/borderSide.schema.json"
+        },
+        "isOutline": {
+            "description": "Whether this border will enclose the decoration's container.",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "borderSide"
+    ],
+    "additionalProperties": false
+}

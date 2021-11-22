@@ -7,17 +7,16 @@
     "properties": {
         "alignLabelWithHint": {
             "description": "Whether to align the label with the hint or not. Defaults to false.",
-            "type": "boolean"
+            "type": "boolean",
+            "default": false
         },
         "border": {
             "description": "The border to display around the input. Will render a border by default when border is null.",
-            "type": "object",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "constraints": {
             "description": "The constraints to be applied to the input.",
-            "type": "object",
-            "__comment__": "TODO"
+            "$ref": "defs/boxContraints.schema.json"
         },
         "contentPadding": {
             "description": "The padding to be applied to the input.",
@@ -204,7 +203,7 @@
         "suffixText": {
             "description": "The text to display after the input.",
             "type": "string"
-        },
+        }
     },
     "additionalProperties": false
 }

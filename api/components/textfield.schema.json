@@ -35,10 +35,6 @@
             "description": "Whether the input should be disabled or not",
             "type": "boolean"
         },
-        "inRow": {
-            "description": "Whether the input and label should be in row or not",
-            "type": "boolean"
-        },
         "error": {
             "description": "Whether the textfield should show and error or not",
             "type": "boolean"

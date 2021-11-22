@@ -71,58 +71,61 @@
             "$ref": "defs/maxLengthEnforcement.schema.json"
         },
         "maxLines": {
-            "description": "",
+            "description": "The maximum number of lines to show at one time.",
             "type": "integer"
         },
         "minLines": {
-            "description": "",
+            "description": "The minimum number of lines to occupy on the screen.",
             "type": "integer"
         },
         "obscureText": {
-            "description": "",
+            "description": "Whether to hide the text being edited.",
             "type": "boolean"
         },
         "onAppPrivateCommand": {
+            "__comment__": "TODO",
             "description": "",
             "$ref": "defs/listener.schema.json"
         },
         "onChanged": {
-            "description": "",
+            "description": "Callback when the user changes the text field value.",
             "$ref": "defs/listener.schema.json"
         },
         "onEditingComplete": {
-            "description": "",
+            "description": "Callback when the user finishes editing the text field.",
             "$ref": "defs/listener.schema.json"
         },
         "onSubmitted": {
-            "description": "",
+            "description": "Callback when the user tells he is done editing the text field.",
             "$ref": "defs/listener.schema.json"
         },
         "onTap": {
-            "description": "",
+            "description": "Callback when the user taps on the text field.",
             "$ref": "defs/listener.schema.json"
         },
         "readOnly": {
-            "description": "",
+            "description": "Whether the text can be changed.",
             "type": "boolean"
         },
         "scrollController": {
-            "description": "",
+            "description": "The scroll controller to use when the input is vertically scrollable.",
             "$ref": "defs/scrollController.schema.json"
         },
         "scrollPhysics": {
-            "description": "",
+            "description": "The scroll physics to use when the input is being scrolled vertically.",
             "$ref": "defs/scrollPhysics.schema.json"
         },
         "selectionControls": {
+            "__comment__": "TODO",
             "description": "",
             "$ref": "defs/textSelectionControls.schema.json"
         },
         "showCursor": {
-            "description": "",
+            "description": "Whether to show the cursor.",
             "type": "boolean"
         },
         "smartDashesType": {
+            "__comment__": "TODO",
             "description": "",
             "enum": [
                 "disabled",
@@ -130,6 +133,7 @@
             ]
         },
         "smartQuotesType": {
+            "__comment__": "TODO",
             "description": "",
             "enum": [
                 "disabled",
@@ -137,41 +141,20 @@
             ]
         },
         "textCapitalization": {
-            "description": "",
-            "enum": [
-                "none",
-                "words",
-                "sentences",
-                "characters"
-            ]
+            "description": "Configures how the platform keyboard will select an uppercase or lowercase keyboard.",
+            "$ref": "defs/textCapitalization.schema.json"
         },
         "textDirection": {
-            "description": "",
-            "enum": [
-                "ltr",
-                "rtl"
-            ]
+            "description": "The direction of the text.",
+            "$ref": "defs/textDirection.schema.json"
         },
         "textInputAction": {
-            "description": "",
-            "enum": [
-                "continueAction",
-                "done",
-                "emergencyCall",
-                "go",
-                "join",
-                "newline",
-                "next",
-                "none",
-                "previous",
-                "route",
-                "search",
-                "send",
-                "unspecified"
-            ]
+            "description": "The type of the action button to use for the keyboard.",
+            "$ref": "defs/textInputAction.schema.json"
         },
         "toolbarOptions": {
-            "description": "",
+            "__comment__": "TODO",
+            "description": "Configuration of toolbar options",
             "$ref": "defs/toolbarOptions.schema.json"
         }
     },

@@ -1,0 +1,210 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "inputDecoration.schema.json",
+    "title": "InputDecoration",
+    "description": "Element of type InputDecoration",
+    "type": "object",
+    "properties": {
+        "alignLabelWithHint": {
+            "description": "Whether to align the label with the hint or not. Defaults to false.",
+            "type": "boolean"
+        },
+        "border": {
+            "description": "The border to display around the input. Will render a border by default when border is null.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "constraints": {
+            "description": "The constraints to be applied to the input.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "contentPadding": {
+            "description": "The padding to be applied to the input.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "counter": {
+            "description": "Custom counter widget to use instead of counterText.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "counterStyle": {
+            "description": "The style use for the counterText.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "counterText": {
+            "description": "The text to place below the line as a character counter.",
+            "type": "string"
+        },
+        "disabledBorder": {
+            "description": "The border to display when the input is disabled and not showing an error.",
+            "__comment__": "TODO"
+        },
+        "enabled": {
+            "description": "Whether the input is enabled or disabled.",
+            "type": "boolean"
+        },
+        "enabledBorder": {
+            "description": "The border to display when the input is enabled and not showing an error.",
+            "__comment__": "TODO"
+        },
+        "errorBorder": {
+            "description": "The border to display when the input has an error and does not have the focus.",
+            "__comment__": "TODO"
+        },
+        "errorMaxLines": {
+            "description": "The maximum number of lines the error text can use.",
+            "type": "integer"
+        },
+        "errorStyle": {
+            "description": "The style to use for the error text.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "errorText": {
+            "description": "The error text to display when the input has an error.",
+            "type": "string"
+        },
+        "fillColor": {
+            "description": "The fill color of the input.",
+            "$ref": "defs/color.schema.json"
+        },
+        "filled": {
+            "description": "Whether the input is filled with fillColor.",
+            "type": "boolean"
+        },
+        "floatingLabelBehavior": {
+            "description": "Defines how the floating label should be displayed.",
+            "enum": [
+                "always",
+                "auto",
+                "never"
+            ]
+        },
+        "floatingLabelStyle": {
+            "description": "The style to use for the floating label.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "focusColor": {
+            "description": "The color to use when the input is focused.",
+            "$ref": "defs/color.schema.json"
+        },
+        "focusedBorder": {
+            "description": "The border to display when the input has the focus.",
+            "__comment__": "TODO"
+        },
+        "focusedErrorBorder": {
+            "description": "The border to display when the input has the focus and has an error.",
+            "__comment__": "TODO"
+        },
+        "helperMaxLines": {
+            "description": "The maximum number of lines the helper text can use.",
+            "type": "integer"
+        },
+        "helperStyle": {
+            "description": "The style to use for the helper text.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "helperText": {
+            "description": "The helper text to display.",
+            "type": "string"
+        },
+        "hintMaxLines": {
+            "description": "The maximum number of lines the hint text can use.",
+            "type": "integer"
+        },
+        "hintStyle": {
+            "description": "The style to use for the hint text.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "hintText": {
+            "description": "The hint text to display.",
+            "type": "string"
+        },
+        "hintTextDirection": {
+            "description": "The direction of the hint text.",
+            "enum": [
+                "ltr",
+                "rtl"
+            ]
+        },
+        "hoverColor": {
+            "description": "The color to use when the input is hovered.",
+            "$ref": "defs/color.schema.json"
+        },
+        "icon": {
+            "description": "The icon to display.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "isCollapsed": {
+            "description": "Whether the decoration is the same size as the input field.",
+            "type": "boolean"
+        },
+        "isDense": {
+            "description": "Whether the decoration is dense.",
+            "type": "boolean"
+        },
+        "label": {
+            "description": "Optional widget that describes the input field.",
+            "type": "object"
+        },
+        "labelStyle": {
+            "description": "The style to use for the label.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "labelText": {
+            "description": "The text that describes the input field.",
+            "type": "string"
+        },
+        "prefix": {
+            "description": "Optional widget to display before the input.",
+            "type": "object"
+        },
+        "prefixIcon": {
+            "description": "The icon to display before the prefix or prefixText and before the input.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "prefixIconConstraints": {
+            "description": "The constraints for the prefixIcon.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "prefixStyle": {
+            "description": "The style to use for the prefixText.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "prefixText": {
+            "description": "The text to display before the input.",
+            "type": "string"
+        },
+        "semanticCounterText": {
+            "description": "The semantic label for the counterText.",
+            "type": "string"
+        },
+        "suffix": {
+            "description": "Optional widget to display after the input.",
+            "type": "object"
+        },
+        "suffixIcon": {
+            "description": "The icon to display after the suffix or suffixText and after the input.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "suffixIconConstraints": {
+            "description": "The constraints for the suffixIcon.",
+            "type": "object",
+            "__comment__": "TODO"
+        },
+        "suffixStyle": {
+            "description": "The style to use for the suffixText.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "suffixText": {
+            "description": "The text to display after the input.",
+            "type": "string"
+        },
+    },
+    "additionalProperties": false
+}

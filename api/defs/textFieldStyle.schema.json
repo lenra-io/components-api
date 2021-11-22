@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "textFieldStyle.schema.json",
+    "title": "TextFieldStyle",
+    "description": "Element of type TextFieldStyle",
+    "type": "object",
+    "properties": {
+        "cursorColor": {
+            "description": "The color of the cursor.",
+            "$ref": "defs/color.schema.json"
+        },
+        "cursorHeight": {
+            "description": "The height of the cursor.",
+            "type": "number"
+        },
+        "cursorRadius": {
+            "description": "The radius of the cursor.",
+            "$ref": "defs/radius.schema.json"
+        },
+        "cursorWidth": {
+            "description": "The width of the cursor.",
+            "type": "number"
+        },
+        "decoration": {
+            "description": "The decoration of the input.",
+            "$ref": "defs/inputDecoration.schema.json"
+        }
+    },
+    "additionalProperties": false
+}

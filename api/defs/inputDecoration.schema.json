@@ -20,13 +20,10 @@
         },
         "contentPadding": {
             "description": "The padding to be applied to the input.",
-            "type": "object",
-            "__comment__": "TODO"
+            "$ref": "defs/padding.schema.json"
         },
         "counter": {
-            "description": "Custom counter widget to use instead of counterText.",
-            "type": "object",
-            "__comment__": "TODO"
+            "type": "component"
         },
         "counterStyle": {
             "description": "The style use for the counterText.",
@@ -38,7 +35,7 @@
         },
         "disabledBorder": {
             "description": "The border to display when the input is disabled and not showing an error.",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "enabled": {
             "description": "Whether the input is enabled or disabled.",
@@ -46,11 +43,11 @@
         },
         "enabledBorder": {
             "description": "The border to display when the input is enabled and not showing an error.",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "errorBorder": {
             "description": "The border to display when the input has an error and does not have the focus.",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "errorMaxLines": {
             "description": "The maximum number of lines the error text can use.",
@@ -74,11 +71,7 @@
         },
         "floatingLabelBehavior": {
             "description": "Defines how the floating label should be displayed.",
-            "enum": [
-                "always",
-                "auto",
-                "never"
-            ]
+            "$ref": "defs/floatingLabelBehavior.schema.json"
         },
         "floatingLabelStyle": {
             "description": "The style to use for the floating label.",
@@ -90,11 +83,11 @@
         },
         "focusedBorder": {
             "description": "The border to display when the input has the focus.",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "focusedErrorBorder": {
             "description": "The border to display when the input has the focus and has an error.",
-            "__comment__": "TODO"
+            "$ref": "defs/inputBorder.schema.json"
         },
         "helperMaxLines": {
             "description": "The maximum number of lines the helper text can use.",
@@ -122,19 +115,14 @@
         },
         "hintTextDirection": {
             "description": "The direction of the hint text.",
-            "enum": [
-                "ltr",
-                "rtl"
-            ]
+            "$ref": "defs/textDirection.schema.json"
         },
         "hoverColor": {
             "description": "The color to use when the input is hovered.",
             "$ref": "defs/color.schema.json"
         },
         "icon": {
-            "description": "The icon to display.",
-            "type": "object",
-            "__comment__": "TODO"
+            "type": "component"
         },
         "isCollapsed": {
             "description": "Whether the decoration is the same size as the input field.",
@@ -145,8 +133,7 @@
             "type": "boolean"
         },
         "label": {
-            "description": "Optional widget that describes the input field.",
-            "type": "object"
+            "type": "component"
         },
         "labelStyle": {
             "description": "The style to use for the label.",
@@ -157,18 +144,14 @@
             "type": "string"
         },
         "prefix": {
-            "description": "Optional widget to display before the input.",
-            "type": "object"
+            "type": "component"
         },
         "prefixIcon": {
-            "description": "The icon to display before the prefix or prefixText and before the input.",
-            "type": "object",
-            "__comment__": "TODO"
+            "type": "component"
         },
         "prefixIconConstraints": {
             "description": "The constraints for the prefixIcon.",
-            "type": "object",
-            "__comment__": "TODO"
+            "$ref": "defs/boxConstraints.schema.json"
         },
         "prefixStyle": {
             "description": "The style to use for the prefixText.",
@@ -183,18 +166,14 @@
             "type": "string"
         },
         "suffix": {
-            "description": "Optional widget to display after the input.",
-            "type": "object"
+            "type":"component"
         },
         "suffixIcon": {
-            "description": "The icon to display after the suffix or suffixText and after the input.",
-            "type": "object",
-            "__comment__": "TODO"
+            "type":"component"
         },
         "suffixIconConstraints": {
             "description": "The constraints for the suffixIcon.",
-            "type": "object",
-            "__comment__": "TODO"
+            "$ref": "defs/boxConstraints.schema.json"
         },
         "suffixStyle": {
             "description": "The style to use for the suffixText.",

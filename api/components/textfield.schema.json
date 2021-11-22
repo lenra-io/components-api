@@ -12,70 +12,63 @@
             ]
         },
         "autocorrect": {
-            "description": "",
+            "description": "Whether to enable the autocorrection",
             "type": "boolean"
         },
         "autofillHints": {
-            "description": "",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+            "description": "The type of this text input to provide autofill hints.",
+            "$ref": "defs/autofillHints.schema.json"
         },
         "autofocus": {
-            "description": "",
+            "description": "Whether this Textfield should be focused initially.",
             "type": "boolean"
         },
         "buildCounter": {
-            "description": "",
+            "description": "Callback that generates a custom counter widget.",
             "$ref": "defs/listener.schema.json"
         },
         "style": {
-            "description": "",
+            "description": "The style of the Textfield.",
             "$ref": "defs/textFieldStyle.schema.json"
         },
         "dragStartBehavior": {
-            "description": "",
-            "enum": [
-                "start",
-                "down"
-            ]
+            "description": "Determines the way that drag start behavior is handled.",
+            "$ref": "defs/dragStartBehavior.schema.json"
         },
         "enabled": {
-            "description": "",
+            "description": "Whether the text field is enabled.",
             "type": "boolean"
         },
         "enableIMEPersonalizedLearning": {
+            "__comment__": "TODO",
             "description": "",
             "type": "boolean"
         },
         "enableInteractiveSelection": {
+            "__comment__": "TODO",
             "description": "",
             "type": "boolean"
         },
         "enableSuggestions": {
+            "__comment__": "TODO",
             "description": "",
             "type": "boolean"
         },
         "expands": {
-            "description": "",
+            "description": "Whether the TextField is sized to fill its parent.",
             "type": "boolean"
         },
         "keyboardType": {
-            "description": "",
+            "description": "The type of the keyboard to use for editing the text.",
             "$ref": "defs/textInputType.schema.json"
         },
         "maxLength": {
-            "description": "",
+            "description": "The maximum number of characters to allow in the text field.",
             "type": "integer"
         },
         "maxLengthEnforcement": {
-            "description": "",
-            "enum": [
-                "none",
-                "soft",
-                "hard"
-            ]
+            "description": "Determines how the maxLength limit should be enforced.",
+            "$ref": "defs/maxLengthEnforcement.schema.json"
         },
         "maxLines": {
             "description": "",

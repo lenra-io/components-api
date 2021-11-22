@@ -24,6 +24,41 @@
         "decoration": {
             "description": "The decoration of the input.",
             "$ref": "defs/inputDecoration.schema.json"
+        },
+        "keyboardAppearance": {
+            "description": "The appearance of the keyboard.",
+            "$ref": "defs/brightness.schema.json"
+        },
+        "obscuringCharacter": {
+            "description": "The character used to obscure the text.",
+            "type": "string"
+        },
+        "scrollPadding": {
+            "description": "The padding of the scrollable when the Textfield scrolls into view.",
+            "$ref": "defs/padding.schema.json"
+        },
+        "selectionHeightStyle": {
+            "description": "The height of the selection highlight boxes.",
+            "$ref": "defs/boxHeightStyle.schema.json"
+        },
+        "selectionWidthStyle": {
+            "description": "The width of the selection highlight boxes.",
+            "$ref": "defs/boxWidthStyle.schema.json"
+        },
+        "strutStyle": {
+            "__comment__": "TODO"
+        },
+        "textStyle": {
+            "description": "The style of the text.",
+            "$ref": "defs/textStyle.schema.json"
+        },
+        "textAlign": {
+            "description": "The alignment of the text.",
+            "$ref": "defs/textAlign.schema.json"
+        },
+        "textAlignVertical": {
+            "description": "How the text should be aligned vertically.",
+            "$ref": "defs/textAlignVertical.schema.json"
         }
     },
     "additionalProperties": false

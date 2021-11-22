@@ -15,22 +15,33 @@
             "description": "the value of the element",
             "type": "boolean"
         },
-        "label": {
-            "description": "The label of the element",
-            "type": "string"
+        "splashRadius": {
+            "description": "the splash Radius when you click on the toggle",
+            "type": "number"
         },
-        "disabled": {
-            "description": "Whether the element is disabled or not",
-            "type": "boolean",
-            "default": false
+        "autofocus": {
+            "description": "the default focus in boolean",
+            "type": "boolean"
+        },
+        "dragStartBehavior": {
+            "description": "Determines the way that drag start behavior is handled.",
+            "type": "string",
+            "enum": [
+                "start",
+                "down"
+            ]
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"
+        },
+        "style": {
+            "$ref": "defs/toggleStyle.schema.json"
         }
     },
     "required": [
         "type",
-        "value"
+        "value",
+        "onPressed"
     ],
     "additionalProperties": false
 }

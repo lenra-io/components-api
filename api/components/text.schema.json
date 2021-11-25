@@ -17,6 +17,31 @@
         },
         "style": {
             "$ref": "defs/textStyle.schema.json"
+        },
+        "locale": {
+            "$ref": "defs/locale.schema.json"
+        },
+        "semanticsLabel": {
+            "description": "The value to explain a different semantics",
+            "type": "string"
+        },
+        "spellOut": {
+            "description": "Whether the assistive technologies should spell out this text character by character",
+            "type": "boolean"
+        },
+        "children": {
+            "description": "Additional texts to add after this text.",
+            "type": "array",
+            "items": {
+                "type": "component",
+                "properties": {
+                    "type": {
+                        "enum": [
+                            "text"
+                        ]
+                    }
+                }
+            }
         }
     },
     "required": [

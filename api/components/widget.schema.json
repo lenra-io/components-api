@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "widget.schema.json",
+    "title": "Widget",
+    "description": "Widget that split and optimize application, widget can request data to datastore",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "enum": [
+                "widget"
+            ]
+        },
+        "name": {
+            "type": "string"
+        },
+        "props": {
+            "type": "object"
+        },
+        "query": {
+            "type": "object"
+        }
+    },
+    "required": [
+        "type",
+        "name"
+    ],
+    "additionalProperties": false
+}

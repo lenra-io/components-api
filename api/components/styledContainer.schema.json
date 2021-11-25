@@ -28,6 +28,12 @@
         },
         "padding": {
             "$ref": "defs/padding.schema.json"
+        },
+        "constraints": {
+            "$ref": "defs/boxConstraints.schema.json"
+        },
+        "decoration": {
+            "$ref": "defs/boxDecoration.schema.json"
         }
     },
     "required": [

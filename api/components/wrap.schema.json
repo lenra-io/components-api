@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "wrap.schema.json",
+    "title": "Wrap",
+    "description": "Element of type Wrap",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "wrap"
+            ]
+        },
+        "children": {
+            "description": "The children of the wrap.",
+            "type": "array",
+            "items": {
+                "type": "component"
+            }
+        },
+        "direction": {
+            "$ref": "defs/direction.schema.json"
+        },
+        "crossAxisAlignment": {
+            "$ref": "defs/wrapCrossAlignment.schema.json"
+        },
+        "spacing": {
+            "description": "The spacing between each child of the wrap.",
+            "type": "number",
+            "default": 0
+        },
+        "runSpacing": {
+            "description": "The spacing between each run of the wrap.",
+            "type": "number",
+            "default": 0
+        },
+        "alignment": {
+            "$ref": "defs/wrapAlignment.schema.json"
+        },
+        "runAlignment": {
+            "$ref": "defs/wrapAlignment.schema.json"
+        },
+        "horizontalDirection": {
+            "$ref": "defs/textDirection.schema.json"
+        },
+        "verticalDirection": {
+            "$ref": "defs/verticalDirection.schema.json"
+        }
+    },
+    "required": [
+        "type",
+        "children"
+    ],
+    "additionalProperties": false
+}

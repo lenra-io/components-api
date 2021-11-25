@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "textDirection.schema.json",
-    "title": "textDirection",
-    "description": "A direction in which text flows.",
+    "title": "Text Direction",
+    "description": "In which direction the elements should be placed following the horizontal axis.",
     "type": "string",
     "enum": [
         "ltr",

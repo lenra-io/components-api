@@ -39,19 +39,8 @@
             "description": "Whether the text field is enabled.",
             "type": "boolean"
         },
-        "enableIMEPersonalizedLearning": {
-            "__comment__": "TODO",
-            "description": "",
-            "type": "boolean"
-        },
         "enableInteractiveSelection": {
-            "__comment__": "TODO",
-            "description": "",
-            "type": "boolean"
-        },
-        "enableSuggestions": {
-            "__comment__": "TODO",
-            "description": "",
+            "description": "Whether to enable user interface options to change the text selection.",
             "type": "boolean"
         },
         "expands": {
@@ -83,8 +72,7 @@
             "type": "boolean"
         },
         "onAppPrivateCommand": {
-            "__comment__": "TODO",
-            "description": "",
+            "description": "This is used to receive a private command from the input method.",
             "$ref": "defs/listener.schema.json"
         },
         "onChanged": {
@@ -107,38 +95,13 @@
             "description": "Whether the text can be changed.",
             "type": "boolean"
         },
-        "scrollController": {
-            "description": "The scroll controller to use when the input is vertically scrollable.",
-            "$ref": "defs/scrollController.schema.json"
-        },
         "scrollPhysics": {
             "description": "The scroll physics to use when the input is being scrolled vertically.",
             "$ref": "defs/scrollPhysics.schema.json"
         },
-        "selectionControls": {
-            "__comment__": "TODO",
-            "description": "",
-            "$ref": "defs/textSelectionControls.schema.json"
-        },
         "showCursor": {
             "description": "Whether to show the cursor.",
             "type": "boolean"
-        },
-        "smartDashesType": {
-            "__comment__": "TODO",
-            "description": "",
-            "enum": [
-                "disabled",
-                "enabled"
-            ]
-        },
-        "smartQuotesType": {
-            "__comment__": "TODO",
-            "description": "",
-            "enum": [
-                "disabled",
-                "enabled"
-            ]
         },
         "textCapitalization": {
             "description": "Configures how the platform keyboard will select an uppercase or lowercase keyboard.",
@@ -153,7 +116,6 @@
             "$ref": "defs/textInputAction.schema.json"
         },
         "toolbarOptions": {
-            "__comment__": "TODO",
             "description": "Configuration of toolbar options",
             "$ref": "defs/toolbarOptions.schema.json"
         }

@@ -1,0 +1,12 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "verticalDirection.schema.json",
+    "title": "verticalDirection",
+    "description": "A direction in which boxes flow vertically.",
+    "type": "string",
+    "enum": [
+        "down",
+        "up"
+    ],
+    "default": "down"
+}

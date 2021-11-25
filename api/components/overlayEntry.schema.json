@@ -1,0 +1,34 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "overlayEntry.schema.json",
+    "title": "Overlay Entry",
+    "description": "Element of type OverlayEntry",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "overlayEntry"
+            ]
+        },
+        "child": {
+            "type": "component"
+        },
+        "maintainState": {
+            "description": "Whether this entry must be included in the tree even if there is a fully opaque entry above it.",
+            "type": "boolean",
+            "default": false
+        },
+        
+        "opaque": {
+            "description": "Whether this entry occludes the entire overlay.",
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "type",
+        "child"
+    ],
+    "additionalProperties": false
+}

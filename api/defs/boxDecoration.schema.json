@@ -5,9 +5,6 @@
     "description": "Element of type BoxDecoration",
     "type": "object",
     "properties": {
-        "border": {
-            "$ref": "defs/border.schema.json"
-        },
         "borderRadius": {
             "$ref": "defs/borderRadius.schema.json"
         },

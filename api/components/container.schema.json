@@ -1,14 +1,14 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "styledContainer.schema.json",
-    "title": "StyledContainer",
-    "description": "Element of type StyledContainer",
+    "$id": "containerontainer.schema.json",
+    "title": "container",
+    "description": "Element of type container",
     "type": "component",
     "properties": {
         "type": {
             "description": "The identifier of the component",
             "enum": [
-                "styledContainer"
+                "container"
             ]
         },
         "child": {

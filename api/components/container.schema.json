@@ -14,17 +14,8 @@
         "child": {
             "type": "component"
         },
-        "color": {
-            "$ref": "defs/color.schema.json"
-        },
         "border": {
             "$ref": "defs/border.schema.json"
-        },
-        "borderRadius": {
-            "$ref": "defs/borderRadius.schema.json"
-        },
-        "boxShadow": {
-            "$ref": "defs/boxShadow.schema.json"
         },
         "padding": {
             "$ref": "defs/padding.schema.json"

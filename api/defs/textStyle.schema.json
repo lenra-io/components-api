@@ -89,12 +89,12 @@
             "description": "A list of Shadows that will be painted underneath the text.",
             "type": "array",
             "items": {
-                "$ref": "boxShadow.schema.json"
+                "$ref": "defs/boxShadow.schema.json"
             }
         },
         "textBaseline": {
             "description": "The common baseline that should be aligned between this text and its parent text.",
-            "$ref": "textBaseline.schema.json"
+            "$ref": "defs/textBaseline.schema.json"
         },
         "wordSpacing": {
             "description": "The amount of space to add at each sequence of white-space.",

@@ -12,7 +12,7 @@
             "$ref": "defs/boxShadow.schema.json"
         },
         "color": {
-            "$ref": "defs/colors.schema.json"
+            "$ref": "defs/color.schema.json"
         },
         "shape": {
             "$ref": "defs/boxShape.schema.json"

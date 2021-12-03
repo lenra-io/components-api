@@ -15,17 +15,22 @@
             "description": "The default state of the checkbox",
             "type": "boolean"
         },
-        "label": {
-            "description": "The value of the text next to the checkbox",
-            "type": "string"
-        },
-        "disabled": {
-            "description": "If true, the checkbox is disabled",
-            "type": "boolean",
-            "default": false
+        "tristate": {
+            "description": "Whether the checkbox can have 3 states.",
+            "type": "boolean"
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"
+        },
+        "style": {
+            "$ref": "defs/checkboxStyle.schema.json"
+        },
+        "materialTapTargetSize": {
+            "$ref": "defs/materialTapTargetSize.schema.json"
+        },
+        "autofocus": {
+            "description": "Whether the checkbox is focused initially.",
+            "type": "boolean"
         }
     },
     "required": [

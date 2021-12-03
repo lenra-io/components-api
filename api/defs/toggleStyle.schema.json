@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "boxShadow.schema.json",
-    "title": "BoxShadow",
-    "description": "Element of type BoxShadow",
+    "$id": "toggleStyle.schema.json",
+    "title": "ToggleStyle",
+    "description": "Element of type ToggleStyle",
     "type": "object",
     "properties": {
         "activeColor": {
@@ -24,10 +24,10 @@
             "$ref": "defs/color.schema.json"
         },
         "activeThumbImage": {
-            "$ref": "../components/image.schema.json"
+            "$ref": "components/image.schema.json"
         },
         "inactiveThumbImage": {
-            "$ref": "../components/image.schema.json"
+            "$ref": "components/image.schema.json"
         },
         "materialTapTargetSize": {
             "type": "string",

@@ -6,21 +6,21 @@
     "type": "component",
     "properties": {
         "type": {
-            "description": "The type of the element",
+            "description": "The type of the element.",
             "enum": [
                 "toggle"
             ]
         },
         "value": {
-            "description": "the value of the element",
+            "description": "The value of the element.",
             "type": "boolean"
         },
         "splashRadius": {
-            "description": "the splash Radius when you click on the toggle",
+            "description": "The splash radius when you click on the toggle.",
             "type": "number"
         },
         "autofocus": {
-            "description": "the default focus in boolean",
+            "description": "The default focus in boolean.",
             "type": "boolean"
         },
         "dragStartBehavior": {
@@ -40,8 +40,7 @@
     },
     "required": [
         "type",
-        "value",
-        "onPressed"
+        "value"
     ],
     "additionalProperties": false
 }

@@ -11,6 +11,10 @@
                 "radio"
             ]
         },
+        "autofocus": {
+            "description": "Whether the radio will be selected initially.",
+            "type": "boolean"
+        },
         "value": {
             "description": "The value of the radio",
             "type": "string"
@@ -19,23 +23,25 @@
             "description": "The value group of the radio",
             "type": "string"
         },
-        "label": {
-            "description": "The label showed aside of the radio",
-            "type": "string"
-        },
-        "disabled": {
-            "description": "Whether the radio should be disabled or not",
-            "type": "boolean"
+        "materialTapTargetSize": {
+            "description": "Configures the minimum size of the tap target.",
+            "$ref": "defs/materialTapTargetSize.schema.json"
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"
+        },
+        "toggleable": {
+            "description": "Whether the radio is allowed to go from checked to unchecked when clicking on it.",
+            "type": "boolean"
+        },
+        "style": {
+            "$ref": "radioStyle.schema.json"
         }
     },
     "required": [
         "type",
         "value",
-        "groupValue",
-        "label"
+        "groupValue"
     ],
     "additionalProperties": false
 }

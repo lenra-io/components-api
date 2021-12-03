@@ -1,0 +1,62 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "slider.schema.json",
+    "title": "Slider",
+    "description": "Element of type Slider",
+    "type": "component",
+    "properties": {
+        "type": {
+            "description": "The identifier of the component",
+            "enum": [
+                "slider"
+            ]
+        },
+        "style": {
+            "$refs": "defs/sliderStyle.schema.json"
+        },
+        "autofocus": {
+            "description": "Whether the slider should be focused initially.",
+            "type": "boolean",
+            "default": false
+        },
+        "divisions": {
+            "description": "The number of divisions to show on the slider.",
+            "type": "number"
+        },
+        "label": {
+            "description": "The label of the slider.",
+            "type": "string"
+        },
+        "min": {
+            "description": "The minimum value of the slider.",
+            "type": "number",
+            "default": 0.0
+        },
+        "max": {
+            "description": "The maximum value of the slider.",
+            "type": "number",
+            "default": 1.0
+        },
+        "onChanged": {
+            "description": "The callback to be invoked when the slider value changes.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onChangeEnd": {
+            "description": "The callback to be invoked when the slider is released.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onChangeStart": {
+            "description": "The callback to be invoked when the slider is pressed.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "value": {
+            "description": "The current value of the slider.",
+            "type": "number",
+            "default": 0.0
+        }
+    },
+    "required": [
+        "type"
+    ],
+    "additionalProperties": false
+}

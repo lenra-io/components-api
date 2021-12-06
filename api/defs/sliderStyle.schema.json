@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "sliderStyle.schema.json",
-    "title": "ToggleStyle",
+    "title": "SliderStyle",
     "description": "Element of type ToggleStyle",
     "type": "object",
     "properties": {

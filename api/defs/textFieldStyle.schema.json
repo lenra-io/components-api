@@ -46,7 +46,7 @@
             "$ref": "defs/boxWidthStyle.schema.json"
         },
         "strutStyle": {
-            "__comment__": "TODO"
+            "$ref": "defs/strutStyle.schema.json"
         },
         "textStyle": {
             "description": "The style of the text.",

@@ -2,21 +2,21 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "button.schema.json",
     "title": "Button",
-    "description": "Element of type Button",
+    "description": "The button component.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "button"
             ]
         },
         "text": {
-            "description": "The value of the text inside the button",
+            "description": "The label to use inside of the button.",
             "type": "string"
         },
         "disabled": {
-            "description": "The button is disabled if true",
+            "description": "The button is disabled if this property is set to `true`.",
             "type": "boolean",
             "default": false
         },

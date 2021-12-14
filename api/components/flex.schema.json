@@ -2,17 +2,17 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "flex.schema.json",
     "title": "Flex",
-    "description": "Element of type Flex",
+    "description": "The Flex component is a container that displays its children in a row or column.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "flex"
             ]
         },
         "children": {
-            "description": "The children",
+            "description": "The children of the component.",
             "type": "array",
             "items": {
                 "type": "component"
@@ -22,7 +22,7 @@
             "$ref": "defs/direction.schema.json"
         },
         "mainAxisAlignment": {
-            "description": "The alignment along the main axis",
+            "description": "The alignment of the children along the main axis.",
             "type": "string",
             "enum": [
                 "start",
@@ -35,7 +35,7 @@
             "default": "start"
         },
         "crossAxisAlignment": {
-            "description": "The alignment along the cross axis",
+            "description": "The alignment of the children along the cross axis.",
             "type": "string",
             "enum": [
                 "start",
@@ -47,12 +47,12 @@
             "default": "start"
         },
         "spacing": {
-            "description": "The multiplier of the base size for the minimal spacing",
+            "description": "The spacing between the children as a multiple of `baseSize`.",
             "type": "number",
             "default": 0
         },
         "fillParent": {
-            "description": "if true the flex will fill the main axis. Otherwise it will take the children size.",
+            "description": "The flex will fill the main axis if this property is set to `true`. Otherwise it will take the size of the children.",
             "type": "boolean",
             "default": false
         },

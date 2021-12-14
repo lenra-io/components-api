@@ -2,21 +2,21 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "checkbox.schema.json",
     "title": "Checkbox",
-    "description": "Element of type Checkbox",
+    "description": "The checkbox component.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "checkbox"
             ]
         },
         "value": {
-            "description": "The default state of the checkbox",
+            "description": "The default state of the checkbox.",
             "type": "boolean"
         },
         "tristate": {
-            "description": "Whether the checkbox can have 3 states.",
+            "description": "Whether the checkbox can have 3 states. Third state displays a dash instead of a checkmark.",
             "type": "boolean"
         },
         "onPressed": {

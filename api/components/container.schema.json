@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "container.schema.json",
     "title": "container",
-    "description": "Element of type container",
+    "description": "A container that can be used wrap a component and provide some additional functionality such as padding or border.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "container"
             ]

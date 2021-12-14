@@ -2,17 +2,17 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "flexible.schema.json",
     "title": "Flexible",
-    "description": "Element of type Flexible",
+    "description": "The Flexible component can be used to define the way in which its child flexes.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The type of the element",
+            "description": "The identifier of the component.",
             "enum": [
                 "flexible"
             ]
         },
         "flex": {
-            "description": "How a flexible child is inscribed into the available space.",
+            "description": "The flex factor to use for the child. The default is 1 which means that the child will take up the remaining space of the parent.",
             "type": "integer",
             "default": 1
         },

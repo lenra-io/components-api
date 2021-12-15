@@ -12,7 +12,7 @@
             ]
         },
         "style": {
-            "$refs": "defs/sliderStyle.schema.json"
+            "$ref": "defs/sliderStyle.schema.json"
         },
         "autofocus": {
             "description": "Whether the slider should be focused initially.",

@@ -38,7 +38,7 @@
         },
         "errorBuilder": {
             "description": "The error callback when the image encounters an error during loading.",
-            "$ref": "defs/listener.schema.json"
+            "type": "component"
         },
         "excludeFromSemantics": {
             "description": "Whether to exclude this image from semantics.",
@@ -49,13 +49,13 @@
             "description": "The quality of the image.",
             "$ref": "defs/filterQuality.schema.json"
         },
-        "fit":  {
+        "fit": {
             "description": "How the image should fit the parent box.",
             "$ref": "defs/boxFit.schema.json"
         },
         "frameBuilder": {
             "description": "A callback that handles the creation of the widget that represents the image.",
-            "$ref": "defs/listener.schema.json"
+            "type": "component"
         },
         "gaplessPlayback": {
             "description": "Whether the old image (true) or nothing (false) is shown when the image provider changes.",
@@ -69,7 +69,7 @@
         },
         "loadingBuilder": {
             "description": "A callback that handles the widget to display while the image is still loading.",
-            "$ref": "defs/listener.schema.json"
+            "type": "component"
         },
         "repeat": {
             "$ref": "defs/imageRepeat.schema.json"

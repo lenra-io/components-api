@@ -21,11 +21,11 @@
             "default": false
         },
         "width": {
-            "description": "The image width",
+            "description": "The image width.",
             "type": "number"
         },
         "height": {
-            "description": "The image height",
+            "description": "The image height.",
             "type": "number"
         },
         "alignment": {

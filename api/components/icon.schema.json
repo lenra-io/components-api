@@ -1,0 +1,37 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "icon.schema.json",
+    "title": "Icon",
+    "description": "The Icon to use",
+    "type": "component",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "value"
+    ],
+    "properties": {
+        "type": {
+            "description": "The type of the element",
+            "enum": [
+                "icon"
+            ]
+        },
+        "size": {
+            "description": "The size of the Icon",
+            "type": "number",
+            "default": "1"
+        },
+        "color": {
+            "$ref": "defs/color.schema.json",
+            "default": "#000000"
+        },
+        "semanticLabel": {
+            "description": "The semantic label for the Icon.",
+            "type": "string"
+        },
+        "value": {
+            "description": "The value of the Icon",
+            "$ref": "defs/iconData.schema.json"
+        }
+    }
+}

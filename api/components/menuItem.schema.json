@@ -26,7 +26,7 @@
             "default": false
         },
         "icon": {
-            "$ref": "defs/icon.schema.json"
+            "$ref": "icon.schema.json"
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"

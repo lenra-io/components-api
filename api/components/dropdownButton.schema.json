@@ -30,7 +30,7 @@
             "type": "component"
         },
         "icon": {
-            "$ref": "defs/icon.schema.json"
+            "$ref": "icon.schema.json"
         }
     },
     "required": [

@@ -5,6 +5,15 @@
     "description": "Element of type InputBorder",
     "type": "object",
     "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "underline",
+                "outline",
+                "none"
+            ],
+            "default": "underline"
+        },
         "borderRadius": {
             "$ref": "defs/borderRadius.schema.json"
         },

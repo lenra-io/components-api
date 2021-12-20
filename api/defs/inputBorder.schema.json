@@ -5,6 +5,9 @@
     "description": "Element of type InputBorder",
     "type": "object",
     "properties": {
+        "borderRadius": {
+            "$ref": "defs/borderRadius.schema.json"
+        },
         "borderSide": {
             "$ref": "defs/borderSide.schema.json"
         },

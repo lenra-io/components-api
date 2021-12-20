@@ -9,8 +9,7 @@
             "type": "string",
             "enum": [
                 "underline",
-                "outline",
-                "none"
+                "outline"
             ],
             "default": "underline"
         },

@@ -18,10 +18,6 @@
         },
         "borderSide": {
             "$ref": "defs/borderSide.schema.json"
-        },
-        "isOutline": {
-            "description": "Whether this border will enclose the decoration's container.",
-            "type": "boolean"
         }
     },
     "required": [

@@ -30,6 +30,10 @@
             "description": "Callback that generates a custom counter widget.",
             "$ref": "defs/listener.schema.json"
         },
+        "controller": {
+            "description": "",
+            "$ref": "defs/listener.schema.json"
+        },
         "style": {
             "description": "The style of the Textfield.",
             "$ref": "defs/textFieldStyle.schema.json"

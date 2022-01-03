@@ -30,10 +30,24 @@
             "$ref": "defs/listener.schema.json"
         },
         "leftIcon": {
-            "$ref": "icon.schema.json"
+            "type": "component",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "icon"
+                    ]
+                }
+            }
         },
         "rightIcon": {
-            "$ref": "icon.schema.json"
+            "type": "component",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "icon"
+                    ]
+                }
+            }
         }
     },
     "required": [

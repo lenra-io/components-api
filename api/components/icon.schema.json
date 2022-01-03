@@ -26,8 +26,9 @@
             "default": "#000000"
         },
         "semanticLabel": {
-            "description": "The semantic label for the Icon.",
-            "type": "string"
+            "description": "The semantic label for the Icon. This will be announced when using accessibility mode.",
+            "type": "string",
+            "default": null
         },
         "value": {
             "description": "The value of the Icon",

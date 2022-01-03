@@ -23,7 +23,7 @@
         },
         "color": {
             "$ref": "defs/color.schema.json",
-            "default": "#000000"
+            "default": null
         },
         "semanticLabel": {
             "description": "The semantic label for the Icon. This will be announced when using accessibility mode.",

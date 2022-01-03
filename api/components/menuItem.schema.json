@@ -26,7 +26,14 @@
             "default": false
         },
         "icon": {
-            "$ref": "icon.schema.json"
+            "type": "component",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "icon"
+                    ]
+                }
+            }
         },
         "onPressed": {
             "$ref": "defs/listener.schema.json"

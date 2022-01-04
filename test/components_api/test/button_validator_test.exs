@@ -25,6 +25,8 @@ defmodule ApplicationRunner.ButtonValidatorTest do
       |> Jason.decode!()
       |> ExComponentSchema.Schema.resolve()
 
+    ComponentsAPI.JsonSchemata.get_schema_map("button.schema.json")
+
     assert :ok = ExComponentSchema.Validator.validate(schema, json)
   end
 

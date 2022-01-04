@@ -1,5 +1,3 @@
-
-
 import Config
 
 # Configure JSON validator

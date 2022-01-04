@@ -21,12 +21,10 @@ defmodule ComponentsAPI.JsonSchemata do
 
   @impl true
   def init(_) do
-    root_json_directory = Application.app_dir(:application_runner, @api_directory)
-
     relative_shemata_path =
-      Path.join(root_json_directory, "/**/*.schema.json")
+      Path.join(@api_directory, "/**/*.schema.json")
       |> Path.wildcard()
-      |> Enum.map(&Path.relative_to(&1, root_json_directory))
+      |> Enum.map(&Path.relative_to(&1, @api_directory))
 
     schemata = Enum.map(relative_shemata_path, &load_schema/1)
     schemata_map = Enum.zip(relative_shemata_path, schemata) |> Enum.into(%{})

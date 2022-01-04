@@ -72,10 +72,11 @@
             "type": "component"
         },
         "repeat": {
+            "description": "How the image should be repeated accross the bounds not covered by the image.",
             "$ref": "defs/imageRepeat.schema.json"
         },
         "semanticLabel": {
-            "description": "A semantic description of the image.",
+            "description": "A semantic description of the image. This is used for TalkBack on Android and VoiceOver on IOS.",
             "type": "string"
         }
     },

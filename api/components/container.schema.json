@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "container.schema.json",
-    "title": "container",
+    "title": "Container",
     "description": "Element of type container",
     "type": "component",
     "properties": {

@@ -15,18 +15,23 @@
             "type": "component"
         },
         "onPressed": {
+            "description": "The listener to be called when the actionable is pressed.",
             "$ref": "defs/listener.schema.json"
         },
         "onDoublePressed": {
+            "description": "The listener to be called when the actionable is double pressed.",
             "$ref": "defs/listener.schema.json"
         },
         "onLongPressed": {
+            "description": "The listener to be called when the actionable is long pressed.",
             "$ref": "defs/listener.schema.json"
         },
         "onPressedCancel": {
+            "description": "The listener to be called when the actionable is pressed inside and released outside of the actionable, causing it to cancel the press action.",
             "$ref": "defs/listener.schema.json"
         },
         "onHovered": {
+            "description": "The listener to be called when the actionable is hovered.",
             "$ref": "defs/listener.schema.json"
         }
     },

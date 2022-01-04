@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "textShadow.schema.json",
-    "title": "textShadow",
+    "title": "TextShadow",
     "description": "Element of type textShadow",
     "type": "object",
     "properties": {

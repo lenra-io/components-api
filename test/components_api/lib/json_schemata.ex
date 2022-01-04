@@ -5,8 +5,7 @@ defmodule ComponentsAPI.JsonSchemata do
     `LenraServers.JsonValidator` is a GenServer that allow to validate a json schema with `LenraServers.JsonValidator.validate_ui/1`
   """
 
-  # Client (api)
-  @component_api_directory "../../api"
+  @api_directory "../../api"
 
   def get_schema_map(path) do
     GenServer.call(__MODULE__, {:get_schema_map, path})
@@ -20,10 +19,9 @@ defmodule ComponentsAPI.JsonSchemata do
     GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
   end
 
-  # Server (callbacks)
   @impl true
   def init(_) do
-    root_json_directory = Application.app_dir(:application_runner, @component_api_directory)
+    root_json_directory = Application.app_dir(:application_runner, @api_directory)
 
     relative_shemata_path =
       Path.join(root_json_directory, "/**/*.schema.json")
@@ -61,7 +59,7 @@ defmodule ComponentsAPI.JsonSchemata do
   end
 
   def read_schema(path) do
-    @component_api_directory
+    @api_directory
     |> Path.join(path)
     |> File.read()
     |> case do

@@ -22,6 +22,7 @@
             "default": "1"
         },
         "color": {
+            "description": "The color of the Icon. If not set or null, the color is inherited from the theme.",
             "$ref": "defs/color.schema.json",
             "default": null
         },

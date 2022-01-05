@@ -33,13 +33,8 @@ defmodule ComponentsAPI.JsonSchemata do
   end
 
   def load_schema(path) do
-    schema =
-      read_schema(path)
-      |> ExComponentSchema.Schema.resolve()
-
-    schema_properties = ApplicationRunner.SchemaParser.parse(schema)
-
-    Map.merge(%{schema: schema}, schema_properties)
+    read_schema(path)
+    |> ExComponentSchema.Schema.resolve()
   rescue
     e in ExComponentSchema.Schema.InvalidSchemaError ->
       reraise ExComponentSchema.Schema.InvalidSchemaError,
@@ -50,9 +45,7 @@ defmodule ComponentsAPI.JsonSchemata do
   defp load_raw_schema(schema, schemata_map, component_name) do
     resolved_schema = ExComponentSchema.Schema.resolve(schema)
 
-    properties = ApplicationRunner.SchemaParser.parse(resolved_schema)
-
-    [{get_component_path(component_name), Map.merge(%{schema: resolved_schema}, properties)}]
+    [{get_component_path(component_name), %{schema: resolved_schema}}]
     |> Enum.into(schemata_map)
   end
 

@@ -11,14 +11,9 @@
                 "image"
             ]
         },
-        "path": {
-            "description": "The image path from the resources folder or from the network depending on the value of fromNetwork.",
+        "src": {
+            "description": "The URL to the image. Will fetch the application's image if the URL does not start with `http(s)://`.",
             "type": "string"
-        },
-        "fromNetwork": {
-            "description": "Whether the image will be loaded from a network url of from an application's resource path.",
-            "type": "boolean",
-            "default": false
         },
         "width": {
             "description": "The image width.",

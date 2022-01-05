@@ -124,6 +124,10 @@
         "icon": {
             "type": "component"
         },
+        "iconColor": {
+            "description": "The color for the icon",
+            "$ref": "defs/color.schema.json"
+        },
         "isCollapsed": {
             "description": "Whether the decoration is the same size as the input field.",
             "type": "boolean"
@@ -149,6 +153,10 @@
         "prefixIcon": {
             "type": "component"
         },
+        "prefixIconColor":{
+            "description": "the color of the prefixIcon",
+            "$ref": "defs/color.schema.json"
+        },
         "prefixIconConstraints": {
             "description": "The constraints for the prefixIcon.",
             "$ref": "defs/boxConstraints.schema.json"
@@ -170,6 +178,10 @@
         },
         "suffixIcon": {
             "type":"component"
+        },
+        "suffixIconColor":{
+            "description": "the color of the sufficIcon",
+            "$ref": "defs/color.schema.json"
         },
         "suffixIconConstraints": {
             "description": "The constraints for the suffixIcon.",

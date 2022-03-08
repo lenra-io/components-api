@@ -60,6 +60,9 @@
         },
         "onChanged": {
             "$ref": "defs/listener.schema.json"
+        },
+        "autofillHints": {
+            "$ref": "defs/autofillHints.schema.json"
         }
     },
     "required": [

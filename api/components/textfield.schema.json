@@ -11,6 +11,10 @@
                 "textfield"
             ]
         },
+        "value": {
+            "description": "The value displayed inside the Textfield",
+            "type": "string"
+        },
         "autocorrect": {
             "description": "Whether to enable the autocorrection",
             "type": "boolean"
@@ -128,7 +132,8 @@
         }
     },
     "required": [
-        "type"
+        "type",
+        "value"
     ],
     "additionalProperties": false
 }

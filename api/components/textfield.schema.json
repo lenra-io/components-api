@@ -34,10 +34,6 @@
             "description": "Callback that generates a custom counter widget.",
             "$ref": "defs/listener.schema.json"
         },
-        "controller": {
-            "description": "Controls the text being edited.",
-            "$ref": "defs/listener.schema.json"
-        },
         "style": {
             "description": "The style of the Textfield.",
             "$ref": "defs/textFieldStyle.schema.json"
@@ -105,10 +101,6 @@
         "readOnly": {
             "description": "Whether the text can be changed.",
             "type": "boolean"
-        },
-        "scrollPhysics": {
-            "description": "The scroll physics to use when the input is being scrolled vertically.",
-            "$ref": "defs/scrollPhysics.schema.json"
         },
         "showCursor": {
             "description": "Whether to show the cursor.",

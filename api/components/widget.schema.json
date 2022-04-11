@@ -17,6 +17,9 @@
         },
         "props": {
             "$ref": "defs/props.schema.json"
+        },
+        "query": {
+            "type": "object"
         }
     },
     "required": [

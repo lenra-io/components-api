@@ -31,7 +31,7 @@
             "$ref": "defs/listener.schema.json"
         },
         "onHovered": {
-            "description": "The listener to be called when the actionable is hovered.",
+            "description": "The listener to be called when the actionable is hovered and when the mouse exits the hoverable area.",
             "$ref": "defs/listener.schema.json"
         }
     },

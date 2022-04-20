@@ -24,6 +24,11 @@
             "description": "Whether this entry occludes the entire overlay.",
             "type": "boolean",
             "default": false
+        },
+        "showOverlay": {
+            "description": "Whether this entry should be shown.",
+            "type": "boolean",
+            "default": false
         }
     },
     "required": [

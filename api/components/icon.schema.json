@@ -19,7 +19,7 @@
         "size": {
             "description": "The size of the Icon",
             "type": "number",
-            "default": "1"
+            "default": "24"
         },
         "color": {
             "description": "The color of the Icon. If not set or null, the color is inherited from the theme.",

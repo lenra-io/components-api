@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "expression.schema.json",
+    "title": "Expression",
+    "description": "Expression query identifier",
+    "oneOf": [
+        {
+            "$ref": "query/and.schema.json"
+        },
+        {
+            "$ref": "query/shortAnd.schema.json"
+        },
+        {
+            "$ref": "query/eq.schema.json"
+        },
+        {
+            "$ref": "query/value.schema.json"
+        }
+    ],
+    "additionalProperties": false
+}

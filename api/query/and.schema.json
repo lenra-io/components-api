@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "and.schema.json",
+    "title": "And",
+    "description": "And query identifier",
+    "type": "object",
+    "properties": {
+        "$and": {
+            "type": "array",
+            "items": {
+                "$ref": "query/expression"
+            }
+        }
+    },
+    "additionalProperties": false
+}

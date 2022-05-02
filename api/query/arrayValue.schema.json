@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "arrayValue.schema.json",
+    "title": "ArrayValue",
+    "description": "ArrayValue query identifier",
+    "type": "array",
+    "items": {
+        "$ref": "query/expression.schema.json"
+    },
+    "additionalProperties": false
+}

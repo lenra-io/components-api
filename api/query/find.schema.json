@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "find.schema.json",
+    "title": "Find",
+    "description": "Find query identifier",
+    "type": "object",
+    "properties": {
+        "$find": {
+            "$ref": "query/expression.schema.json"
+        }
+    },
+    "required": [
+        "$find"
+    ],
+    "additionalProperties": false
+}

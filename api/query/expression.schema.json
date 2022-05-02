@@ -3,7 +3,7 @@
     "$id": "expression.schema.json",
     "title": "Expression",
     "description": "Expression query identifier",
-    "oneOf": [
+    "anyOf": [
         {
             "$ref": "query/and.schema.json"
         },

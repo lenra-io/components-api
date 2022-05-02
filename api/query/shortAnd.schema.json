@@ -6,7 +6,7 @@
     "type": "object",
     "patternProperties": {
         "^[a-zA-Z0-9_]+$": {
-            "oneOf": [
+            "anyOf": [
                 {
                     "$ref": "query/expression.schema.json"
                 },

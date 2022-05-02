@@ -3,7 +3,7 @@
     "$id": "value.schema.json",
     "title": "Value",
     "description": "Value query identifier",
-    "oneOf": [
+    "anyOf": [
         {"$ref": "query/arrayValue.schema.json"},
         {"$ref": "query/meRef.schema.json"},
         {"$ref": "query/stringValue.schema.json"},

@@ -6,17 +6,7 @@
     "type": "object",
     "patternProperties": {
         "^[a-zA-Z0-9_]+$": {
-            "anyOf": [
-                {
-                    "$ref": "query/expression.schema.json"
-                },
-                {
-                    "type": "string"
-                },
-                {
-                    "type": "array"
-                }
-            ]
+            "$ref": "query/expression.schema.json"
         }
     },
     "additionalProperties": false

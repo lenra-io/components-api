@@ -12,57 +12,115 @@
             ]
         },
         "value": {
-            "description": "the value displayed in the element",
+            "description": "The value displayed inside the Textfield",
             "type": "string"
         },
-        "label": {
-            "description": "the text displayed aside the textfield",
-            "type": "string"
-        },
-        "hintText": {
-            "description": "the text displayed inside the textfield",
-            "type": "string"
-        },
-        "description": {
-            "description": "the text displayed under the textfield",
-            "type": "string"
-        },
-        "obscure": {
-            "description": "Whether the input text should be hidden or not",
+        "autocorrect": {
+            "description": "Whether to enable the autocorrection",
             "type": "boolean"
-        },
-        "disabled": {
-            "description": "Whether the input should be disabled or not",
-            "type": "boolean"
-        },
-        "inRow": {
-            "description": "Whether the input and label should be in row or not",
-            "type": "boolean"
-        },
-        "error": {
-            "description": "Whether the textfield should show and error or not",
-            "type": "boolean"
-        },
-        "errorMessage": {
-            "description": "The error message to display whenever the input is incorrect",
-            "type": "string"
-        },
-        "minLines": {
-            "description": "the minimum number of lines for the textfield",
-            "type": "integer"
-        },
-        "maxLines": {
-            "description": "the maximum number of lines for the textfield",
-            "type": "integer"
-        },
-        "size": {
-            "$ref": "defs/size.schema.json"
-        },
-        "onChanged": {
-            "$ref": "defs/listener.schema.json"
         },
         "autofillHints": {
-            "$ref": "defs/autofillHints.schema.json"
+            "description": "The type of this text input to provide autofill hints.",
+            "type": "array",
+            "items": {
+                "$ref": "defs/autofillHints.schema.json"
+            }
+        },
+        "autofocus": {
+            "description": "Whether this Textfield should be focused initially.",
+            "type": "boolean"
+        },
+        "buildCounter": {
+            "description": "Callback that generates a custom counter widget.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "style": {
+            "description": "The style of the Textfield.",
+            "$ref": "defs/textFieldStyle.schema.json"
+        },
+        "dragStartBehavior": {
+            "description": "Determines the way that drag start behavior is handled.",
+            "$ref": "defs/dragStartBehavior.schema.json"
+        },
+        "enabled": {
+            "description": "Whether the text field is enabled.",
+            "type": "boolean"
+        },
+        "enableInteractiveSelection": {
+            "description": "Whether to enable user interface options to change the text selection.",
+            "type": "boolean"
+        },
+        "expands": {
+            "description": "Whether the TextField is sized to fill its parent.",
+            "type": "boolean"
+        },
+        "keyboardType": {
+            "description": "The type of the keyboard to use for editing the text.",
+            "$ref": "defs/textInputType.schema.json"
+        },
+        "maxLength": {
+            "description": "The maximum number of characters to allow in the text field.",
+            "type": "integer"
+        },
+        "maxLengthEnforcement": {
+            "description": "Determines how the maxLength limit should be enforced.",
+            "$ref": "defs/maxLengthEnforcement.schema.json"
+        },
+        "maxLines": {
+            "description": "The maximum number of lines to show at one time.",
+            "type": "integer"
+        },
+        "minLines": {
+            "description": "The minimum number of lines to occupy on the screen.",
+            "type": "integer"
+        },
+        "obscureText": {
+            "description": "Whether to hide the text being edited.",
+            "type": "boolean"
+        },
+        "onAppPrivateCommand": {
+            "description": "This is used to receive a private command from the input method.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onChanged": {
+            "description": "Callback when the user changes the text field value.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onEditingComplete": {
+            "description": "Callback when the user finishes editing the text field.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onSubmitted": {
+            "description": "Callback when the user tells he is done editing the text field.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "onTap": {
+            "description": "Callback when the user taps on the text field.",
+            "$ref": "defs/listener.schema.json"
+        },
+        "readOnly": {
+            "description": "Whether the text can be changed.",
+            "type": "boolean"
+        },
+        "showCursor": {
+            "description": "Whether to show the cursor.",
+            "type": "boolean"
+        },
+        "textCapitalization": {
+            "description": "Configures how the platform keyboard will select an uppercase or lowercase keyboard.",
+            "$ref": "defs/textCapitalization.schema.json"
+        },
+        "textDirection": {
+            "description": "The direction of the text.",
+            "$ref": "defs/textDirection.schema.json"
+        },
+        "textInputAction": {
+            "description": "The type of the action button to use for the keyboard.",
+            "$ref": "defs/textInputAction.schema.json"
+        },
+        "toolbarOptions": {
+            "description": "Configuration of toolbar options",
+            "$ref": "defs/toolbarOptions.schema.json"
         }
     },
     "required": [

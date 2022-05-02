@@ -16,7 +16,7 @@
         },
         "constraints": {
             "description": "The constraints to be applied to the input.",
-            "$ref": "defs/boxContraints.schema.json"
+            "$ref": "defs/boxConstraints.schema.json"
         },
         "contentPadding": {
             "description": "The padding to be applied to the input.",

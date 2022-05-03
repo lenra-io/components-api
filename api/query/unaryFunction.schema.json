@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "unaryFunction.schema.json",
+    "title": "Unary Function",
+    "description": "Unary Function query identifier",
+    "oneOf": [
+        {
+            "$ref": "query/and.schema.json"
+        }
+    ]
+}

@@ -4,10 +4,12 @@
     "title": "ShortAnd",
     "description": "ShortAnd query identifier",
     "type": "object",
-    "patternProperties": {
-        "^[a-zA-Z0-9_]+$": {
-            "$ref": "query/expressionOrValue.schema.json"
+    "anyOf": [
+        {
+            "$ref": "query/unaryFunction.schema.json"
+        }, 
+        {
+            "$ref": "query/keyValue.schema.json"
         }
-    },
-    "additionalProperties": false
+    ]
 }

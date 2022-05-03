@@ -3,14 +3,9 @@
     "$id": "find.schema.json",
     "title": "Find",
     "description": "Find query identifier",
-    "type": "object",
-    "properties": {
-        "$find": {
-            "$ref": "query/expression.schema.json"
+    "oneOf": [
+        {
+            "$ref": "query/shortAnd.schema.json"
         }
-    },
-    "required": [
-        "$find"
-    ],
-    "additionalProperties": false
+    ]
 }

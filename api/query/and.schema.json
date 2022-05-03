@@ -8,9 +8,12 @@
         "$and": {
             "type": "array",
             "items": {
-                "$ref": "query/expression.schema.json"
+                "$ref": "query/shortAnd.schema.json"
             }
         }
     },
+    "required": [
+        "$and"
+    ],
     "additionalProperties": false
 }

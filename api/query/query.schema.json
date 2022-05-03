@@ -1,12 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "eq.schema.json",
-    "title": "Eq",
-    "description": "Eq query identifier",
+    "$id": "query.schema.json",
+    "title": "Query",
+    "description": "Query query identifier",
     "type": "object",
     "properties": {
-        "$eq": {
-            "$ref": "query/value.schema.json"
+        "$find": {
+            "$ref": "query/find.schema.json"
         }
     },
     "additionalProperties": false

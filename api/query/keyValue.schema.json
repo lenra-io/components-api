@@ -1,0 +1,20 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "keyValue.schema.json",
+    "title": "KeyValue",
+    "description": "KeyValue query identifier",
+    "type": "object",
+    "patternProperties": {
+        "^[a-zA-Z0-9_]+$": {
+            "oneOf": [
+                {
+                    "$ref": "query/value.schema.json"
+                },
+                {
+                    "$ref": "query/binaryFunction.schema.json"
+                }
+            ]
+        }
+    },
+    "additionalProperties": false
+}

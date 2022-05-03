@@ -12,9 +12,6 @@
         },
         {
             "$ref": "query/eq.schema.json"
-        },
-        {
-            "$ref": "query/shortEq.schema.json"
         }
     ],
     "additionalProperties": false

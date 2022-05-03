@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "shortAnd.schema.json",
-    "title": "ShortAnd",
-    "description": "ShortAnd query identifier",
+    "$id": "shortEq.schema.json",
+    "title": "Short Eq",
+    "description": "Short Eq query identifier",
     "type": "object",
     "patternProperties": {
         "^[a-zA-Z0-9_]+$": {

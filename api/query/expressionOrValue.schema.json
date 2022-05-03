@@ -11,5 +11,5 @@
             "$ref": "query/value.schema.json"
         }
     ],
-    "additionalProperties": true
+    "additionalProperties": false
 }

@@ -17,5 +17,5 @@
             "$ref": "query/value.schema.json"
         }
     ],
-    "additionalProperties": false
+    "additionalProperties": true
 }

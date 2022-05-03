@@ -9,5 +9,5 @@
             "$ref": "query/expression.schema.json"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": true
 }

@@ -5,7 +5,7 @@
     "description": "ArrayValue query identifier",
     "type": "array",
     "items": {
-        "$ref": "query/expression.schema.json"
+        "$ref": "query/expressionOrValue.schema.json"
     },
     "additionalProperties": false
 }

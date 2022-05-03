@@ -12,9 +12,6 @@
         },
         {
             "$ref": "query/eq.schema.json"
-        },
-        {
-            "$ref": "query/value.schema.json"
         }
     ],
     "additionalProperties": true

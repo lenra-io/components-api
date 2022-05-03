@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "$eq": {
-            "$ref": "query/expression.schema.json"
+            "$ref": "query/expressionOrValue.schema.json"
         }
     },
     "additionalProperties": false

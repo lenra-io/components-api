@@ -7,6 +7,5 @@
         {
             "$ref": "query/eq.schema.json"
         }
-    ],
-    "additionalProperties": false
+    ]
 }

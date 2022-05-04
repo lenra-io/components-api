@@ -17,6 +17,9 @@
                 },
                 {
                     "$ref": "query/binaryFunction.schema.json"
+                },
+                {
+                    "$ref": "query/shortAndFunctions.schema.json"
                 }
             ]
         }

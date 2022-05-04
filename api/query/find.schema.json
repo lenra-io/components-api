@@ -3,9 +3,5 @@
     "$id": "find.schema.json",
     "title": "Find",
     "description": "Find query identifier",
-    "oneOf": [
-        {
-            "$ref": "query/shortAnd.schema.json"
-        }
-    ]
+    "$ref": "query/shortAnd.schema.json"
 }

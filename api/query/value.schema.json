@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "value.schema.json",
+    "title": "Value",
+    "description": "Value query identifier",
+    "oneOf": [
+        {"$ref": "query/arrayValue.schema.json"},
+        {"$ref": "query/meRef.schema.json"},
+        {"$ref": "query/stringValue.schema.json"},
+        {"$ref": "query/numberValue.schema.json"}
+    ],
+    "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "shortAndFunctions.schema.json",
+    "title": "ShortAndFunctions",
+    "description": "ShortAndFunctions query identifier",
+    "type": "object",
+    "properties": {
+        "$and": {
+            "$ref": "query/and.schema.json"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "contains.schema.json",
+    "title": "Contains",
+    "description": "Contains query identifier",
+    "type": "object",
+    "properties": {
+        "$contains": {
+            "type": "array",
+            "items": {
+                "$ref": "query/value.schema.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}

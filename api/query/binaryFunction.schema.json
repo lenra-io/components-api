@@ -6,6 +6,9 @@
     "oneOf": [
         {
             "$ref": "query/eq.schema.json"
+        },
+        {
+            "$ref": "query/contains.schema.json"
         }
     ]
 }

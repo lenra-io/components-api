@@ -20,6 +20,9 @@
         },
         "query": {
             "type": "object"
+        },
+        "context": {
+            "type": "boolean"
         }
     },
     "required": [

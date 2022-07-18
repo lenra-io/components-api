@@ -2,21 +2,21 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "dropdownButton.schema.json",
     "title": "Dropdown Button",
-    "description": "Element of type Dropdown Button",
+    "description": "A dropdown button that can be used to open a dropdown menu when clicked.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "dropdownButton"
             ]
         },
         "text": {
-            "description": "The text of the dropdown button",
+            "description": "The label to use inside of the dropdown button.",
             "type": "string"
         },
         "disabled": {
-            "description": "If true, the dropdown button is disabled",
+            "description": "The dropdown button is disabled if this property is set to `true`.",
             "type": "boolean",
             "default": false
         },

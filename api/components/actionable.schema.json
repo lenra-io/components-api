@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "actionable.schema.json",
     "title": "Actionable",
-    "description": "Element of type Actionable",
+    "description": "This component can be used to wrap a component that needs to be actionable.",
     "type": "component",
     "properties": {
         "type": {
-            "description": "The identifier of the component",
+            "description": "The identifier of the component.",
             "enum": [
                 "actionable"
             ]

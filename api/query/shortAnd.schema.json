@@ -1,0 +1,28 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "shortAnd.schema.json",
+    "title": "ShortAnd",
+    "description": "ShortAnd query identifier",
+    "type": "object",
+    "properties": {
+        "$and": {
+            "$ref": "query/and.schema.json"
+        }
+    },
+    "patternProperties": {
+        "^[a-zA-Z0-9_]+$": {
+            "oneOf": [
+                {
+                    "$ref": "query/value.schema.json"
+                },
+                {
+                    "$ref": "query/binaryFunction.schema.json"
+                },
+                {
+                    "$ref": "query/shortAndFunctions.schema.json"
+                }
+            ]
+        }
+    },
+    "additionalProperties": false
+}

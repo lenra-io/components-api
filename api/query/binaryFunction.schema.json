@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "binaryFunction.schema.json",
+    "title": "Binary Function",
+    "description": "Binary Function query identifier",
+    "oneOf": [
+        {
+            "$ref": "query/eq.schema.json"
+        },
+        {
+            "$ref": "query/contains.schema.json"
+        }
+    ]
+}

@@ -30,7 +30,14 @@
             "type": "component"
         },
         "icon": {
-            "$ref": "defs/icon.schema.json"
+            "type": "component",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "icon"
+                    ]
+                }
+            }
         }
     },
     "required": [

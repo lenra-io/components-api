@@ -29,6 +29,18 @@
             "description": "Whether the assistive technologies should spell out this text character by character",
             "type": "boolean"
         },
+        "textAlign": {
+            "description": "The text alignment",
+            "enum": [
+                "left",
+                "center",
+                "right",
+                "justify",
+                "start",
+                "end"
+            ],
+            "default": "left"
+        },
         "children": {
             "description": "Additional texts to add after this text.",
             "type": "array",

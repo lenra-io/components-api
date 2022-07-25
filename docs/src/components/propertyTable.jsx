@@ -1,6 +1,30 @@
 export default (props) => {
-    let requiredProperties = props.schema.required;
-    let properties = props.schema.properties;
+    console.log(props);
+
+    if (props.schema['$id'].endsWith('/iconData.schema.json')) {
+        return displayIcon(props.schema);
+    } else {
+        if (props.schema.properties) {
+            return <>
+                <h2>Properties</h2>
+                {createPropertiesTable(props.schema)}
+            </>;
+        }
+    }
+}
+
+function displayIcon(schema) {
+    return <>
+        <h2>Values</h2>
+        <ul>
+            {schema.type.values.map(value => <li>{value}</li>)}
+        </ul>
+    </>;
+}
+
+function createPropertiesTable(schema) {
+    let requiredProperties = schema.required;
+    let properties = schema.properties;
 
     return <table>
         <tbody>

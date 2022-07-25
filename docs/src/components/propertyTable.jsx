@@ -22,18 +22,22 @@ function displayIcon(schema) {
     </>;
 }
 
+function createFirstLine(hasOther) {
+    return <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+        <th>Type</th>
+        {hasOther ? <th colSpan="2">Details</th> : <></>}
+    </tr>;
+}
+
 function createPropertiesTable(schema) {
     let requiredProperties = schema.required;
     let properties = schema.properties;
 
     return <table>
         <tbody>
-            <tr>
-                <th>Attribute</th>
-                <th>Description</th>
-                <th>Type</th>
-                <th colSpan="2">Details</th>
-            </tr>
+            {createFirstLine(schema.hasOtherAttributes)}
             {
                 ...Object.keys(properties).map(key =>
                     <tr className={requiredProperties.includes(key) ? "required" : null}>

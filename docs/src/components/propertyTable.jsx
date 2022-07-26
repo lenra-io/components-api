@@ -27,15 +27,12 @@ function displayType(schema, property) {
     if (property.type) {
         // Handle property has "type" case
         res += property.type;
-        let hasDefaultOrEnum = false;
         if (property.default || property.enum) {
             res += "(";
             if (property.default) {
-                hasDefaultOrEnum = true;
                 res += `<strong>"${property.default}"</strong>`;
             }
             if (property.enum) {
-                hasDefaultOrEnum = true;
                 property.enum.forEach((value) => {
                     if (property.default != value) {
                         res += `, "${value}"`;

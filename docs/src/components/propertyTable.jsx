@@ -28,19 +28,22 @@ function displayType(schema, property) {
         // Handle property has "type" case
         res += property.type;
         let hasDefaultOrEnum = false;
-        if (property.default) {
-            hasDefaultOrEnum = true;
-            res += `(<strong>"${property.default}"</strong>`;
+        if (property.default || property.enum) {
+            res += "(";
+            if (property.default) {
+                hasDefaultOrEnum = true;
+                res += `<strong>"${property.default}"</strong>`;
+            }
+            if (property.enum) {
+                hasDefaultOrEnum = true;
+                property.enum.forEach((value) => {
+                    if (property.default != value) {
+                        res += `, "${value}"`;
+                    }
+                });
+            }
+            res += ")";
         }
-        if (property.enum) {
-            hasDefaultOrEnum = true;
-            property.enum.forEach((value) => {
-                if (property.default != value) {
-                    res += `, "${value}"`;
-                }
-            });
-        }
-        if (hasDefaultOrEnum) res += ")";
     } else {
         // Handle property has "$ref" case
         res = <a href={property['$ref']}>{property['$ref']}</a>;

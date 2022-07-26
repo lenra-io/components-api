@@ -62,8 +62,6 @@ function createPropertyLine(schema, key) {
         <td>{key}</td>
         <td>{schema.properties[key].description}</td>
         <td>{displayType(schema, schema.properties[key])}</td>
-        <td></td>
-        <td></td>
     </tr>;
 }
 

@@ -41,9 +41,9 @@ function displayType(schema, property) {
             }
             res += ")";
         }
-    } else {
+    } else if (property["$ref"]) {
         // Handle property has "$ref" case
-        res = <a href={property['$ref']}>{property['$ref']}</a>;
+        res = <a href={"/components-api/" + property['$ref'].replace("json", "html")}>{property['$ref']}</a>;
     }
     return res;
 }

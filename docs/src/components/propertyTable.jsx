@@ -22,31 +22,56 @@ function displayIcon(schema) {
     </>;
 }
 
-function createFirstLine(hasOther) {
+function displayType(schema, property) {
+    let res = "";
+    if (property.type) {
+        // Handle property has "type" case
+        res += property.type;
+        if (property.default) {
+            res += `(<strong>"${property.default}"</strong>`;
+        } else if (property.enum) {
+            property.enum.forEach((value) => {
+                if (property.default != value) {
+                    res += `, "${value}"`;
+                }
+            });
+            res += ")";
+        } 
+    } else {
+        // Handle property has "$ref" case
+        res = <a href={property['$ref']}>{property['$ref']}</a>;
+    }
+    return res;
+}
+
+function createFirstLine() {
     return <tr>
         <th>Attribute</th>
         <th>Description</th>
         <th>Type</th>
-        {hasOther ? <th colSpan="2">Details</th> : <></>}
+    </tr>;
+}
+
+function createPropertyLine(schema, key) {
+    let requiredProperties = schema.required;
+    return <tr className={requiredProperties.includes(key) ? "required" : null}>
+        <td>{key}</td>
+        <td>{schema.properties[key].description}</td>
+        <td>{displayType(schema, schema.properties[key])}</td>
+        <td></td>
+        <td></td>
     </tr>;
 }
 
 function createPropertiesTable(schema) {
-    let requiredProperties = schema.required;
     let properties = schema.properties;
 
     return <table>
         <tbody>
-            {createFirstLine(schema.hasOtherAttributes)}
+            {createFirstLine()}
             {
                 ...Object.keys(properties).map(key =>
-                    <tr className={requiredProperties.includes(key) ? "required" : null}>
-                        <td>{key}</td>
-                        <td>{properties[key].description}</td>
-                        <td>{properties[key].type}</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    createPropertyLine(schema, key)
                 )
             }
         </tbody>

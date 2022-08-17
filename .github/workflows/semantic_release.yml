@@ -21,12 +21,6 @@ jobs:
         run: |
           npm i conventional-changelog-conventionalcommits@4 -D
           npm run build
-      - name: Archive doc artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: docs
-          path: |
-            docs/build/*
       - name: Compress tar.gz
         run: |
           tar czvf lenra-api.tar.gz api/

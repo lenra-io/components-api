@@ -19,7 +19,6 @@ jobs:
           node-version: "14"
       - name: Setup node deps
         run: |
-          npm i
           npm i conventional-changelog-conventionalcommits@4 -D
           npm run build
       - name: Compress tar.gz

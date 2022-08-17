@@ -18,11 +18,23 @@ jobs:
         with:
           node-version: "14"
       - name: Setup node deps
-        run: npm i conventional-changelog-conventionalcommits@4 -D
+        run: |
+          npm i conventional-changelog-conventionalcommits@4 -D
+          npm run build
+      - name: Archive doc artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: |
+            docs/build/*
       - name: Compress tar.gz
-        run: tar czvf lenra-api.tar.gz api/
+        run: |
+          tar czvf lenra-api.tar.gz api/
+          tar czvf lenra-api-docs.tar.gz docs/build/
       - name: Compress zip
-        run: zip -r lenra-api.zip api/
+        run: |
+          zip -r lenra-api.zip api/
+          zip -r lenra-api-docs.zip docs/build/
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

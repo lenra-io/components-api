@@ -1,6 +1,4 @@
 export default (props) => {
-    console.log(props);
-
     if (props.schema['$id'].endsWith('/iconData.schema.json')) {
         return displayIcon(props.schema);
     } else {

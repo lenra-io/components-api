@@ -18,8 +18,11 @@ jobs:
         with:
           node-version: "14"
       - name: Setup node deps
+        run: npm i conventional-changelog-conventionalcommits@4 -D
+      - name: Setup docs node deps
         run: |
-          npm i conventional-changelog-conventionalcommits@4 -D
+          cd docs
+          npm i
           npm run build
       - name: Compress tar.gz
         run: |

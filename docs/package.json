@@ -1,0 +1,24 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Documentation for components API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mdx2html build src/pages/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenra-io/components-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lenra-io/components-api/issues"
+  },
+  "homepage": "https://github.com/lenra-io/components-api#readme",
+  "dependencies": {
+    "mdx2html": "git://github.com/lenra-io/mdx2html.git#v1.0.0"
+  }
+}

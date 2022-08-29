@@ -19,19 +19,19 @@ jobs:
           node-version: "14"
       - name: Setup node deps
         run: npm i conventional-changelog-conventionalcommits@4 -D
-      - name: Setup docs node deps
-        run: |
-          cd docs
-          npm i
-          npm run build
+      # - name: Setup docs node deps
+      #   run: |
+      #     cd docs
+      #     npm i
+      #     npm run build
       - name: Compress tar.gz
         run: |
           tar czvf lenra-api.tar.gz api/
-          tar czvf lenra-api-docs.tar.gz docs/build/
+      # tar czvf lenra-api-docs.tar.gz docs/build/
       - name: Compress zip
         run: |
           zip -r lenra-api.zip api/
-          zip -r lenra-api-docs.zip docs/build/
+      # zip -r lenra-api-docs.zip docs/build/
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

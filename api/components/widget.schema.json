@@ -19,9 +19,11 @@
             "$ref": "defs/props.schema.json"
         },
         "query": {
+            "description": "The query to apply to the data.",
             "type": "object"
         },
         "coll": {
+            "description": "the collection where the query is applied",
             "type": "string"
         },
         "context": {

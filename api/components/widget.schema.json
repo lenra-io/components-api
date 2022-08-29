@@ -21,6 +21,9 @@
         "query": {
             "type": "object"
         },
+        "coll": {
+            "type": "string"
+        },
         "context": {
             "type": "boolean"
         }

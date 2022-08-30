@@ -27,7 +27,7 @@ jobs:
         run: |
           cd docs
           npm config set @lenra-io:registry https://npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}
-          npm_config_registry=https://npm.pkg.github.com/ npx -p @lenra-io/mdx2html@1.0.0 mdx2html
+          npx -p @lenra-io/mdx2html@1.0.0 mdx2html
           npm run build
       - name: Compress tar.gz
         run: |

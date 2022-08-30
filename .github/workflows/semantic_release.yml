@@ -27,9 +27,15 @@ jobs:
           cd ../..
           npm run build
       - name: Compress tar.gz
-        run: tar czvf lenra-api-docs.tar.gz docs/build/
+        run: |
+          cd docs/build/
+          tar czvf lenra-api-docs.tar.gz *
+          mv lenra-api-docs.tar.gz ../..
       - name: Compress zip
-        run: zip -r lenra-api-docs.zip docs/build/
+        run: |
+          cd docs/build/
+          zip -r lenra-api-docs.zip *
+          mv lenra-api-docs.zip ../..
       - name: Documentation artifact
         uses: actions/upload-artifact@v3
         with:

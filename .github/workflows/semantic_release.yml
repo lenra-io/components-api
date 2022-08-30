@@ -10,6 +10,9 @@ jobs:
   generate_doc_artifact:
     name: Generate doc artifact
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
     timeout-minutes: 10
     steps:
       - name: Checkout
@@ -19,13 +22,12 @@ jobs:
         with:
           node-version: "16"
       - name: Setup node deps
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
           cd docs
-          npm i
-          cd node_modules/mdx2html
-          node build.js bin/**/*.jsx
-          npm i -g .
-          cd ../..
+          npm config set @lenra-io:registry https://npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}
+          npm_config_registry=https://npm.pkg.github.com/ npx -p @lenra-io/mdx2html@1.0.0 mdx2html
           npm run build
       - name: Compress tar.gz
         run: |

@@ -51,6 +51,13 @@ jobs:
         run: tar czvf lenra-api.tar.gz api/
       - name: Compress zip
         run: zip -r lenra-api.zip api/
+
+      - name: download-artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: |
+            lenra-api-docs.tar.gz
+            lenra-api-docs.zip
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

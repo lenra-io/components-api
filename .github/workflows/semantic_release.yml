@@ -60,6 +60,7 @@ jobs:
       - name: download-artifacts
         uses: actions/download-artifact@v3
         with:
+          name: lenra-api-docs
           path: |
             lenra-api-docs.tar.gz
             lenra-api-docs.zip

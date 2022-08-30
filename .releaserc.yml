@@ -4,12 +4,15 @@ branches:
   - main
   - name: beta
     prerelease: true
+  - name: fix-doc-release
+    prerelease: true
 plugins:
   - - "@semantic-release/commit-analyzer"
     - preset: conventionalcommits
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
   - - "@semantic-release/github"
+    - successComment: false
     - assets:
         - path: lenra-api.zip
           name: lenra-api-${nextRelease.gitTag}.zip

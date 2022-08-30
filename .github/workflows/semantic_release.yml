@@ -22,7 +22,7 @@ jobs:
       - name: Compress tar.gz
         run: tar czvf lenra-api.tar.gz api/
       - name: Compress zip
-        run: zip -r lenra-api-docs.zip docs/build/
+        run: zip -r lenra-api.zip api/
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

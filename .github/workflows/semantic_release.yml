@@ -5,6 +5,7 @@ on:
       - main
       - beta
       - "*.x"
+      - fix-doc-release
 jobs:
   generate_doc_artifact:
     name: Generate doc artifact

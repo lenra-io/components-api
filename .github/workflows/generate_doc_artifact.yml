@@ -1,4 +1,4 @@
-name: Release
+name: Generate doc artifact
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
       - "*.x"
 jobs:
   release:
-    name: Release
+    name: Generate doc artifact
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -18,12 +18,11 @@ jobs:
         with:
           node-version: "14"
       - name: Setup node deps
-        run: npm i conventional-changelog-conventionalcommits@4 -D
+        run: |
+          cd docs
+          npm i
+          npm run build
       - name: Compress tar.gz
-        run: tar czvf lenra-api.tar.gz api/
+        run: tar czvf lenra-api-docs.tar.gz docs/build/
       - name: Compress zip
         run: zip -r lenra-api-docs.zip docs/build/
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
-        run: npx semantic-release@18

@@ -18,7 +18,7 @@
     "url": "https://github.com/lenra-io/components-api/issues"
   },
   "homepage": "https://github.com/lenra-io/components-api#readme",
-  "dependencies": {
+  "devDependencies": {
     "mdx2html": "git://github.com/lenra-io/mdx2html.git#v1.0.0"
   }
 }

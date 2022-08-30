@@ -22,6 +22,8 @@ jobs:
         run: |
           cd docs
           npm i
+          node node_modules/mdx2html/build.js bin/**/*.jsx
+          npm i -g .
           npm run build
       - name: Compress tar.gz
         run: tar czvf lenra-api-docs.tar.gz docs/build/

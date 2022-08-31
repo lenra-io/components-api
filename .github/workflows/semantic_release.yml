@@ -66,9 +66,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: lenra-api-docs
-          path: |
-            lenra-api-docs.tar.gz
-            lenra-api-docs.zip
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

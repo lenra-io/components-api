@@ -5,6 +5,7 @@ on:
       - main
       - beta
       - "*.x"
+      - test-ci
 jobs:
   generate_doc_artifact:
     name: Generate doc artifact

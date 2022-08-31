@@ -6,7 +6,45 @@ on:
       - beta
       - "*.x"
 jobs:
+  generate_doc_artifact:
+    name: Generate doc artifact
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Setup node deps
+        run: |
+          cd docs
+          npm install @lenra/mdx2html
+          npx @lenra/mdx2html
+          npm run build
+      - name: Compress tar.gz
+        run: |
+          cd docs/build/
+          tar czvf lenra-api-docs.tar.gz *
+          mv lenra-api-docs.tar.gz ../..
+      - name: Compress zip
+        run: |
+          cd docs/build/
+          zip -r lenra-api-docs.zip *
+          mv lenra-api-docs.zip ../..
+      - name: Documentation artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: lenra-api-docs
+          path: |
+            lenra-api-docs.tar.gz
+            lenra-api-docs.zip
   release:
+    needs: generate_doc_artifact
     name: Release
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -18,20 +56,19 @@ jobs:
         with:
           node-version: "14"
       - name: Setup node deps
-        run: npm i conventional-changelog-conventionalcommits@4 -D
-      # - name: Setup docs node deps
-      #   run: |
-      #     cd docs
-      #     npm i
-      #     npm run build
+        run: npm i conventional-changelog-conventionalcommits@5 -D
       - name: Compress tar.gz
-        run: |
-          tar czvf lenra-api.tar.gz api/
-      # tar czvf lenra-api-docs.tar.gz docs/build/
+        run: tar czvf lenra-api.tar.gz api/
       - name: Compress zip
-        run: |
-          zip -r lenra-api.zip api/
-      # zip -r lenra-api-docs.zip docs/build/
+        run: zip -r lenra-api.zip api/
+
+      - name: download-artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: lenra-api-docs
+          path: |
+            lenra-api-docs.tar.gz
+            lenra-api-docs.zip
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}

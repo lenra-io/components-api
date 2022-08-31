@@ -24,7 +24,7 @@ jobs:
       - name: Setup node deps
         run: |
           cd docs
-          npx @lenra-io/mdx2html@1.0.0
+          npx @lenra/mdx2html@1.0.0
           npm run build
       - name: Compress tar.gz
         run: |

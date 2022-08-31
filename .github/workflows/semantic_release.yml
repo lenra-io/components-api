@@ -22,12 +22,9 @@ jobs:
         with:
           node-version: "16"
       - name: Setup node deps
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
           cd docs
-          npm config set @lenra-io:registry https://npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}
-          npx -p @lenra-io/mdx2html@1.0.0 mdx2html
+          npx @lenra-io/mdx2html@1.0.0
           npm run build
       - name: Compress tar.gz
         run: |

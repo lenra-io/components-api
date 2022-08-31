@@ -17,8 +17,8 @@ plugins:
           name: lenra-api-${nextRelease.gitTag}.zip
         - path: lenra-api.tar.gz
           name: lenra-api-${nextRelease.gitTag}.tar.gz
-        - path: lenra-api-docs.zip
+        - path: lenra-api-docs/lenra-api-docs.zip
           name: lenra-api-docs-${nextRelease.gitTag}.zip
-        - path: lenra-api-docs.tar.gz
+        - path: lenra-api-docs/lenra-api-docs.tar.gz
           name: lenra-api-docs-${nextRelease.gitTag}.tar.gz
       # TODO: add Licence and README ?

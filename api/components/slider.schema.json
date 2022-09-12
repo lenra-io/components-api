@@ -53,6 +53,10 @@
             "description": "The current value of the slider.",
             "type": "number",
             "default": 0.0
+        },
+        "name": {
+            "description": "The name that will be used in the form.",
+            "type": "string"
         }
     },
     "required": [

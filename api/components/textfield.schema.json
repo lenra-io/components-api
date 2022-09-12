@@ -121,6 +121,10 @@
         "toolbarOptions": {
             "description": "Configuration of toolbar options",
             "$ref": "defs/toolbarOptions.schema.json"
+        },
+        "name": {
+            "description": "The name that will be used in the form.",
+            "type": "string"
         }
     },
     "required": [

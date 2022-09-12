@@ -48,6 +48,11 @@
                     ]
                 }
             }
+        },
+        "submit": {
+            "description": "Whether the button is a submit button for a form.",
+            "type": "boolean",
+            "default": false
         }
     },
     "required": [

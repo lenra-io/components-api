@@ -11,6 +11,11 @@ When stacking two or more actionables of the same size and using the same attrib
 
 ### Making a text clickable
 
+The actionable component will allow you to set an event listener on many user actions.
+
+You can set the `onPressed` event using the following example to trigger the action `textPress`.
+`props` will add more flexibility and allow reusable listeners by passing some more informations to your listeners like the `id` of the button you pressed.
+
 ```json
 {
     "type": "actionable",

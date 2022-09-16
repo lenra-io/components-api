@@ -1,0 +1,31 @@
+import PropertyTable from '../components/propertyTable';
+import wrapSchema from '../../../api/components/wrap.schema.json';
+
+# Wrap
+
+This component can be used to display a long list of components, if they get out of the screen the wrap component will make the overflowing ones use a new row.
+
+## Examples
+
+### Simple wrap
+`wrap` component works like the `flex` component, but instead of trying to fit children in the available space, it will allow you to set fixed width/height and make it display in multiple rows if it overflows the parent.
+
+```json
+{
+    "type": "wrap",
+    "spacing": 10,
+    "children": [
+        {
+            "type": "text",
+            "value": "Foo",
+        },
+        // This text will be wrapped, this means that it will show itself right under the "Foo" text instead of out of the screen
+        {
+            "type": "text",
+            "value": "Wrapped",
+        }
+    ]
+}
+```
+
+<PropertyTable schema={wrapSchema}/>

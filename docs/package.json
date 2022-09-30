@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mdx2html build -o build/components/ src/pages/components/* && mdx2html build -o build/defs/ src/pages/defs/*"
+    "build": "for DIR in $(ls src/pages/); do mdx2html build -o build/$DIR/ src/pages/$DIR/*; done"
   },
   "repository": {
     "type": "git",

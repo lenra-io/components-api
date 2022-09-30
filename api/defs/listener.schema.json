@@ -6,8 +6,7 @@
     "properties": {
         "action": {
             "description": "The action name to call",
-            "type": "string",
-            "pattern": "^[a-zA-Z_$][a-zA-Z_$0-9]*$"
+            "$ref": "defs/action.schema.json"
         },
         "props": {
             "description": "Parameters passed to the listener",

@@ -1,0 +1,35 @@
+import PropertyTable from '../../components/propertyTable';
+import iconSchema from '../../../../api/components/icon.schema.json';
+
+# Icon
+
+All of the possible values for the icon come from the [material design icons](https://api.flutter.dev/flutter/material/Icons-class.html#constants).
+
+## Examples
+
+`value` just represent the id of the material design icons you want to use, check the doc to find one that fit your needs.
+
+### Simple icon
+
+```json
+{
+    "type": "icon",
+    "value": "abc"
+}
+```
+
+### Icon color & size
+You can also change the font color just for your icon, try by changing the `integer` code of this icon.
+
+(In this example, the hexadecimal code uses a syntactic sugar from JavaScript but the value sent is still an Integer)
+
+```json
+{
+    "type": "icon",
+    "value": "abc",
+    "color": 0xFF000000,
+    "size": 100
+}
+```
+
+<PropertyTable schema={iconSchema}/>

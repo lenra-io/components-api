@@ -1,5 +1,8 @@
+import * as Path from 'path'
+import * as fs from 'fs'
+
 export default (props) => {
-    if (props.schema['$id'].endsWith('/iconData.schema.json')) {
+    if (props.schema['$id']?.endsWith('/iconData.schema.json')) {
         return displayIcon(props.schema);
     } else {
         if (props.schema.properties) {
@@ -41,6 +44,20 @@ function displayType(schema, property) {
         }
     } else if (property["$ref"]) {
         // Handle property has "$ref" case
+        const api_path = Path.join('../api/', property['$ref'])
+        const src_path = Path.join('./src/pages/', property['$ref']).replace(".schema.json", ".mdx")
+        console.log(src_path)
+        if (!src_path.includes('/#/') && !fs.existsSync(src_path)) {
+            const name = Path.basename(api_path, '.schema.json')
+            fs.writeFileSync(src_path, `
+import PropertyTable from '../../components/propertyTable';
+import ${name} from '../../../${api_path}';
+
+# ${name[0].toUpperCase() + name.substring(1)}
+
+<PropertyTable schema={${name}}/>
+`)
+        }
         res = <a href={"/components-api/" + property['$ref'].replace("json", "html")}>{property['$ref']}</a>;
     }
     return res;
@@ -56,7 +73,7 @@ function createFirstLine() {
 
 function createPropertyLine(schema, key) {
     let requiredProperties = schema.required;
-    return <tr className={requiredProperties.includes(key) ? "required" : null}>
+    return <tr className={requiredProperties?.includes(key) ? "required" : null}>
         <td>{key}</td>
         <td>{schema.properties[key].description}</td>
         <td>{displayType(schema, schema.properties[key])}</td>

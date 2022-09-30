@@ -21,10 +21,7 @@
         },
         "autofillHints": {
             "description": "The type of this text input to provide autofill hints.",
-            "type": "array",
-            "items": {
-                "$ref": "defs/autofillHints.schema.json"
-            }
+            "$ref": "defs/autofillHints.schema.json"
         },
         "autofocus": {
             "description": "Whether this Textfield should be focused initially.",

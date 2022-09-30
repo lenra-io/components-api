@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mdx2html build src/pages/*"
+    "build": "for DIR in $(ls src/pages/); do mdx2html build -o build/$DIR/ src/pages/$DIR/*; done"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/lenra-io/components-api/issues"
   },
-  "homepage": "https://github.com/lenra-io/components-api#readme"
+  "homepage": "https://github.com/lenra-io/components-api#readme",
+  "devDependencies": {
+    "@lenra/mdx2html": "^1.0.1-beta.2"
+  }
 }

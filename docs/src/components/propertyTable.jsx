@@ -58,7 +58,7 @@ import ${name} from '../../../${api_path}';
 <PropertyTable schema={${name}}/>
 `)
         }
-        res = <a href={"/" + property['$ref'].replace("json", "html")}>{property['$ref']}</a>;
+        res = <a href={"/" + property['$ref'].replace(".schema.json", ".html")}>{property['$ref']}</a>;
     }
     return res;
 }

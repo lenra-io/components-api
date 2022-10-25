@@ -24,23 +24,15 @@ function displayIcon(schema) {
 }
 
 function displayType(schema, property) {
-    let res = "";
     if (property.type) {
         // Handle property has "type" case
-        res += property.type;
         if (property.default || property.enum) {
-            res += "(";
-            if (property.default) {
-                res += `<strong>"${property.default}"</strong>`;
-            }
-            if (property.enum) {
-                property.enum.forEach((value) => {
-                    if (property.default != value) {
-                        res += `, "${value}"`;
-                    }
-                });
-            }
-            res += ")";
+            return <> { property.type } (
+                { property.default ? <strong>{ property.default }</strong> : '' }
+                { property.enum ? property.enum.filter((value) => property.default != value).join(', ') : '' }
+            ) </>
+        } else {
+            return <>{ property.type }</>
         }
     } else if (property["$ref"]) {
         // Handle property has "$ref" case
@@ -58,9 +50,10 @@ import ${name} from '../../../${api_path}';
 <PropertyTable schema={${name}}/>
 `)
         }
-        res = <a href={"/" + property['$ref'].replace(".schema.json", ".html")}>{property['$ref']}</a>;
+        return <>
+            <a href={"/" + property['$ref'].replace(".schema.json", ".html")}>{property['$ref']}</a>
+        </>
     }
-    return res;
 }
 
 function createFirstLine() {

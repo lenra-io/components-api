@@ -14,6 +14,9 @@
         "child": {
             "type": "component"
         },
+        "alignment": {
+            "$ref": "defs/alignment.schema.json"
+        },
         "border": {
             "$ref": "defs/border.schema.json"
         },

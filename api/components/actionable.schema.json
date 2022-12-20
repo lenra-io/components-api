@@ -33,6 +33,11 @@
         "onHovered": {
             "description": "The listener to be called when the actionable is hovered and when the mouse exits the hoverable area.",
             "$ref": "defs/listener.schema.json"
+        },
+        "submit": {
+            "description": "Whether the actionable can submit a form.",
+            "type": "boolean",
+            "default": false
         }
     },
     "required": [

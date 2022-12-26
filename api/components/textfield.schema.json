@@ -28,7 +28,7 @@
             "type": "boolean"
         },
         "buildCounter": {
-            "description": "Callback that generates a custom counter widget.",
+            "description": "Callback that generates a custom counter view.",
             "$ref": "defs/listener.schema.json"
         },
         "style": {

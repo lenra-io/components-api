@@ -1,18 +1,18 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "widget.schema.json",
-    "title": "Widget",
-    "description": "Element of type widget",
+    "$id": "view.schema.json",
+    "title": "View",
+    "description": "Element of type view",
     "type": "component",
     "properties": {
         "type": {
             "description": "The identifier of the component",
             "enum": [
-                "widget"
+                "view"
             ]
         },
         "name": {
-            "description": "The name of the widget",
+            "description": "The name of the view",
             "type": "string"
         },
         "props": {

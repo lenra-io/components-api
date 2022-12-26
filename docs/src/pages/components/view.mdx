@@ -1,0 +1,60 @@
+import PropertyTable from '../../components/propertyTable';
+import viewSchema from '../../../../api/components/view.schema.json';
+
+# View
+
+This component calls a view defined in the application. This can be used to create reusable views across the application and call them from anywhere.
+
+The view must be defined and references in the index.js root file of the application.
+
+## Examples
+
+### Simple view
+
+Create a file that will contain the view.
+
+```json
+module.exports = (users, _props) => {
+  return {
+    "type": "text",
+    "value": "This is a view",
+  };
+}
+```
+
+Reference this view in the root index.js of the application.
+
+```json
+module.exports = async () => {
+  return {
+    views: {
+        myView: require('./views/myView.js'),
+    },
+    listeners: {},
+    rootView: 'main'
+  }
+}
+```
+
+Then instantiate the view in the root view of the application.
+
+```json
+module.exports = (users, _props) => {
+  return {
+    "type": "flex",
+    "children": [
+        {
+            "type": "text",
+            "value": "This the root view",
+        },
+        // Will call myView and show the "This is a view" text
+        {
+            "type": "view",
+            "name": "myView",
+        }
+    ]
+  };
+}
+```
+
+<PropertyTable schema={viewSchema}/>

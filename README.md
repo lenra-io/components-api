@@ -2,9 +2,9 @@
 
 The component API project. The API is described with JSON Schema files.
 
-# Normalization of the API
+## Normalization of the API
 
-## General JSON format
+### General JSON format
 The API follow the camelCase convention for keys and enum-styled values of the json object.
 
 ```json
@@ -16,7 +16,7 @@ The API follow the camelCase convention for keys and enum-styled values of the j
 }
 ```
 
-## The `value` key :
+### The `value` key :
 
 The `value` key describe the user-given main value of the component.
 Typically the boolean of a radio/checkbox, the text of a text input, the text of a "text" component...
@@ -30,7 +30,7 @@ This value is typically replaced by a variable in the end-user code.
 }
 ```
 
-## The `label` key : 
+### The `label` key : 
 The `label` key must describe a text that is displayed next to the component.
 
 ```json
@@ -41,7 +41,7 @@ The `label` key must describe a text that is displayed next to the component.
 }
 ```
 
-## The `text` key : 
+### The `text` key : 
 The `text` key must describe a text that is displayed inside the component.
 
 ```json
@@ -54,12 +54,12 @@ The `text` key must describe a text that is displayed inside the component.
 
 
 
-## The listeners
+### The listeners
 
 All the listeners must start with `on` and be passed `onPressed`, `onChanged`...
 All listeners MUST have the `action` property and MAY have the `props` object property.
 
-### The `onPressed` listener
+#### The `onPressed` listener
 
 This listener is used to react on a click/press on a component. 
 Do NOT use the `onClick` or `onTap` key.
@@ -76,7 +76,7 @@ Do NOT use the `onClick` or `onTap` key.
 }
 ```
 
-### The `onChanged` listener
+#### The `onChanged` listener
 This listener is used to react on a value changed by the user.
 This listener is never called when the value is changed programatically.
 

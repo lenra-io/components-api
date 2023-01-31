@@ -30,24 +30,10 @@
             "$ref": "../defs/listener.schema.json"
         },
         "leftIcon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         },
         "rightIcon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         },
         "submit": {
             "description": "Whether the button is a submit button for a form.",

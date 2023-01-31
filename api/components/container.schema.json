@@ -31,8 +31,7 @@
         }
     },
     "required": [
-        "type",
-        "child"
+        "type"
     ],
     "additionalProperties": false
 }

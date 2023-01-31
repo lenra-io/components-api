@@ -122,7 +122,7 @@
             "$ref": "../defs/color.schema.json"
         },
         "icon": {
-            "$ref": "icon.schema.json"
+            "$ref": "../components/icon.schema.json"
         },
         "iconColor": {
             "description": "The color for the icon",
@@ -151,7 +151,7 @@
             "type": "component"
         },
         "prefixIcon": {
-            "$ref": "icon.schema.json"
+            "$ref": "../components/icon.schema.json"
         },
         "prefixIconColor":{
             "description": "the color of the prefixIcon",
@@ -177,7 +177,7 @@
             "type":"component"
         },
         "suffixIcon": {
-            "$ref": "icon.schema.json"
+            "$ref": "../components/icon.schema.json"
         },
         "suffixIconColor":{
             "description": "the color of the sufficIcon",

@@ -6,29 +6,29 @@
     "type": "object",
     "properties": {
         "activeColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "checkColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "focusColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "hoverColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "splashRadius": {
             "description": "The splash radius.",
             "type": "number"
         },
         "visualDensity": {
-            "$ref": "defs/visualDensity.schema.json"
+            "$ref": "../defs/visualDensity.schema.json"
         },
         "shape": {
-            "$ref": "defs/outlinedBorder.schema.json"
+            "$ref": "../defs/outlinedBorder.schema.json"
         },
         "side": {
-            "$ref": "defs/borderSide.schema.json"
+            "$ref": "../defs/borderSide.schema.json"
         }
     },
     "additionalProperties": false

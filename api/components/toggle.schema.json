@@ -32,10 +32,10 @@
             ]
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "style": {
-            "$ref": "defs/toggleStyle.schema.json"
+            "$ref": "../defs/toggleStyle.schema.json"
         },
         "name": {
             "description": "The name that will be used in the form.",

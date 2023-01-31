@@ -19,10 +19,10 @@
             }
         },
         "direction": {
-            "$ref": "defs/direction.schema.json"
+            "$ref": "../defs/direction.schema.json"
         },
         "crossAxisAlignment": {
-            "$ref": "defs/wrapCrossAlignment.schema.json"
+            "$ref": "../defs/wrapCrossAlignment.schema.json"
         },
         "spacing": {
             "description": "The spacing between each child of the wrap.",
@@ -35,16 +35,16 @@
             "default": 0
         },
         "alignment": {
-            "$ref": "defs/wrapAlignment.schema.json"
+            "$ref": "../defs/wrapAlignment.schema.json"
         },
         "runAlignment": {
-            "$ref": "defs/wrapAlignment.schema.json"
+            "$ref": "../defs/wrapAlignment.schema.json"
         },
         "horizontalDirection": {
-            "$ref": "defs/textDirection.schema.json"
+            "$ref": "../defs/textDirection.schema.json"
         },
         "verticalDirection": {
-            "$ref": "defs/verticalDirection.schema.json"
+            "$ref": "../defs/verticalDirection.schema.json"
         }
     },
     "required": [

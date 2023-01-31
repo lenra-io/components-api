@@ -38,7 +38,7 @@
             "description": "The additional leading of the strut which is a multiple of fontSize."
         },
         "leadingDistribution": {
-            "$ref": "defs/textLeadingDistribution.schema.json"
+            "$ref": "../defs/textLeadingDistribution.schema.json"
         }
     },
     "additionalProperties": false

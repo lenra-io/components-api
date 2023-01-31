@@ -11,7 +11,7 @@
             "default": 1.0
         },
         "color": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         }
     },
     "additionalProperties": false

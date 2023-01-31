@@ -16,7 +16,7 @@
         },
         "onSubmit": {
             "description": "Callback when the user submits the form.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         }
     },
     "required": [

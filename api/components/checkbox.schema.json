@@ -20,13 +20,13 @@
             "type": "boolean"
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "style": {
-            "$ref": "defs/checkboxStyle.schema.json"
+            "$ref": "../defs/checkboxStyle.schema.json"
         },
         "materialTapTargetSize": {
-            "$ref": "defs/materialTapTargetSize.schema.json"
+            "$ref": "../defs/materialTapTargetSize.schema.json"
         },
         "autofocus": {
             "description": "Whether the checkbox is focused initially.",

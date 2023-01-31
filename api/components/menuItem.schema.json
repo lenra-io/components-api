@@ -36,7 +36,7 @@
             }
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         }
     },
     "required": [

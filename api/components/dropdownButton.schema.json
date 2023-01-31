@@ -21,10 +21,10 @@
             "default": false
         },
         "size": {
-            "$ref": "defs/size.schema.json"
+            "$ref": "../defs/size.schema.json"
         },
         "mainStyle": {
-            "$ref": "defs/style.schema.json"
+            "$ref": "../defs/style.schema.json"
         },
         "child": {
             "type": "component"

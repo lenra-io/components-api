@@ -25,11 +25,11 @@
         },
         "alignment": {
             "description": "How to align the image.",
-            "$ref": "defs/alignment.schema.json"
+            "$ref": "../defs/alignment.schema.json"
         },
         "centerSlice": {
             "description": "The center slice for a nine-patch image.",
-            "$ref": "defs/rect.schema.json"
+            "$ref": "../defs/rect.schema.json"
         },
         "errorPlaceholder": {
             "description": "The error placeholder when the image encounters an error during loading.",
@@ -42,11 +42,11 @@
         },
         "filterQuality": {
             "description": "The quality of the image.",
-            "$ref": "defs/filterQuality.schema.json"
+            "$ref": "../defs/filterQuality.schema.json"
         },
         "fit": {
             "description": "How the image should fit the parent box.",
-            "$ref": "defs/boxFit.schema.json"
+            "$ref": "../defs/boxFit.schema.json"
         },
         "framePlaceholder": {
             "description": "A placeholder to display while the image is loading or to add effects to the image.",
@@ -68,7 +68,7 @@
         },
         "repeat": {
             "description": "How the image should be repeated accross the bounds not covered by the image.",
-            "$ref": "defs/imageRepeat.schema.json"
+            "$ref": "../defs/imageRepeat.schema.json"
         },
         "semanticLabel": {
             "description": "A semantic description of the image. This is used for TalkBack on Android and VoiceOver on IOS.",

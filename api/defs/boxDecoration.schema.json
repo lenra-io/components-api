@@ -6,16 +6,16 @@
     "type": "object",
     "properties": {
         "borderRadius": {
-            "$ref": "defs/borderRadius.schema.json"
+            "$ref": "../defs/borderRadius.schema.json"
         },
         "boxShadow": {
-            "$ref": "defs/boxShadow.schema.json"
+            "$ref": "../defs/boxShadow.schema.json"
         },
         "color": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "shape": {
-            "$ref": "defs/boxShape.schema.json"
+            "$ref": "../defs/boxShape.schema.json"
         }
     },
     "additionalProperties": false

@@ -14,10 +14,10 @@
             "default": "underline"
         },
         "borderRadius": {
-            "$ref": "defs/borderRadius.schema.json"
+            "$ref": "../defs/borderRadius.schema.json"
         },
         "borderSide": {
-            "$ref": "defs/borderSide.schema.json"
+            "$ref": "../defs/borderSide.schema.json"
         }
     },
     "required": [

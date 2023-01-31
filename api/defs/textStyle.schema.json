@@ -7,17 +7,17 @@
     "properties": {
         "color": {
             "description": "The color of the text.",
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "decoration": {
-            "$ref": "defs/textDecoration.schema.json"
+            "$ref": "../defs/textDecoration.schema.json"
         },
         "decorationColor": {
             "description": "The color of the decoration.",
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "decorationStyle": {
-            "$ref": "defs/textDecorationStyle.schema.json"
+            "$ref": "../defs/textDecorationStyle.schema.json"
         },
         "decorationThickness": {
             "description": "The thickness of the decoration.",
@@ -86,12 +86,12 @@
             "description": "A list of Shadows that will be painted underneath the text.",
             "type": "array",
             "items": {
-                "$ref": "defs/boxShadow.schema.json"
+                "$ref": "../defs/boxShadow.schema.json"
             }
         },
         "textBaseline": {
             "description": "The common baseline that should be aligned between this text and its parent text.",
-            "$ref": "defs/textBaseline.schema.json"
+            "$ref": "../defs/textBaseline.schema.json"
         },
         "wordSpacing": {
             "description": "The amount of space to add at each sequence of white-space.",

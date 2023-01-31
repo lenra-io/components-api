@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "side": {
-            "$ref": "defs/borderSide.schema.json"
+            "$ref": "../defs/borderSide.schema.json"
         }
     },
     "additionalProperties": false

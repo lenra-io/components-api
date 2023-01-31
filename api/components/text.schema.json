@@ -16,10 +16,10 @@
             "type": "string"
         },
         "style": {
-            "$ref": "defs/textStyle.schema.json"
+            "$ref": "../defs/textStyle.schema.json"
         },
         "locale": {
-            "$ref": "defs/locale.schema.json"
+            "$ref": "../defs/locale.schema.json"
         },
         "semanticsLabel": {
             "description": "The value to explain a different semantics",

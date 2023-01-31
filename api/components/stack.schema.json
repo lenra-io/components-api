@@ -19,10 +19,10 @@
             }
         },
         "alignment": {
-            "$ref": "defs/alignment.schema.json"
+            "$ref": "../defs/alignment.schema.json"
         },
         "fit": {
-            "$ref": "defs/stackFit.schema.json"
+            "$ref": "../defs/stackFit.schema.json"
         }
     },
     "required": [

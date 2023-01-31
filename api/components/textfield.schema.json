@@ -21,7 +21,7 @@
         },
         "autofillHints": {
             "description": "The type of this text input to provide autofill hints.",
-            "$ref": "defs/autofillHints.schema.json"
+            "$ref": "../defs/autofillHints.schema.json"
         },
         "autofocus": {
             "description": "Whether this Textfield should be focused initially.",
@@ -29,15 +29,15 @@
         },
         "buildCounter": {
             "description": "Callback that generates a custom counter view.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "style": {
             "description": "The style of the Textfield.",
-            "$ref": "defs/textFieldStyle.schema.json"
+            "$ref": "../defs/textFieldStyle.schema.json"
         },
         "dragStartBehavior": {
             "description": "Determines the way that drag start behavior is handled.",
-            "$ref": "defs/dragStartBehavior.schema.json"
+            "$ref": "../defs/dragStartBehavior.schema.json"
         },
         "enabled": {
             "description": "Whether the text field is enabled.",
@@ -53,7 +53,7 @@
         },
         "keyboardType": {
             "description": "The type of the keyboard to use for editing the text.",
-            "$ref": "defs/textInputType.schema.json"
+            "$ref": "../defs/textInputType.schema.json"
         },
         "maxLength": {
             "description": "The maximum number of characters to allow in the text field.",
@@ -61,7 +61,7 @@
         },
         "maxLengthEnforcement": {
             "description": "Determines how the maxLength limit should be enforced.",
-            "$ref": "defs/maxLengthEnforcement.schema.json"
+            "$ref": "../defs/maxLengthEnforcement.schema.json"
         },
         "maxLines": {
             "description": "The maximum number of lines to show at one time.",
@@ -77,23 +77,23 @@
         },
         "onAppPrivateCommand": {
             "description": "This is used to receive a private command from the input method.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onChanged": {
             "description": "Callback when the user changes the text field value.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onEditingComplete": {
             "description": "Callback when the user finishes editing the text field.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onSubmitted": {
             "description": "Callback when the user tells he is done editing the text field.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onTap": {
             "description": "Callback when the user taps on the text field.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "readOnly": {
             "description": "Whether the text can be changed.",
@@ -105,19 +105,19 @@
         },
         "textCapitalization": {
             "description": "Configures how the platform keyboard will select an uppercase or lowercase keyboard.",
-            "$ref": "defs/textCapitalization.schema.json"
+            "$ref": "../defs/textCapitalization.schema.json"
         },
         "textDirection": {
             "description": "The direction of the text.",
-            "$ref": "defs/textDirection.schema.json"
+            "$ref": "../defs/textDirection.schema.json"
         },
         "textInputAction": {
             "description": "The type of the action button to use for the keyboard.",
-            "$ref": "defs/textInputAction.schema.json"
+            "$ref": "../defs/textInputAction.schema.json"
         },
         "toolbarOptions": {
             "description": "Configuration of toolbar options",
-            "$ref": "defs/toolbarOptions.schema.json"
+            "$ref": "../defs/toolbarOptions.schema.json"
         },
         "name": {
             "description": "The name that will be used in the form.",

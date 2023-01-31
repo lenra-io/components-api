@@ -6,28 +6,28 @@
     "type": "object",
     "properties": {
         "activeColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "activeTrackColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "inactiveTrackColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "inactiveThumbColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "hoverColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "focusColor": {
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "activeThumbImage": {
-            "$ref": "components/image.schema.json"
+            "$ref": "../components/image.schema.json"
         },
         "inactiveThumbImage": {
-            "$ref": "components/image.schema.json"
+            "$ref": "../components/image.schema.json"
         },
         "materialTapTargetSize": {
             "type": "string",

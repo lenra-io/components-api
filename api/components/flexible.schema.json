@@ -17,7 +17,7 @@
             "default": 1
         },
         "fit": {
-            "$ref": "defs/flexFit.schema.json"
+            "$ref": "../defs/flexFit.schema.json"
         },
         "child": {
             "type": "component"

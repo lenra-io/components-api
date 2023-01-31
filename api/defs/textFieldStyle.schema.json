@@ -7,7 +7,7 @@
     "properties": {
         "cursorColor": {
             "description": "The color of the cursor.",
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "cursorHeight": {
             "description": "The height of the cursor.",
@@ -15,7 +15,7 @@
         },
         "cursorRadius": {
             "description": "The radius of the cursor.",
-            "$ref": "defs/radius.schema.json"
+            "$ref": "../defs/radius.schema.json"
         },
         "cursorWidth": {
             "description": "The width of the cursor.",
@@ -23,11 +23,11 @@
         },
         "decoration": {
             "description": "The decoration of the input.",
-            "$ref": "defs/inputDecoration.schema.json"
+            "$ref": "../defs/inputDecoration.schema.json"
         },
         "keyboardAppearance": {
             "description": "The appearance of the keyboard.",
-            "$ref": "defs/brightness.schema.json"
+            "$ref": "../defs/brightness.schema.json"
         },
         "obscuringCharacter": {
             "description": "The character used to obscure the text.",
@@ -35,30 +35,30 @@
         },
         "scrollPadding": {
             "description": "The padding of the scrollable when the Textfield scrolls into view.",
-            "$ref": "defs/padding.schema.json"
+            "$ref": "../defs/padding.schema.json"
         },
         "selectionHeightStyle": {
             "description": "The height of the selection highlight boxes.",
-            "$ref": "defs/boxHeightStyle.schema.json"
+            "$ref": "../defs/boxHeightStyle.schema.json"
         },
         "selectionWidthStyle": {
             "description": "The width of the selection highlight boxes.",
-            "$ref": "defs/boxWidthStyle.schema.json"
+            "$ref": "../defs/boxWidthStyle.schema.json"
         },
         "strutStyle": {
-            "$ref": "defs/strutStyle.schema.json"
+            "$ref": "../defs/strutStyle.schema.json"
         },
         "textStyle": {
             "description": "The style of the text.",
-            "$ref": "defs/textStyle.schema.json"
+            "$ref": "../defs/textStyle.schema.json"
         },
         "textAlign": {
             "description": "The alignment of the text.",
-            "$ref": "defs/textAlign.schema.json"
+            "$ref": "../defs/textAlign.schema.json"
         },
         "textAlignVertical": {
             "description": "How the text should be aligned vertically.",
-            "$ref": "defs/textAlignVertical.schema.json"
+            "$ref": "../defs/textAlignVertical.schema.json"
         }
     },
     "additionalProperties": false

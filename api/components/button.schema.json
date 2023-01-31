@@ -21,13 +21,13 @@
             "default": false
         },
         "size": {
-            "$ref": "defs/size.schema.json"
+            "$ref": "../defs/size.schema.json"
         },
         "mainStyle": {
-            "$ref": "defs/style.schema.json"
+            "$ref": "../defs/style.schema.json"
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "leftIcon": {
             "type": "component",

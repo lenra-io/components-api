@@ -17,6 +17,10 @@
             "description": "Color when the mouse is over the element",
             "$ref": "defs/color.schema.json"
         },
+        "unselectedColor": {
+            "description": "Color when the radio is not selected",
+            "$ref": "defs/color.schema.json"
+        },
         "splashRadius": {
             "description": "The splash radius of the radio button",
             "type": "number"

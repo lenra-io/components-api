@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "listener.schema.json",
-    "title": "Basic Listener",
+    "title": "Listener",
     "type": "listener",
     "properties": {
         "action": {

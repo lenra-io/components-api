@@ -12,7 +12,7 @@
             ]
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "alignment": {
             "$ref": "../defs/alignment.schema.json"

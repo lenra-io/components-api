@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "offset.schema.json",
+    "$id": "defs/offset.schema.json",
     "title": "Offset",
     "description": "Element of type Offset",
     "type": "object",

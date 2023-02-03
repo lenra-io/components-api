@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textfield.schema.json",
+    "$id": "components/textfield.schema.json",
     "title": "TextField",
     "description": "Element of type TextField",
     "type": "component",

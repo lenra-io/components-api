@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "checkboxStyle.schema.json",
+    "$id": "defs/checkboxStyle.schema.json",
     "title": "CheckboxStyle",
     "description": "Element of type CheckboxStyle",
     "type": "object",

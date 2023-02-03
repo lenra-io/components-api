@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textStyle.schema.json",
+    "$id": "defs/textStyle.schema.json",
     "title": "TextStyle",
     "description": "The style of the Text.",
     "type": "object",

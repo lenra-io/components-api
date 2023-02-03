@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "iconName.schema.json",
+    "$id": "defs/iconName.schema.json",
     "title": "IconName",
     "description": "All of the possible values for an Icon.",
     "type": "string",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "dropdownButton.schema.json",
+    "$id": "components/dropdownButton.schema.json",
     "title": "Dropdown Button",
     "description": "Element of type Dropdown Button",
     "type": "component",

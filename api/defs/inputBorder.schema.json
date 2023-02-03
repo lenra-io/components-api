@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "inputBorder.schema.json",
+    "$id": "defs/inputBorder.schema.json",
     "title": "InputBorder",
     "description": "Element of type InputBorder",
     "type": "object",

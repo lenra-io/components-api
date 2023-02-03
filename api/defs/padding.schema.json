@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "padding.schema.json",
+    "$id": "defs/padding.schema.json",
     "title": "Padding",
     "description": "Element of type Padding",
     "type": "object",

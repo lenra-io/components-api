@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textAlign.schema.json",
+    "$id": "defs/textAlign.schema.json",
     "title": "TextAlign",
     "description": "Component of type TextAlign.",
     "type": "string",

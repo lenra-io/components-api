@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "flexible.schema.json",
+    "$id": "components/flexible.schema.json",
     "title": "Flexible",
     "description": "Element of type Flexible",
     "type": "component",

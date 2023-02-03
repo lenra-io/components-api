@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "color.schema.json",
+    "$id": "defs/color.schema.json",
     "title": "Color",
     "description": "Color type",
     "type": "integer"

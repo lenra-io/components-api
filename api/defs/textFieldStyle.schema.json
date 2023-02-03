@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textFieldStyle.schema.json",
+    "$id": "defs/textFieldStyle.schema.json",
     "title": "TextFieldStyle",
     "description": "Element of type TextFieldStyle",
     "type": "object",

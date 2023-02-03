@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "radioStyle.schema.json",
+    "$id": "defs/radioStyle.schema.json",
     "title": "Radio Style",
     "description": "Element of type RadioStyle",
     "type": "object",

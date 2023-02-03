@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "alignment.schema.json",
+    "$id": "defs/alignment.schema.json",
     "title": "Alignment",
     "description": "The alignment to use.",
     "type": "string",

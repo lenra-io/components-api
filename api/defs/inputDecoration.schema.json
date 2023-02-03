@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "inputDecoration.schema.json",
+    "$id": "defs/inputDecoration.schema.json",
     "title": "InputDecoration",
     "description": "Element of type InputDecoration",
     "type": "object",

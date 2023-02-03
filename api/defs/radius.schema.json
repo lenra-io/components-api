@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "radius.schema.json",
+    "$id": "defs/radius.schema.json",
     "title": "Radius",
     "description": "Element of type Radius",
     "type": "object",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "boxDecoration.schema.json",
+    "$id": "defs/boxDecoration.schema.json",
     "title": "BoxDecoration",
     "description": "Element of type BoxDecoration",
     "type": "object",

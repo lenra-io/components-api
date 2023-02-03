@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "stack.schema.json",
+    "$id": "components/stack.schema.json",
     "title": "Stack",
     "description": "Element of type Stack",
     "type": "component",

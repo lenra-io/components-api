@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "borderSide.schema.json",
+    "$id": "defs/borderSide.schema.json",
     "title": "BorderSide",
     "description": "Element of type BorderSide",
     "type": "object",

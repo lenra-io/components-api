@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textLeadingDistribution.schema.json",
+    "$id": "defs/textLeadingDistribution.schema.json",
     "title": "TextLeadingDitribution",
     "description": "The TextLeadingDistribution enum.",
     "type": "string",

@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "components/overlayEntry.schema.json",
-    "title": "Overlay Entry",
+    "title": "OverlayEntry",
     "description": "Element of type OverlayEntry",
     "type": "component",
     "properties": {

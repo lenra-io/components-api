@@ -137,7 +137,7 @@
             "type": "boolean"
         },
         "label": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "labelStyle": {
             "description": "The style to use for the label.",
@@ -148,7 +148,7 @@
             "type": "string"
         },
         "prefix": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "prefixIcon": {
             "$ref": "../components/icon.schema.json"

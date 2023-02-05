@@ -15,7 +15,7 @@
             "description": "The children of the wrap.",
             "type": "array",
             "items": {
-                "type": "component"
+                "$ref": "../component.schema.json"
             }
         },
         "direction": {

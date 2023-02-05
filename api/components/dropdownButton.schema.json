@@ -27,7 +27,7 @@
             "$ref": "../defs/style.schema.json"
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "icon": {
             "$ref": "icon.schema.json"

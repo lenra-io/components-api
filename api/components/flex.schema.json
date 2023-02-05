@@ -15,7 +15,7 @@
             "description": "The children",
             "type": "array",
             "items": {
-                "type": "component"
+                "$ref": "../component.schema.json"
             }
         },
         "direction": {

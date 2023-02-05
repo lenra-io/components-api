@@ -33,7 +33,7 @@
         },
         "errorPlaceholder": {
             "description": "The error placeholder when the image encounters an error during loading.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "excludeFromSemantics": {
             "description": "Whether to exclude this image from semantics.",
@@ -50,7 +50,7 @@
         },
         "framePlaceholder": {
             "description": "A placeholder to display while the image is loading or to add effects to the image.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "gaplessPlayback": {
             "description": "Whether the old image (true) or nothing (false) is shown when the image provider changes.",
@@ -64,7 +64,7 @@
         },
         "loadingPlaceholder": {
             "description": "A placeholder to display while the image is still loading.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "repeat": {
             "description": "How the image should be repeated accross the bounds not covered by the image.",

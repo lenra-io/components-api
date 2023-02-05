@@ -20,7 +20,7 @@
             "$ref": "../defs/flexFit.schema.json"
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         }
     },
     "required": [

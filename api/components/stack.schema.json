@@ -15,7 +15,7 @@
             "description": "The children of the Stack.",
             "type": "array",
             "items": {
-                "type": "component"
+                "$ref": "../component.schema.json"
             }
         },
         "alignment": {

@@ -15,7 +15,7 @@
             "type": "array",
             "description": "The menu items",
             "items": {
-                "type": "component"
+                "$ref": "../component.schema.json"
             }
         }
     },

@@ -12,7 +12,7 @@
             ]
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "maintainState": {
             "description": "Whether this entry must be included in the tree even if there is a fully opaque entry above it.",

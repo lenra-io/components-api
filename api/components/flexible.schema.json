@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "flexible.schema.json",
+    "$id": "components/flexible.schema.json",
     "title": "Flexible",
     "description": "Element of type Flexible",
     "type": "component",
@@ -17,10 +17,10 @@
             "default": 1
         },
         "fit": {
-            "$ref": "defs/flexFit.schema.json"
+            "$ref": "../defs/flexFit.schema.json"
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         }
     },
     "required": [

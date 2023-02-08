@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "button.schema.json",
+    "$id": "components/button.schema.json",
     "title": "Button",
     "description": "Element of type Button",
     "type": "component",
@@ -21,33 +21,19 @@
             "default": false
         },
         "size": {
-            "$ref": "defs/size.schema.json"
+            "$ref": "../defs/size.schema.json"
         },
         "mainStyle": {
-            "$ref": "defs/style.schema.json"
+            "$ref": "../defs/style.schema.json"
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "leftIcon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         },
         "rightIcon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         },
         "submit": {
             "description": "Whether the button is a submit button for a form.",

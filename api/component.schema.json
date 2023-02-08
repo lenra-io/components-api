@@ -1,0 +1,74 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "component.schema.json",
+    "title": "Component",
+    "description": "The component abstract type",
+    "oneOf": [
+        {
+            "$ref": "components/actionable.schema.json"
+        },
+        {
+            "$ref": "components/button.schema.json"
+        },
+        {
+            "$ref": "components/checkbox.schema.json"
+        },
+        {
+            "$ref": "components/container.schema.json"
+        },
+        {
+            "$ref": "components/dropdownButton.schema.json"
+        },
+        {
+            "$ref": "components/flex.schema.json"
+        },
+        {
+            "$ref": "components/flexible.schema.json"
+        },
+        {
+            "$ref": "components/form.schema.json"
+        },
+        {
+            "$ref": "components/icon.schema.json"
+        },
+        {
+            "$ref": "components/image.schema.json"
+        },
+        {
+            "$ref": "components/menu.schema.json"
+        },
+        {
+            "$ref": "components/menuItem.schema.json"
+        },
+        {
+            "$ref": "components/overlayEntry.schema.json"
+        },
+        {
+            "$ref": "components/radio.schema.json"
+        },
+        {
+            "$ref": "components/slider.schema.json"
+        },
+        {
+            "$ref": "components/stack.schema.json"
+        },
+        {
+            "$ref": "components/statusSticker.schema.json"
+        },
+        {
+            "$ref": "components/text.schema.json"
+        },
+        {
+            "$ref": "components/textfield.schema.json"
+        },
+        {
+            "$ref": "components/toggle.schema.json"
+        },
+        {
+            "$ref": "components/view.schema.json"
+        },
+        {
+            "$ref": "components/wrap.schema.json"
+        }
+    ]
+}

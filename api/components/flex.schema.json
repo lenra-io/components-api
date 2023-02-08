@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "flex.schema.json",
+    "$id": "components/flex.schema.json",
     "title": "Flex",
     "description": "Element of type Flex",
     "type": "component",
@@ -15,11 +15,11 @@
             "description": "The children",
             "type": "array",
             "items": {
-                "type": "component"
+                "$ref": "../component.schema.json"
             }
         },
         "direction": {
-            "$ref": "defs/direction.schema.json"
+            "$ref": "../defs/direction.schema.json"
         },
         "mainAxisAlignment": {
             "description": "The alignment along the main axis",
@@ -62,16 +62,16 @@
             "default": false
         },
         "padding": {
-            "$ref": "defs/padding.schema.json"
+            "$ref": "../defs/padding.schema.json"
         },
         "horizontalDirection": {
-            "$ref": "defs/textDirection.schema.json"
+            "$ref": "../defs/textDirection.schema.json"
         },
         "verticalDirection": {
-            "$ref": "defs/verticalDirection.schema.json"
+            "$ref": "../defs/verticalDirection.schema.json"
         },
         "textBaseline": {
-            "$ref": "defs/textBaseline.schema.json"
+            "$ref": "../defs/textBaseline.schema.json"
         }
     },
     "required": [

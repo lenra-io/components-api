@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "imageRepeat.schema.json",
+    "$id": "defs/imageRepeat.schema.json",
     "title": "Image Repeat",
     "description": "How the image should be painted on the areas that it does not cover.",
     "type": "string",

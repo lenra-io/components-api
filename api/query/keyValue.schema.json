@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "keyValue.schema.json",
+    "$id": "query/keyValue.schema.json",
     "title": "KeyValue",
     "description": "KeyValue query identifier",
     "type": "object",

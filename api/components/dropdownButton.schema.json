@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "dropdownButton.schema.json",
-    "title": "Dropdown Button",
+    "$id": "components/dropdownButton.schema.json",
+    "title": "DropdownButton",
     "description": "Element of type Dropdown Button",
     "type": "component",
     "properties": {
@@ -21,23 +21,16 @@
             "default": false
         },
         "size": {
-            "$ref": "defs/size.schema.json"
+            "$ref": "../defs/size.schema.json"
         },
         "mainStyle": {
-            "$ref": "defs/style.schema.json"
+            "$ref": "../defs/style.schema.json"
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "icon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         }
     },
     "required": [

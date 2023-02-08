@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textCapitalization.schema.json",
+    "$id": "defs/textCapitalization.schema.json",
     "title": "TextCapitalization",
     "description": "Component of type TextCapitalization.",
     "type": "string",

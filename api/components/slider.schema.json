@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "slider.schema.json",
+    "$id": "components/slider.schema.json",
     "title": "Slider",
     "description": "Element of type Slider",
     "type": "component",
@@ -12,7 +12,7 @@
             ]
         },
         "style": {
-            "$ref": "defs/sliderStyle.schema.json"
+            "$ref": "../defs/sliderStyle.schema.json"
         },
         "autofocus": {
             "description": "Whether the slider should be focused initially.",
@@ -39,15 +39,15 @@
         },
         "onChanged": {
             "description": "The callback to be invoked when the slider value changes.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onChangeEnd": {
             "description": "The callback to be invoked when the slider is released.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onChangeStart": {
             "description": "The callback to be invoked when the slider is pressed.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "value": {
             "description": "The current value of the slider.",

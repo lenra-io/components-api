@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "query.schema.json",
+    "$id": "query/query.schema.json",
     "title": "Query",
     "description": "Query query identifier",
     "type": "object",

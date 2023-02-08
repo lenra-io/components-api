@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "autofillHints.schema.json",
+    "$id": "defs/autofillHints.schema.json",
     "title": "AutofillHints",
     "description": "The AutofillHints enum to handle textfield's autocompletion.",
     "type": "array",

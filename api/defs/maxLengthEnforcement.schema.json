@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "maxLengthEnforcement.schema.json",
+    "$id": "defs/maxLengthEnforcement.schema.json",
     "title": "MaxLengthEnforcement",
     "description": "Component of type MaxLengthEnforcement.",
     "type": "string",

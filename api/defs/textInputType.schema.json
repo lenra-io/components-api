@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textInputType.schema.json",
+    "$id": "defs/textInputType.schema.json",
     "title": "textInputType",
     "description": "Element of textInput Type",
     "type": "object",

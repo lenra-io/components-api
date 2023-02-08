@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "menu_item.schema.json",
+    "$id": "components/menu_item.schema.json",
     "title": "MenuItem",
     "description": "Element of type MenuItem",
     "type": "component",
@@ -26,17 +26,10 @@
             "default": false
         },
         "icon": {
-            "type": "component",
-            "properties": {
-                "type": {
-                    "enum": [
-                        "icon"
-                    ]
-                }
-            }
+            "$ref": "icon.schema.json"
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         }
     },
     "required": [

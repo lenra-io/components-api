@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "boxFit.schema.json",
+    "$id": "defs/boxFit.schema.json",
     "title": "Box Fit",
     "description": "How the box should be fitted in its parent.",
     "type": "string",

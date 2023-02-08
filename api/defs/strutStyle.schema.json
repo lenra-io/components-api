@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "strutStyle.schema.json",
+    "$id": "defs/strutStyle.schema.json",
     "title": "StrutStyle",
     "description": "Defines the strut of a text line.",
     "type": "object",
@@ -38,7 +38,7 @@
             "description": "The additional leading of the strut which is a multiple of fontSize."
         },
         "leadingDistribution": {
-            "$ref": "defs/textLeadingDistribution.schema.json"
+            "$ref": "../defs/textLeadingDistribution.schema.json"
         }
     },
     "additionalProperties": false

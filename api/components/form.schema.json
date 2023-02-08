@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "form.schema.json",
+    "$id": "components/form.schema.json",
     "title": "Form",
     "description": "Element of type Form",
     "type": "component",
@@ -12,11 +12,11 @@
             ]
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "onSubmit": {
             "description": "Callback when the user submits the form.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         }
     },
     "required": [

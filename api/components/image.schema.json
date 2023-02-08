@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "image.schema.json",
+    "$id": "components/image.schema.json",
     "title": "Image",
     "description": "Element of type Image",
     "type": "component",
@@ -25,15 +25,15 @@
         },
         "alignment": {
             "description": "How to align the image.",
-            "$ref": "defs/alignment.schema.json"
+            "$ref": "../defs/alignment.schema.json"
         },
         "centerSlice": {
             "description": "The center slice for a nine-patch image.",
-            "$ref": "defs/rect.schema.json"
+            "$ref": "../defs/rect.schema.json"
         },
         "errorPlaceholder": {
             "description": "The error placeholder when the image encounters an error during loading.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "excludeFromSemantics": {
             "description": "Whether to exclude this image from semantics.",
@@ -42,15 +42,15 @@
         },
         "filterQuality": {
             "description": "The quality of the image.",
-            "$ref": "defs/filterQuality.schema.json"
+            "$ref": "../defs/filterQuality.schema.json"
         },
         "fit": {
             "description": "How the image should fit the parent box.",
-            "$ref": "defs/boxFit.schema.json"
+            "$ref": "../defs/boxFit.schema.json"
         },
         "framePlaceholder": {
             "description": "A placeholder to display while the image is loading or to add effects to the image.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "gaplessPlayback": {
             "description": "Whether the old image (true) or nothing (false) is shown when the image provider changes.",
@@ -64,11 +64,11 @@
         },
         "loadingPlaceholder": {
             "description": "A placeholder to display while the image is still loading.",
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "repeat": {
             "description": "How the image should be repeated accross the bounds not covered by the image.",
-            "$ref": "defs/imageRepeat.schema.json"
+            "$ref": "../defs/imageRepeat.schema.json"
         },
         "semanticLabel": {
             "description": "A semantic description of the image. This is used for TalkBack on Android and VoiceOver on IOS.",

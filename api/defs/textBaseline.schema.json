@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "textBaseline.schema.json",
+    "$id": "defs/textBaseline.schema.json",
     "title": "textBaseline",
     "description": "A horizontal line used for aligning text.",
     "type": "string",

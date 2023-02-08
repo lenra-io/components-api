@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "actionable.schema.json",
+    "$id": "components/actionable.schema.json",
     "title": "Actionable",
     "description": "Element of type Actionable",
     "type": "component",
@@ -12,27 +12,27 @@
             ]
         },
         "child": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "onPressed": {
             "description": "The listener to be called when the actionable is pressed.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onDoublePressed": {
             "description": "The listener to be called when the actionable is double pressed.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onLongPressed": {
             "description": "The listener to be called when the actionable is long pressed.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onPressedCancel": {
             "description": "The listener to be called when the actionable is pressed inside and released outside of the actionable, causing it to cancel the press action.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "onHovered": {
             "description": "The listener to be called when the actionable is hovered and when the mouse exits the hoverable area.",
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "submit": {
             "description": "Whether the actionable can submit a form.",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "checkbox.schema.json",
+    "$id": "components/checkbox.schema.json",
     "title": "Checkbox",
     "description": "Element of type Checkbox",
     "type": "component",
@@ -20,13 +20,13 @@
             "type": "boolean"
         },
         "onPressed": {
-            "$ref": "defs/listener.schema.json"
+            "$ref": "../defs/listener.schema.json"
         },
         "style": {
-            "$ref": "defs/checkboxStyle.schema.json"
+            "$ref": "../defs/checkboxStyle.schema.json"
         },
         "materialTapTargetSize": {
-            "$ref": "defs/materialTapTargetSize.schema.json"
+            "$ref": "../defs/materialTapTargetSize.schema.json"
         },
         "autofocus": {
             "description": "Whether the checkbox is focused initially.",

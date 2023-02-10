@@ -18,10 +18,10 @@
         "props": {
             "$ref": "../defs/props.schema.json"
         },
-        "find : {
-             "description": "Find query.",
-             "$ref": "../defs/find.schema.json"
-        }
+        "find": {
+            "description": "Find query.",
+            "$ref": "../defs/find.schema.json"
+        },
         "query": {
             "description": "The query to apply to the data.",
             "type": "object",

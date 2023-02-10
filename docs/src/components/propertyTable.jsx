@@ -41,14 +41,14 @@ function displayType(schema, property) {
         console.log(src_path)
         if (!src_path.includes('/#/') && !fs.existsSync(src_path)) {
             const name = Path.basename(api_path, '.schema.json')
-            fs.writeFileSync(src_path, `
-import PropertyTable from '../../components/propertyTable';
-import ${name} from '../../../${api_path}';
+//             fs.writeFileSync(src_path, `
+// import PropertyTable from '../../components/propertyTable';
+// import ${name} from '../../../${api_path}';
 
-# ${name[0].toUpperCase() + name.substring(1)}
+// # ${name[0].toUpperCase() + name.substring(1)}
 
-<PropertyTable schema={${name}}/>
-`)
+// <PropertyTable schema={${name}}/>
+// `)
         }
         return <>
             <a href={"/" + property['$ref'].replace(".schema.json", ".html")}>{property['$ref']}</a>

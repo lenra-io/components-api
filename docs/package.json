@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/lenra-io/components-api#readme",
   "devDependencies": {
-    "@lenra/mdx2html": "1.1.0"
+    "@lenra/mdx2html": "1.1.1"
   }
 }

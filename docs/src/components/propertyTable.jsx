@@ -50,6 +50,7 @@ function createFirstLine() {
 
 function createPropertyLine(schema, key) {
     let requiredProperties = schema.required;
+    // TODO: get ref description if not in property
     return <tr className={requiredProperties?.includes(key) ? "required" : null}>
         <td>{key}</td>
         <td>{schema.properties[key].description}</td>
@@ -73,9 +74,11 @@ function displayType(schema, property) {
         const api_path = Path.join('../api/', property['$ref'])
         const src_path = Path.join('./src/pages/', property['$ref']).replace(".schema.json", ".mdx")
         console.log(src_path)
+        // TODO: include ref when it's simple (not an object)
         const refSchema = src_path.includes('/#/') ? schema.definitions[src_path.replace('/#/', "")] : require('../../../../api/' + property['$ref'].replace("../", ""))
         if (!src_path.includes('/#/') && !fs.existsSync(src_path)) {
             const name = Path.basename(api_path, '.schema.json')
+            // TODO: create def file if needed
 //             fs.writeFileSync(src_path, `
 // import PropertyTable from '../../components/propertyTable';
 // import ${name} from '../../../${api_path}';

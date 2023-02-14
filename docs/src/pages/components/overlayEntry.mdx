@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/overlayEntry.schema.json';
 
 # {schema.title}
@@ -11,6 +12,7 @@ This component is used to create an **overlay** that shows itself over the curre
 
 This component uses the `showOverlay` boolean property to know whether it should be shown to the screen or not. This property **should be used** to open/close the overlayEntry. The overlayEntry **should not be** directly removed from the JSON tree as it will not follow the right disposing process, the overlayEntry will end up stuck on the screen with no way to remove it.
 
+<CodeBlock>
 ```json
 {
     "type": "overlayEntry",
@@ -21,10 +23,12 @@ This component uses the `showOverlay` boolean property to know whether it should
     }
 }
 ```
+</CodeBlock>
 
 ### Recommended : Overlays in root component
 It is recommended to put overlays inside the root `flex` component of the application because it will be easier to handle the lifecycle of these overlays. Behind the scenes, the overlays are put at the top of the UI tree anyway. An example is shown below.
 
+<CodeBlock>
 ```json
 {
     "type": "flex",
@@ -45,5 +49,6 @@ It is recommended to put overlays inside the root `flex` component of the applic
     ]
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

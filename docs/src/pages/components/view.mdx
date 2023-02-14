@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/view.schema.json';
 
 # {schema.title}
@@ -13,6 +14,7 @@ The view must be defined and references in the index.js root file of the applica
 
 Create a file that will contain the view.
 
+<CodeBlock>
 ```json
 module.exports = (users, _props) => {
   return {
@@ -21,9 +23,11 @@ module.exports = (users, _props) => {
   };
 }
 ```
+</CodeBlock>
 
 Reference this view in the root index.js of the application.
 
+<CodeBlock>
 ```json
 module.exports = async () => {
   return {
@@ -35,9 +39,11 @@ module.exports = async () => {
   }
 }
 ```
+</CodeBlock>
 
 Then instantiate the view in the root view of the application.
 
+<CodeBlock>
 ```json
 module.exports = (users, _props) => {
   return {
@@ -56,5 +62,6 @@ module.exports = (users, _props) => {
   };
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

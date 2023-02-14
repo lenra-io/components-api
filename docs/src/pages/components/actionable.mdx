@@ -1,5 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
-import CodeBlock from '../../components/codeBlock.mdx';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/actionable.schema.json';
 
 # {schema.title}
@@ -32,6 +32,13 @@ You can set the `onPressed` event using the following example to trigger the act
         "value": "This is an actionable text."
     }
 }
+```
+```javascript
+Actionable(
+    Text("This is an actionable text.")
+).onPressed("textPress", {
+    ...
+})
 ```
 </CodeBlock>
 

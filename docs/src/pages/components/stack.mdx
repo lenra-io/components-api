@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/stack.schema.json';
 
 # {schema.title}
@@ -12,6 +13,7 @@ The first child in the list will be in the background while the last child of th
 
 This example will show two boxes, a red one at the background and a green one in the foreground. Both are respectively sized 100x100 and 60x60 so that they can be seen.
 
+<CodeBlock>
 ```json
 {
     "type": "stack",
@@ -41,5 +43,6 @@ This example will show two boxes, a red one at the background and a green one in
     ]
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

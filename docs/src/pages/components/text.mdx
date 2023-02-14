@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/text.schema.json';
 
 # {schema.title}
@@ -11,17 +12,20 @@ This component has a `children` property in case some complex text needs to be d
 
 ### Basic text
 
+<CodeBlock>
 ```json
 {
     "type": "text",
     "value": "This is a text.",
 }
 ```
+</CodeBlock>
 
 ### Complex text
 
 This is an example involving a complex text. It is composed of bold and italic values all in one sentence.
 
+<CodeBlock>
 ```json
 {
     "type": "text",
@@ -52,5 +56,6 @@ This is an example involving a complex text. It is composed of bold and italic v
     ]
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

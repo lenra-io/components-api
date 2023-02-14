@@ -30,7 +30,7 @@
             "$ref": "../component.schema.json"
         },
         "icon": {
-            "$ref": "icon.schema.json"
+            "$ref": "../components/icon.schema.json"
         }
     },
     "required": [

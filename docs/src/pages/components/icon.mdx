@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/icon.schema.json';
 
 # {schema.title}
@@ -11,18 +12,21 @@ All of the possible values for the icon come from the [material design icons](ht
 
 ### Simple icon
 
+<CodeBlock>
 ```json
 {
     "type": "icon",
     "value": "abc"
 }
 ```
+</CodeBlock>
 
 ### Icon color & size
 You can also change the font color just for your icon, try by changing the `integer` code of this icon.
 
 (In this example, the hexadecimal code uses a syntactic sugar from JavaScript but the value sent is still an Integer)
 
+<CodeBlock>
 ```json
 {
     "type": "icon",
@@ -31,5 +35,6 @@ You can also change the font color just for your icon, try by changing the `inte
     "size": 100
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/toggle.schema.json';
 
 # {schema.title}
@@ -10,6 +11,7 @@ This component can be toggled on or off.
 
 ### Simple toggle
 
+<CodeBlock>
 ```json
 {
     "type": "toggle",
@@ -21,5 +23,6 @@ This component can be toggled on or off.
     }
 },
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

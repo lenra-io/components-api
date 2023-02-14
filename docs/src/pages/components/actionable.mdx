@@ -1,4 +1,5 @@
 import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock.mdx';
 import schema from '../../../../api/components/actionable.schema.json';
 
 # {schema.title}
@@ -16,6 +17,7 @@ The actionable component will allow you to set an event listener on many user ac
 You can set the `onPressed` event using the following example to trigger the action `textPress`.
 `props` will add more flexibility and allow reusable listeners by passing some more informations to your listeners like the `id` of the button you pressed.
 
+<CodeBlock>
 ```json
 {
     "type": "actionable",
@@ -31,11 +33,13 @@ You can set the `onPressed` event using the following example to trigger the act
     }
 }
 ```
+</CodeBlock>
 
 ### Handling multiple events.
 
 You can handle multiple events using just one `actionable`.
 Just define them in the component declaration like in this example :
+<CodeBlock>
 ```json
 {
     "type": "actionable",
@@ -57,6 +61,7 @@ Just define them in the component declaration like in this example :
     }
 }
 ```
+</CodeBlock>
 
 ### Stacking actionables with same attribute.
 
@@ -64,7 +69,7 @@ You can stack `actionable` that trigger the same event, but only the deepest act
 
 Deeper your `actionable` is, more priority it gets to trigger the event.
 
-
+<CodeBlock>
 ```json
 {
     "type": "actionable",
@@ -89,5 +94,6 @@ Deeper your `actionable` is, more priority it gets to trigger the event.
     }
 }
 ```
+</CodeBlock>
 
 <PropertyTable schema={schema}/>

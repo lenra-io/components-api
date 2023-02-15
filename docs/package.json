@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mdx2html build src/pages/"
+    "pre-build": "node pre-build.js",
+    "gen-html": "mdx2html build tmp/pages/",
+    "build": "npm run pre-build && npm run gen-html"
   },
   "repository": {
     "type": "git",

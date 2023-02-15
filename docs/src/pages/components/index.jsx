@@ -11,6 +11,6 @@ export default (props) => {
     });
     return <>
         <h1>Components</h1>
-        <ul>{schema.oneOf.map(({ "$ref": ref }) => <li>{schemas[ref].title}<img src="test.jpg" /></li>)}</ul>
+        <nav>{schema.oneOf.map(({ "$ref": ref }) => <a href={ref.replace("components/", "").replace(".schema.json", ".html")}>{schemas[ref].title}<img src="test.jpg" /></a>)}</nav>
     </>
 }

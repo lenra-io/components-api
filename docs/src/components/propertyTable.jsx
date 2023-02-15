@@ -3,8 +3,10 @@ import * as fs from 'fs'
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
+const schemasCache = {};
+
 export default (props) => {
-    if (props.schema['$id']?.endsWith('/iconData.schema.json')) {
+    if (props.schema['$id']?.endsWith('/iconName.schema.json')) {
         return displayIcon(props.schema);
     } else {
         if (props.schema.properties) {
@@ -20,7 +22,7 @@ function displayIcon(schema) {
     return <>
         <h2>Values</h2>
         <ul>
-            {schema.type.values.map(value => <li key={value}>{value}</li>)}
+            {schema.enum.map(value => <li>{value}</li>)}
         </ul>
     </>;
 }
@@ -50,46 +52,98 @@ function createFirstLine() {
 
 function createPropertyLine(schema, key) {
     let requiredProperties = schema.required;
-    // TODO: get ref description if not in property
-    return <tr className={requiredProperties?.includes(key) ? "required" : null}>
+    // get ref description if not in property
+    const property = schema.properties[key];
+    let description = property.description;
+    if (!description && property["$ref"]) {
+        const refSchema = getSchema(schema, property['$ref']);
+        description = refSchema.description;
+    }
+    const classList = [];
+    if (requiredProperties?.includes(key)) classList.push("required");
+    if (property.deprecated) classList.push("deprecated");
+    return <tr className={classList.join(" ")}>
         <td>{key}</td>
-        <td>{schema.properties[key].description}</td>
-        <td>{displayType(schema, schema.properties[key])}</td>
+        <td>{description}</td>
+        <td>{displayType(schema, property)}</td>
     </tr>;
 }
 
 function displayType(schema, property) {
-    if (property.type) {
+    if (property.oneOf) {
+        console.error("oneOf is not managed yet", property.title);
+        return;
+    }
+    if (property.type || property.enum) {
         // Handle property has "type" case
         if (property.default || property.enum) {
-            return <> { property.type } (
-                { property.default ? <strong>{ property.default }</strong> : '' }
-                { property.enum ? property.enum.filter((value) => property.default != value).join(', ') : '' }
-            ) </>
+            if (property.enum?.length > 20) return;
+            const notDefaultPropertyEnum = property.enum?.filter((value) => property.default != value) || [];
+            return <>
+                {property.type}
+                <ul className='values'>
+                    {property.default ? <li className='default'>{property.default}</li> : ''}
+                    {notDefaultPropertyEnum.length > 0 ? notDefaultPropertyEnum.map(val => <li>{val}</li>) : ''}
+                </ul>
+            </>
         } else {
-            return <>{ property.type }</>
+            return <>{property.type}</>
         }
     } else if (property["$ref"]) {
         // Handle property has "$ref" case
-        const api_path = Path.join('../api/', property['$ref'])
+        // const api_path = Path.join('../api/', property['$ref'])
         const src_path = Path.join('./src/pages/', property['$ref']).replace(".schema.json", ".mdx")
         console.log(src_path)
         // TODO: include ref when it's simple (not an object)
-        const refSchema = src_path.includes('/#/') ? schema.definitions[src_path.replace('/#/', "")] : require('../../../../api/' + property['$ref'].replace("../", ""))
-        if (!src_path.includes('/#/') && !fs.existsSync(src_path)) {
-            const name = Path.basename(api_path, '.schema.json')
-            // TODO: create def file if needed
-//             fs.writeFileSync(src_path, `
-// import PropertyTable from '../../components/propertyTable';
-// import ${name} from '../../../${api_path}';
+        const refSchema = getSchema(schema, property['$ref']);
+        if (["object", "component"].includes(refSchema.type)) {
+            if (!src_path.includes('#/') && !fs.existsSync(src_path)) {
+                // const name = Path.basename(api_path, '.schema.json')
+                // TODO: create def file if needed
+                //             fs.writeFileSync(src_path, `
+                // import PropertyTable from '../../components/propertyTable';
+                // import ${name} from '../../../${api_path}';
 
-// # ${name[0].toUpperCase() + name.substring(1)}
+                // # ${name[0].toUpperCase() + name.substring(1)}
 
-// <PropertyTable schema={${name}}/>
-// `)
+                // <PropertyTable schema={${name}}/>
+                // `)
+            }
+        }
+        else {
+            const type = displayType(schema, refSchema);
+            if (type) return type;
         }
         return <>
-            <a href={property['$ref'].replace(".schema.json", ".html")}>{refSchema.title}</a>
+            <a href={getRefHref(property['$ref'])}>{refSchema.title}</a>
         </>
     }
+    else {
+        console.error("Not managed type", property);
+        throw new Error(`Not managed type: ${JSON.stringify(property)}`);
+    }
+}
+
+/**
+ * 
+ * @param {*} schema 
+ * @param {string} ref 
+ * @returns 
+ */
+function getSchema(schema, ref) {
+    if (!(ref in schemasCache)) {
+        if (ref.includes('#/')) {
+            schemasCache[ref] = ref.replace('#/', "")
+                .split("/")
+                .reduce((o, key) => o[key], schema);
+        }
+        else
+            schemasCache[ref] = require('../../../../api/' + ref.replace("../", ""));
+    }
+    return schemasCache[ref];
+}
+
+function getRefHref(ref) {
+    if (ref.endsWith("component.schema.json")) return ref.replace("component.schema.json", "components/")
+    return ref.includes('#/') ? ref.replace('#/', "#") : ref.replace(".schema.json", ".html");
 }

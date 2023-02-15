@@ -33,7 +33,23 @@
         },
         "value": {
             "description": "The value of the Icon",
-            "$ref": "../defs/iconData.schema.json"
+            "$ref": "../defs/iconName.schema.json"
+        },
+        "style": {
+            "$ref": "#/definitions/iconStyle"
+        }
+    },
+    "definitions": {
+        "iconStyle": {
+            "type": "string",
+            "description": "The style of the Icon",
+            "enum": [
+                "filled",
+                "sharp",
+                "rounded",
+                "outlined"
+            ],
+            "default": "filled"
         }
     }
 }

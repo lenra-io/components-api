@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "defs/toolbarOptions.schema.json",
-    "title": "toolbarOptions",
+    "title": "ToolbarOptions",
     "description": "Element of type toolbar options",
     "type": "object",
     "properties": {

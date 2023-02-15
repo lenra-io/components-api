@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "component.schema.json",
     "title": "Component",
-    "description": "The component abstract type",
+    "description": "Any component",
     "oneOf": [
         {
             "$ref": "components/actionable.schema.json"

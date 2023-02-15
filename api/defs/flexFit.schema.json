@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
     "$id": "defs/flexFit.schema.json",
-    "title": "flexFit",
+    "title": "FlexFit",
     "description": "How a flexible child is inscribed into the available space.",
     "type": "string",
     "enum": [

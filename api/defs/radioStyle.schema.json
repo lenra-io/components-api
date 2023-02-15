@@ -19,7 +19,7 @@
         },
         "unselectedColor": {
             "description": "Color when the radio is not selected",
-            "$ref": "defs/color.schema.json"
+            "$ref": "../defs/color.schema.json"
         },
         "splashRadius": {
             "description": "The splash radius of the radio button",

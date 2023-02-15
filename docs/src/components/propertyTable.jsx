@@ -10,10 +10,7 @@ export default (props) => {
         return displayIcon(props.schema);
     } else {
         if (props.schema.properties) {
-            return <>
-                <h2>Properties</h2>
-                {createPropertiesTable(props.schema)}
-            </>;
+            return createPropertiesTable(props.schema);
         }
     }
 }
@@ -91,31 +88,14 @@ function displayType(schema, property) {
         }
     } else if (property["$ref"]) {
         // Handle property has "$ref" case
-        // const api_path = Path.join('../api/', property['$ref'])
-        const src_path = Path.join('./src/pages/', property['$ref']).replace(".schema.json", ".mdx")
-        console.log(src_path)
-        // TODO: include ref when it's simple (not an object)
         const refSchema = getSchema(schema, property['$ref']);
-        if (["object", "component"].includes(refSchema.type)) {
-            if (!src_path.includes('#/') && !fs.existsSync(src_path)) {
-                // const name = Path.basename(api_path, '.schema.json')
-                // TODO: create def file if needed
-                //             fs.writeFileSync(src_path, `
-                // import PropertyTable from '../../components/propertyTable';
-                // import ${name} from '../../../${api_path}';
-
-                // # ${name[0].toUpperCase() + name.substring(1)}
-
-                // <PropertyTable schema={${name}}/>
-                // `)
-            }
-        }
-        else {
+        if (!(refSchema.oneOf || refSchema.properties || refSchema.enum?.length > 20)) {
             const type = displayType(schema, refSchema);
             if (type) return type;
         }
+        const name = refSchema.title || property['$ref'].split('/').at(-1);
         return <>
-            <a href={getRefHref(property['$ref'])}>{refSchema.title}</a>
+            <a href={getRefHref(property['$ref'])}>{name}</a>
         </>
     }
     else {

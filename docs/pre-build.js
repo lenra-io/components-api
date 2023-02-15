@@ -43,6 +43,17 @@ function generateDefaultPage(path, schema) {
     if (schema.oneOf || schema.properties || schema.enum?.length > 20) {
         if (path.includes("#")) {
             console.log("add section", path);
+            const parts = path.split("#/");
+            const filePath = `tmp/pages/${parts[0].replace(".schema.json", ".mdx")}`;
+            const name = schema.title || parts[1].split("/").at(-1);
+            fs.appendFileSync(
+                filePath,
+                `
+<h2 id='#${parts[1]}'>${name}</h2>
+
+<PropertyTable schema={schema.${parts[1].replace(/\//, ".")}}/>
+`
+            );
         }
         else if (path != mainSchema) {
             const filePath = `tmp/pages/${path.replace(".schema.json", ".mdx")}`;

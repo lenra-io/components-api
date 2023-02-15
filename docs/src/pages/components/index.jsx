@@ -1,6 +1,11 @@
-import schema from '../../../../api/component.schema.json';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
+import schema from '../../../../api/component.schema.json';
+import {jsonData} from '../../utils';
+export const json = {
+    ...jsonData(schema, "docs/src/pages/components/index.jsx"),
+    title: "Components"
+}
 
 export default (props) => {
     const schemas = {};

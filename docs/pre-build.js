@@ -9,13 +9,18 @@ const mainSchema = 'component.schema.json';
 const checkedPath = [];
 
 const srcDir = 'src';
-const destDir = 'tmp';
+const tmpDir = 'tmp';
+const buildDir = 'build';
+
+// Clean
+if (fs.existsSync(tmpDir))
+    fs.rmSync(tmpDir, { recursive: true });
+if (fs.existsSync(buildDir))
+    fs.rmSync(buildDir, { recursive: true });
 
 // Copy sources
-if (fs.existsSync(destDir))
-    fs.rmSync(destDir, { recursive: true });
-fs.mkdirSync(destDir);
-fs.cpSync(srcDir, destDir, { recursive: true });
+fs.mkdirSync(tmpDir);
+fs.cpSync(srcDir, tmpDir, { recursive: true });
 
 // Generate pages for non existing references
 generateRefPages(mainSchema);
@@ -64,6 +69,8 @@ function generateDefaultPage(path, schema) {
                     filePath,
                     `import PropertyTable from '../../components/propertyTable';
 import schema from '../../../../api/${path}';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema, 'docs/pre-build.js');
 
 # ${schema.title}
 

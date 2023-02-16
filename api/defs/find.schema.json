@@ -12,7 +12,11 @@
         "coll": {
             "description": "the collection where the query is applied",
             "type": "string"
-        }
+        },
+        "projection": {
+            "description": "Filter data object.",
+            "type": "object"
+        },
     },
     "additionalProperties": false
 }

@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import radioSchema from '../../../../api/components/radio.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/radio.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component is basically a radio component as you might know it from other frameworks.
 
@@ -11,6 +14,7 @@ This component is basically a radio component as you might know it from other fr
 
 The radio component uses the `value` and `groupValue` properties to know whether it should be checked or not. The `value` property holds the value of the radio component and the `groupValue` property holds the current selected radio value for a group of radios.
 
+<CodeBlock>
 ```json
 {
     "type": "radio",
@@ -18,10 +22,12 @@ The radio component uses the `value` and `groupValue` properties to know whether
     "groupValue": "a",
 }
 ```
+</CodeBlock>
 
 ### Group of radios
 To group many radio, you just set the same `groupValue` like in this example :
 
+<CodeBlock>
 ```json
 {
     "type": "flex",
@@ -42,5 +48,6 @@ To group many radio, you just set the same `groupValue` like in this example :
 }
 
 ```
+</CodeBlock>
 
-<PropertyTable schema={radioSchema}/>
+<PropertyTable schema={schema}/>

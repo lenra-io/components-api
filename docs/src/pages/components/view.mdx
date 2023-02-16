@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import viewSchema from '../../../../api/components/view.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/view.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component calls a view defined in the application. This can be used to create reusable views across the application and call them from anywhere.
 
@@ -13,6 +16,7 @@ The view must be defined and references in the index.js root file of the applica
 
 Create a file that will contain the view.
 
+<CodeBlock>
 ```json
 module.exports = (users, _props) => {
   return {
@@ -21,9 +25,11 @@ module.exports = (users, _props) => {
   };
 }
 ```
+</CodeBlock>
 
 Reference this view in the root index.js of the application.
 
+<CodeBlock>
 ```json
 module.exports = async () => {
   return {
@@ -35,9 +41,11 @@ module.exports = async () => {
   }
 }
 ```
+</CodeBlock>
 
 Then instantiate the view in the root view of the application.
 
+<CodeBlock>
 ```json
 module.exports = (users, _props) => {
   return {
@@ -56,5 +64,6 @@ module.exports = (users, _props) => {
   };
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={viewSchema}/>
+<PropertyTable schema={schema}/>

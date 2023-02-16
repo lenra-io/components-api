@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import dropdownButtonSchema from '../../../../api/components/dropdownButton.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/dropdownButton.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 A dropdown button that can be used to open a dropdown menu when clicked.
 
@@ -11,6 +14,7 @@ A dropdown button that can be used to open a dropdown menu when clicked.
 
 This creates a dropdown button that shows a button `Menu Button` when clicked.
 
+<CodeBlock>
 ```json
 {
     "type": "dropdownButton",
@@ -23,11 +27,13 @@ This creates a dropdown button that shows a button `Menu Button` when clicked.
     },
 }
 ```
+</CodeBlock>
 
 ### Disabled dropdown button
 
 This creates a disabled dropdownButton, this means that it cannot be opened. The `child` property is still necessary even though it is impossible to show it.
 
+<CodeBlock>
 ```json
 {
     "type": "dropdownButton",
@@ -39,11 +45,13 @@ This creates a disabled dropdownButton, this means that it cannot be opened. The
     }
 }
 ```
+</CodeBlock>
 
 ### Sized and styled dropdown button
 
 The dropdown button has different sizes and styles that can be selected as shown below.
 
+<CodeBlock>
 ```json
 {
     "type": "dropdownButton",
@@ -56,10 +64,12 @@ The dropdown button has different sizes and styles that can be selected as shown
     }
 }
 ```
+</CodeBlock>
 
 ### Dropdown button with icon
 If your field need some polish, you can add an icon to it easily. Just look at the material design icons to find the one you need.
 
+<CodeBlock>
 ```json
 {
     "type": "dropdownButton",
@@ -74,5 +84,6 @@ If your field need some polish, you can add an icon to it easily. Just look at t
     },
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={dropdownButtonSchema}/>
+<PropertyTable schema={schema}/>

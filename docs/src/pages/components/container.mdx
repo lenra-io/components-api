@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import containerSchema from '../../../../api/components/container.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/container.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 The container component that can be used to apply border, padding, constraints or decoration to its child.
 
@@ -11,6 +14,7 @@ The container component that can be used to apply border, padding, constraints o
 The most simple container will just wrap around a component.
 Here, your container is around the text component.
 
+<CodeBlock>
 ```json
 {
     "type": "container",
@@ -20,10 +24,12 @@ Here, your container is around the text component.
     }
 }
 ```
+</CodeBlock>
 
 ### Container with padding
 You can configure a container to let some space between your components with the padding or margin properties.
 
+<CodeBlock>
 ```json
 {
     "type": "container",
@@ -39,10 +45,12 @@ You can configure a container to let some space between your components with the
     }
 }
 ```
+</CodeBlock>
 
 ### Container with border
 You can add some styles properties to customize the look of your container. This allow you to create any design for your apps.
 
+<CodeBlock>
 ```json
 {
     "type": "container",
@@ -59,11 +67,13 @@ You can add some styles properties to customize the look of your container. This
     }
 }
 ```
+</CodeBlock>
 
 ### Container with constraints
 You can override the default constraints of your container.
 Here we set the size of our container to 100x100 pixels instead of using the parent component's size.
 
+<CodeBlock>
 ```json
 {
     "type": "container",
@@ -80,10 +90,12 @@ Here we set the size of our container to 100x100 pixels instead of using the par
     }
 },
 ```
+</CodeBlock>
 
 ### Container with decoration
 `border` is not enough ? You can provide more flexible and precise style properties to your component.
 
+<CodeBlock>
 ```json
 {
     "type": "container",
@@ -112,5 +124,6 @@ Here we set the size of our container to 100x100 pixels instead of using the par
     }
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={containerSchema}/>
+<PropertyTable schema={schema}/>

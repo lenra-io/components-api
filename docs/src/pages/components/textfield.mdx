@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import textfieldSchema from '../../../../api/components/textfield.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/textfield.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component gives the possibility to the user to write text.
 
@@ -11,6 +14,7 @@ This component gives the possibility to the user to write text.
 The `onChanged` event will be triggered if the user type (or remove) some text in the field.
 So you can save it to your data and react to any user input later.
 
+<CodeBlock>
 ```json
 {
     "type": "textfield",
@@ -21,12 +25,14 @@ So you can save it to your data and react to any user input later.
     }
 }
 ```
+</CodeBlock>
 
 
 ### Complex textfield
 Like some other components (`container`, ...), `textfield` allow you to change its style using the `decoration` property.
 But as you can see, it's really easy to react to the user input on the fly.
 
+<CodeBlock>
 ```json
 {
     "type": "textfield",
@@ -56,5 +62,6 @@ But as you can see, it's really easy to react to the user input on the fly.
     "onChanged": {"code": "CodeA"}
 },
 ```
+</CodeBlock>
 
-<PropertyTable schema={textfieldSchema}/>
+<PropertyTable schema={schema}/>

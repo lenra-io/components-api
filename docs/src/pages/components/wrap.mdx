@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import wrapSchema from '../../../../api/components/wrap.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/wrap.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component can be used to display a long list of components, if they get out of the screen the wrap component will make the overflowing ones use a new row.
 
@@ -10,6 +13,7 @@ This component can be used to display a long list of components, if they get out
 ### Simple wrap
 `wrap` component works like the `flex` component, but instead of trying to fit children in the available space, it will allow you to set fixed width/height and make it display in multiple rows if it overflows the parent.
 
+<CodeBlock>
 ```json
 {
     "type": "wrap",
@@ -27,5 +31,6 @@ This component can be used to display a long list of components, if they get out
     ]
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={wrapSchema}/>
+<PropertyTable schema={schema}/>

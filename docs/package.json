@@ -6,19 +6,21 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "for DIR in $(ls src/pages/); do mdx2html build -o build/$DIR/ src/pages/$DIR/*; done"
+    "pre-build": "node pre-build.js",
+    "gen-html": "mdx2html build tmp/pages/",
+    "build": "npm run pre-build && npm run gen-html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lenra-io/components-api.git"
   },
-  "author": "",
+  "author": "Lenra",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lenra-io/components-api/issues"
   },
   "homepage": "https://github.com/lenra-io/components-api#readme",
   "devDependencies": {
-    "@lenra/mdx2html": "^1.0.1-beta.2"
+    "@lenra/mdx2html": "1.1.1"
   }
 }

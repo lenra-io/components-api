@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import statusStickerSchema from '../../../../api/components/statusSticker.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/statusSticker.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component is a status based sticker. It can take 4 different statuses, `success`, `warning`, `error` and `pending`
 
@@ -9,11 +12,13 @@ This component is a status based sticker. It can take 4 different statuses, `suc
 
 ### Simple Status Sticker
 
+<CodeBlock>
 ```json
 {
     "type": "statusSticker",
     "status": "success"
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={statusStickerSchema}/>
+<PropertyTable schema={schema}/>

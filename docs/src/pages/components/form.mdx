@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import flexSchema from '../../../../api/components/form.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/form.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 The Form component is a container that dispatches an event with all its containing field values.
 
@@ -11,6 +14,7 @@ The Form component is a container that dispatches an event with all its containi
 
 Here is a basic Form component example:
 
+<CodeBlock>
 ```json
 {
     "type": "form",
@@ -39,14 +43,17 @@ Here is a basic Form component example:
     }
 }
 ```
+</CodeBlock>
 
 The `myListener` listener will be triggered with an event containing the next data:
 
+<CodeBlock>
 ```json
 {
     "myField": "The first field value",
     "secondField": "The second field value"
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={flexSchema}/>
+<PropertyTable schema={schema}/>

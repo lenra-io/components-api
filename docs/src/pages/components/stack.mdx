@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import stackSchema from '../../../../api/components/stack.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/stack.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 This component is used to make its children overlap. This is particularly interesting when building complex views that needs to put some content above an image or for styling some views.
 The first child in the list will be in the background while the last child of the list will be in the foreground of the stack.
@@ -12,6 +15,7 @@ The first child in the list will be in the background while the last child of th
 
 This example will show two boxes, a red one at the background and a green one in the foreground. Both are respectively sized 100x100 and 60x60 so that they can be seen.
 
+<CodeBlock>
 ```json
 {
     "type": "stack",
@@ -41,5 +45,6 @@ This example will show two boxes, a red one at the background and a green one in
     ]
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={stackSchema}/>
+<PropertyTable schema={schema}/>

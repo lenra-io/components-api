@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import flexibleSchema from '../../../../api/components/flexible.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/flexible.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 The Flexible component can be used to define the way in which its child flexes.
 
@@ -11,6 +14,7 @@ The Flexible component can be used to define the way in which its child flexes.
 
 The default flexible behavior when only using the child property is to take the minimal amount of space.
 
+<CodeBlock>
 ```json
 {
     "type": "flexible",
@@ -20,11 +24,13 @@ The default flexible behavior when only using the child property is to take the 
     }
 }
 ```
+</CodeBlock>
 
 ### Flexible `flex` property
 
 A flexible component can use the `flex` property as a factor to determine the space to take on the screen. This makes sense when using multiple flexible components.
 
+<CodeBlock>
 ```json
 {
     "type": "flex",
@@ -48,6 +54,7 @@ A flexible component can use the `flex` property as a factor to determine the sp
     ]
 }
 ```
+</CodeBlock>
 
 ### Flexible `fit` property
 
@@ -55,6 +62,7 @@ A flexible component can use the `fit` property to decide how it will fill the a
 
 Flexible uses a `loose` fit by default.
 
+<CodeBlock>
 ```json
 {
     "type": "flexible",
@@ -65,5 +73,6 @@ Flexible uses a `loose` fit by default.
     }
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={flexibleSchema}/>
+<PropertyTable schema={schema}/>

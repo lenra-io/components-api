@@ -1,7 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import sliderSchema from '../../../../api/components/slider.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/slider.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
 
-
+# {schema.title}
 
 The slider component can be used to select from a **range** of values.
 
@@ -15,6 +18,7 @@ This component defines 3 types of listener. `onChanged` that is called when the 
 
 For this example, the data should contain the `slider` value and the `onChanged` listener should properly change that value.
 
+<CodeBlock>
 ```json
 {
     "type": "slider",
@@ -28,5 +32,6 @@ For this example, the data should contain the `slider` value and the `onChanged`
     }
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={sliderSchema}/>
+<PropertyTable schema={schema}/>

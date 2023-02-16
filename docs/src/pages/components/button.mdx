@@ -1,5 +1,10 @@
 import PropertyTable from '../../components/propertyTable';
-import buttonSchema from '../../../../api/components/button.schema.json';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/button.schema.json';
+import {jsonData} from '../../utils';
+export const json = jsonData(schema);
+
+# {schema.title}
 
 This is the button component.
 
@@ -9,6 +14,7 @@ You can set its text, disable it, adjust its size and style, react to a click an
 
 ### Simple button
 
+<CodeBlock>
 ```json
 {
     "type": "button",
@@ -18,9 +24,11 @@ You can set its text, disable it, adjust its size and style, react to a click an
     },
 }
 ```
+</CodeBlock>
 
 ### Disabled button
 
+<CodeBlock>
 ```json
 {
     "type": "button",
@@ -28,9 +36,11 @@ You can set its text, disable it, adjust its size and style, react to a click an
     "disabled": true,
 }
 ```
+</CodeBlock>
 
 ### Size and style adjusted button
 
+<CodeBlock>
 ```json
 {
     "type": "button",
@@ -39,9 +49,11 @@ You can set its text, disable it, adjust its size and style, react to a click an
     "mainStyle": "secondary",
 }
 ```
+</CodeBlock>
 
 ### Button with icons
 
+<CodeBlock>
 ```json
 {
     "type": "button",
@@ -57,5 +69,6 @@ You can set its text, disable it, adjust its size and style, react to a click an
     },
 }
 ```
+</CodeBlock>
 
-<PropertyTable schema={buttonSchema}/>
+<PropertyTable schema={schema}/>

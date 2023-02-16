@@ -16,7 +16,7 @@
         "projection": {
             "description": "Filter data object.",
             "type": "object"
-        },
+        }
     },
     "additionalProperties": false
 }

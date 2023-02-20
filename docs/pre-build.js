@@ -72,8 +72,6 @@ import schema from '../../../../api/${path}';
 import {jsonData} from '../../utils';
 export const json = jsonData(schema, 'docs/pre-build.js');
 
-# ${schema.title}
-
 <PropertyTable schema={schema}/>
 `
                 );

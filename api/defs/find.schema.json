@@ -18,5 +18,8 @@
             "type": "object"
         }
     },
+    "required": [
+        "coll"
+    ],
     "additionalProperties": false
 }

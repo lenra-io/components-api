@@ -18,13 +18,19 @@
         "props": {
             "$ref": "../defs/props.schema.json"
         },
+        "find": {
+            "description": "Find query.",
+            "$ref": "../defs/find.schema.json"
+        },
         "query": {
             "description": "The query to apply to the data.",
-            "type": "object"
+            "type": "object",
+            "deprecated": true
         },
         "coll": {
             "description": "the collection where the query is applied",
-            "type": "string"
+            "type": "string",
+            "deprecated": true
         },
         "context": {
             "type": "boolean"

@@ -4,10 +4,12 @@ branches:
   - main
   - name: beta
     prerelease: true
+  - name: alpha
+    prerelease: true
 plugins:
   - - "@semantic-release/commit-analyzer"
     - preset: conventionalcommits
-      releaseRules: 
+      releaseRules:
         - type: docs
           scope: api
           release: patch

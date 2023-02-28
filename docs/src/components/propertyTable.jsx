@@ -24,14 +24,24 @@ function displayIcon(schema) {
     </>;
 }
 
-function createPropertiesTable(schema) {
-    let properties = schema.properties;
+function getSortedPropertyKeys(schema) {
+    const required = schema.required || [];
+    return Object.keys(schema.properties)
+        .sort((prop1, prop2) => {
+            if (schema.properties[prop1].deprecated && !schema.properties[prop2].deprecated) return 1;
+            if (!schema.properties[prop1].deprecated && schema.properties[prop2].deprecated) return -1;
+            if (required.includes(prop1) && !required.includes(prop2)) return -1;
+            if (!required.includes(prop1) && required.includes(prop2)) return 1;
+            return prop1.localeCompare(prop2);
+        })
+}
 
+function createPropertiesTable(schema) {
     return <table>
         <tbody>
             {createFirstLine()}
             {
-                ...Object.keys(properties).map(key =>
+                ...getSortedPropertyKeys(schema).map(key =>
                     createPropertyLine(schema, key)
                 )
             }

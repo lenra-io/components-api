@@ -2,7 +2,10 @@ import PropertyTable from '../../components/propertyTable';
 import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/flex.schema.json';
 import {jsonData} from '../../utils';
-export const json = jsonData(schema);
+export const json = {
+    ...jsonData(schema),
+    categories: [ "basic", "layout" ]
+};
 
 The Flex component is a container that displays its children in a row or column.
 

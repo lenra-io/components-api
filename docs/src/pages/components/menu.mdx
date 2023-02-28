@@ -2,7 +2,10 @@ import PropertyTable from '../../components/propertyTable';
 import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/menu.schema.json';
 import {jsonData} from '../../utils';
-export const json = jsonData(schema);
+export const json = {
+    ...jsonData(schema),
+    categories: [ "interaction" ]
+};
 
 This component is meant to be used along with the `menuItem` component because there is no real interest of using it alone.
 

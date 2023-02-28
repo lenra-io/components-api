@@ -2,7 +2,10 @@ import PropertyTable from '../../components/propertyTable';
 import CodeBlock from '../../components/codeBlock';
 import schema from '../../../../api/components/actionable.schema.json';
 import {jsonData} from '../../utils';
-export const json = jsonData(schema);
+export const json = {
+    ...jsonData(schema),
+    categories: [ "basic", "interaction" ]
+};
 
 This component makes its child actionable based on the defined properties.
 

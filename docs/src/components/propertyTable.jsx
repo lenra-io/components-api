@@ -28,8 +28,8 @@ function getSortedPropertyKeys(schema) {
     const required = schema.required || [];
     return Object.keys(schema.properties)
         .sort((prop1, prop2) => {
-            if (prop1=="type") return -1;
-            if (prop2=="type") return 1;
+            if (prop1 == "type") return -1;
+            if (prop2 == "type") return 1;
             if (schema.properties[prop1].deprecated && !schema.properties[prop2].deprecated) return 1;
             if (!schema.properties[prop1].deprecated && schema.properties[prop2].deprecated) return -1;
             if (required.includes(prop1) && !required.includes(prop2)) return -1;
@@ -40,8 +40,10 @@ function getSortedPropertyKeys(schema) {
 
 function createPropertiesTable(schema) {
     return <table className="properties">
-        <tbody>
+        <thead>
             {createFirstLine()}
+        </thead>
+        <tbody>
             {
                 ...getSortedPropertyKeys(schema).map(key =>
                     createPropertyLine(schema, key)

@@ -39,7 +39,7 @@ function getSortedPropertyKeys(schema) {
 }
 
 function createPropertiesTable(schema) {
-    return <table>
+    return <table className="properties">
         <tbody>
             {createFirstLine()}
             {

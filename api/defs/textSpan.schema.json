@@ -1,16 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
-    "$id": "components/text.schema.json",
-    "title": "Text",
-    "description": "Element of type Text",
-    "type": "component",
+    "$id": "defs/textSpan.schema.json",
+    "title": "TextSpan",
+    "description": "Subpart of a text element with specific style",
+    "type": "object",
     "properties": {
-        "type": {
-            "description": "The type of the element",
-            "enum": [
-                "text"
-            ]
-        },
         "value": {
             "description": "the value displayed in the element",
             "type": "string"
@@ -28,29 +22,9 @@
         "spellOut": {
             "description": "Whether the assistive technologies should spell out this text character by character",
             "type": "boolean"
-        },
-        "textAlign": {
-            "description": "The text alignment",
-            "enum": [
-                "left",
-                "center",
-                "right",
-                "justify",
-                "start",
-                "end"
-            ],
-            "default": "left"
-        },
-        "children": {
-            "description": "Additional texts to add after this text.",
-            "type": "array",
-            "items": {
-                "$ref": "../defs/textSpan.schema.json"
-            }
         }
     },
     "required": [
-        "type",
         "value"
     ],
     "additionalProperties": false

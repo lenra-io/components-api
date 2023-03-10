@@ -23,7 +23,7 @@
             "$ref": "../defs/padding.schema.json"
         },
         "counter": {
-            "type": "component"
+            "$ref": "../component.schema.json"
         },
         "counterStyle": {
             "description": "The style use for the counterText.",
@@ -174,7 +174,7 @@
             "type": "string"
         },
         "suffix": {
-            "type":"component"
+            "$ref": "../component.schema.json"
         },
         "suffixIcon": {
             "$ref": "../components/icon.schema.json"

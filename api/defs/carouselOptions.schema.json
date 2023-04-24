@@ -17,10 +17,10 @@
             "default": false
         },
         "autoPlayInterval": {
-            "$ref": "defs/duration.schema.json"
+            "$ref": "../defs/duration.schema.json"
         },
         "autoPlayAnimationDuration": {
-            "$ref": "defs/duration.schema.json"
+            "$ref": "../defs/duration.schema.json"
         },
         "pauseAutoPlayOnTouch": {
             "type": "boolean",
@@ -41,7 +41,7 @@
             "default": false
         },
         "scrollDirection": {
-            "$ref": "defs/direction.schema.json"
+            "$ref": "../defs/direction.schema.json"
         },
         "viewportFraction": {
             "type": "number",

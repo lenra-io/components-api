@@ -11,6 +11,9 @@
             "$ref": "components/button.schema.json"
         },
         {
+            "$ref": "components/carousel.schema.json"
+        },
+        {
             "$ref": "components/checkbox.schema.json"
         },
         {

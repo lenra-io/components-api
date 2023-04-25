@@ -1,0 +1,61 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lenra-io/ex_component_schema/beta/priv/static/draft-lenra.json",
+    "$id": "defs/carouselOptions.schema.json",
+    "title": "CarouselOptions",
+    "description": "Element of type CarouselOptions",
+    "type": "object",
+    "properties": {
+        "height": {
+            "type": "number"
+        },
+        "enlargeCenterPage": {
+            "type": "boolean",
+            "default": false
+        },
+        "autoPlay": {
+            "type": "boolean",
+            "default": false
+        },
+        "autoPlayInterval": {
+            "$ref": "../defs/duration.schema.json"
+        },
+        "autoPlayAnimationDuration": {
+            "$ref": "../defs/duration.schema.json"
+        },
+        "pauseAutoPlayOnTouch": {
+            "type": "boolean",
+            "default": true
+        },
+        "aspectRatio": {
+            "type": "number"
+        },
+        "initialPage": {
+            "type": "integer"
+        },
+        "enableInfiniteScroll": {
+            "type": "boolean",
+            "default": true
+        },
+        "reverse": {
+            "type": "boolean",
+            "default": false
+        },
+        "scrollDirection": {
+            "$ref": "../defs/direction.schema.json"
+        },
+        "viewportFraction": {
+            "type": "number",
+            "default": 0.8
+        },
+        "enlargeStrategy": {
+            "type": "string",
+            "enum": [
+                "scale",
+                "height",
+                "zoom"
+            ],
+            "default": "scale"
+        }
+    },
+    "additionalProperties": false
+}

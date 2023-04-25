@@ -1,0 +1,64 @@
+import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/carousel.schema.json';
+import {jsonData} from '../../utils';
+export const json = {
+    ...jsonData(schema),
+    categories: [ "interaction" ]
+};
+
+This is the carousel component.
+
+It takes `children` as parameters. `options` can also be added but are optional.
+
+## Examples
+
+### Simple carousel
+
+<CodeBlock>
+```json
+{
+    "type": "carousel",
+    "children": [
+        {
+            "type": "text",
+            "value": "page 1",
+        },
+        {
+            "type": "text",
+            "value": "page 2",
+        }
+    ]
+}
+```
+</CodeBlock>
+
+### Vertical scroll Carousel with enlarged center element
+
+<CodeBlock>
+```json
+{
+    "type": "carousel",
+    "options": {
+        "aspectRatio": 2.0,
+        "enlargeCenterPage": true,
+        "scrollDirection": "vertical",
+    },
+    "children": [
+        {
+            "type": "container",
+            "padding": {"top": 8, "left": 8, "bottom": 8, "right": 8},
+            "child":  {"type": "text", "value": "This is element number 1"}
+        },
+        {
+            "type": "container",
+            "padding": {"top": 8, "left": 8, "bottom": 8, "right": 8},
+            "child":  {"type": "text", "value": "This is element number 2"}
+        },
+    ]
+}
+```
+</CodeBlock>
+
+## Properties
+<PropertyTable schema={schema}/>

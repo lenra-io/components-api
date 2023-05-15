@@ -33,7 +33,8 @@
             "deprecated": true
         },
         "context": {
-            "type": "boolean"
+            "description": "The context projection. This field represents the projection of the context, allowing selective retrieval of specific elements. It is a map that specifies the desired elements to be included in the projection.",
+            "type": "object"
         }
     },
     "required": [

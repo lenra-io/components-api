@@ -28,22 +28,6 @@ module.exports = (users, _props) => {
 ```
 </CodeBlock>
 
-Reference this view in the root index.js of the application.
-
-<CodeBlock>
-```json
-module.exports = async () => {
-  return {
-    views: {
-        myView: require('./views/myView.js'),
-    },
-    listeners: {},
-    rootView: 'main'
-  }
-}
-```
-</CodeBlock>
-
 Then instantiate the view in the root view of the application.
 
 <CodeBlock>

@@ -20,7 +20,7 @@
             "type": "boolean"
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "style": {
             "$ref": "../defs/checkboxStyle.schema.json"

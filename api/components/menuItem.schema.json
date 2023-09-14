@@ -29,7 +29,7 @@
             "$ref": "../components/icon.schema.json"
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         }
     },
     "required": [

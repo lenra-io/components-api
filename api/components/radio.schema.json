@@ -28,7 +28,7 @@
             "$ref": "../defs/materialTapTargetSize.schema.json"
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "toggleable": {
             "description": "Whether the radio is allowed to go from checked to unchecked when clicking on it.",

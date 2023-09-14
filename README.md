@@ -57,7 +57,7 @@ The `text` key must describe a text that is displayed inside the component.
 ### The listeners
 
 All the listeners must start with `on` and be passed `onPressed`, `onChanged`...
-All listeners MUST have the `action` property and MAY have the `props` object property.
+All listeners MUST have the `name` property and MAY have the `props` object property.
 
 #### The `onPressed` listener
 
@@ -70,7 +70,8 @@ Do NOT use the `onClick` or `onTap` key.
     [...]
     "listeners": {
         "onPressed": {
-            "action": "toggleCheckbox"
+            "_type": "listener",
+            "name": "toggleCheckbox"
         },
     }
 }
@@ -85,7 +86,8 @@ This listener is never called when the value is changed programatically.
     "type": "textfield",
     "listeners": {
         "onChanged": {
-            "action": "myAction",
+            "_type": "listener",
+            "name": "myAction",
         }
     }
 }

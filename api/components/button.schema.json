@@ -27,7 +27,7 @@
             "$ref": "../defs/style.schema.json"
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "leftIcon": {
             "$ref": "../components/icon.schema.json"

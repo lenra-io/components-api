@@ -29,7 +29,7 @@
         },
         "buildCounter": {
             "description": "Callback that generates a custom counter view.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "style": {
             "description": "The style of the Textfield.",
@@ -77,23 +77,23 @@
         },
         "onAppPrivateCommand": {
             "description": "This is used to receive a private command from the input method.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "onChanged": {
             "description": "Callback when the user changes the text field value.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "onEditingComplete": {
             "description": "Callback when the user finishes editing the text field.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "onSubmitted": {
             "description": "Callback when the user tells he is done editing the text field.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "onTap": {
             "description": "Callback when the user taps on the text field.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "readOnly": {
             "description": "Whether the text can be changed.",

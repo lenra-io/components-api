@@ -6,11 +6,11 @@
     "type": "component",
     "additionalProperties": false,
     "required": [
-        "type",
+        "_type",
         "value"
     ],
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "icon"

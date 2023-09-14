@@ -5,7 +5,7 @@
     "description": "Element of type Form",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "form"
@@ -20,7 +20,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "child"
     ],
     "additionalProperties": false

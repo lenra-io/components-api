@@ -5,7 +5,7 @@
     "description": "Element of type Flexible",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "flexible"
@@ -24,7 +24,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "child"
     ],
     "additionalProperties": false

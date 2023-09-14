@@ -5,7 +5,7 @@
     "description": "Element of type Button",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "button"
@@ -42,7 +42,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "text"
     ],
     "additionalProperties": false

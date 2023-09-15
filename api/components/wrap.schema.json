@@ -5,7 +5,7 @@
     "description": "Element of type Wrap",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "wrap"
@@ -48,7 +48,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "children"
     ],
     "additionalProperties": false

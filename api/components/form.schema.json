@@ -5,7 +5,7 @@
     "description": "Element of type Form",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "form"
@@ -16,11 +16,11 @@
         },
         "onSubmit": {
             "description": "Callback when the user submits the form.",
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         }
     },
     "required": [
-        "type",
+        "_type",
         "child"
     ],
     "additionalProperties": false

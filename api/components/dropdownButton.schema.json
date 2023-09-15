@@ -5,7 +5,7 @@
     "description": "Element of type Dropdown Button",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "dropdownButton"
@@ -34,7 +34,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "text",
         "child"
     ],

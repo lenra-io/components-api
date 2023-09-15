@@ -1,0 +1,33 @@
+import PropertyTable from '../../components/propertyTable';
+import CodeBlock from '../../components/codeBlock';
+import schema from '../../../../api/components/actionable.schema.json';
+import {jsonData} from '../../utils';
+export const json = {
+    ...jsonData(schema),
+    categories: [ "basic", "interaction" ]
+};
+
+This element is not a UI component but it's the definition of a listener call.
+
+## Examples
+
+### Making a text clickable
+
+The listener component will which listener and it properties when a user action is dispatch.
+
+<CodeBlock>
+```json
+{
+    "type": "button",
+    "text": "My button",
+    "onPressed": {
+        "_type": "listener",
+        "name": "buttonPressed"
+    },
+}
+```
+</CodeBlock>
+
+
+## Properties
+<PropertyTable schema={schema}/>

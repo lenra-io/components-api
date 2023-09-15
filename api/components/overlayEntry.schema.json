@@ -5,7 +5,7 @@
     "description": "Element of type OverlayEntry",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "overlayEntry"
@@ -32,7 +32,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "child"
     ],
     "additionalProperties": false

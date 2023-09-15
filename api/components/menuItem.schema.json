@@ -5,7 +5,7 @@
     "description": "Element of type MenuItem",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "menuItem"
@@ -29,11 +29,11 @@
             "$ref": "../components/icon.schema.json"
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         }
     },
     "required": [
-        "type",
+        "_type",
         "text"
     ],
     "additionalProperties": false

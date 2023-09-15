@@ -5,7 +5,7 @@
     "description": "Element of type view",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "view"
@@ -22,23 +22,13 @@
             "description": "Find query.",
             "$ref": "../defs/find.schema.json"
         },
-        "query": {
-            "description": "The query to apply to the data.",
-            "type": "object",
-            "deprecated": true
-        },
-        "coll": {
-            "description": "the collection where the query is applied",
-            "type": "string",
-            "deprecated": true
-        },
         "context": {
             "description": "The context projection. This field represents the projection of the context, allowing selective retrieval of specific elements. It is a map that specifies the desired elements to be included in the projection.",
             "type": "object"
         }
     },
     "required": [
-        "type",
+        "_type",
         "name"
     ],
     "additionalProperties": false

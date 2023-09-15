@@ -5,7 +5,7 @@
     "description": "Element of type Flex",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The identifier of the component",
             "enum": [
                 "flex"
@@ -75,7 +75,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "children"
     ],
     "additionalProperties": false

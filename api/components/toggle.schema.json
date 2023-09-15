@@ -5,7 +5,7 @@
     "description": "Element of type Toggle",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element.",
             "enum": [
                 "toggle"
@@ -32,7 +32,7 @@
             ]
         },
         "onPressed": {
-            "$ref": "../defs/listener.schema.json"
+            "$ref": "../components/listener.schema.json"
         },
         "style": {
             "$ref": "../defs/toggleStyle.schema.json"
@@ -48,7 +48,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "value"
     ],
     "additionalProperties": false

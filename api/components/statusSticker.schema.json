@@ -5,7 +5,7 @@
     "description": "Element of type StatusSticker",
     "type": "component",
     "properties": {
-        "type": {
+        "_type": {
             "description": "The type of the element",
             "enum": [
                 "statusSticker"
@@ -23,7 +23,7 @@
         }
     },
     "required": [
-        "type",
+        "_type",
         "status"
     ],
     "additionalProperties": false

@@ -17,7 +17,7 @@ When stacking two or more actionables of the same size and using the same attrib
 
 The actionable component will allow you to set an event listener on many user actions.
 
-You can set the `onPressed` event using the following example to trigger the action `textPress`.
+You can set the `onPressed` event using the following example to trigger the listener `textPress`.
 `props` will add more flexibility and allow reusable listeners by passing some more informations to your listeners like the `id` of the button you pressed.
 
 <CodeBlock>
@@ -25,7 +25,8 @@ You can set the `onPressed` event using the following example to trigger the act
 {
     "type": "actionable",
     "onPressed": {
-        "action": "textPress",
+        "_type": "listener",
+        "name": "textPress",
         "props": {
             ...
         }
@@ -54,16 +55,20 @@ Just define them in the component declaration like in this example :
 {
     "type": "actionable",
     "onPressed": {
-        "action": "pressedOnceAction",
+        "_type": "listener",
+        "name": "pressedOnceAction",
     },
     "onDoublePressed": {
-        "action": "doublePressedAction",
+        "_type": "listener",
+        "name": "doublePressedAction",
     },
     "onLongPressed": {
-        "action": "longPressedAction",
+        "_type": "listener",
+        "name": "longPressedAction",
     },
     "onHovered": {
-        "action": "hoveredAction",
+        "_type": "listener",
+        "name": "hoveredAction",
     },
     "child": {
         "type": "text",
@@ -75,7 +80,7 @@ Just define them in the component declaration like in this example :
 
 ### Stacking actionables with same attribute.
 
-You can stack `actionable` that trigger the same event, but only the deepest actionable will trigger the action.
+You can stack `actionable` that trigger the same event, but only the deepest actionable will trigger the listener.
 
 Deeper your `actionable` is, more priority it gets to trigger the event.
 
@@ -86,16 +91,19 @@ Deeper your `actionable` is, more priority it gets to trigger the event.
     "onPressed": {
         // Will not be called because there is an actionable below that defines the onPressed attribute
         // Note that if this actionable was sized to be bigger than the actionable below, it would be possible to trigger this onPressed
-        "action": "willNotBeCalled",
+        "_type": "listener",
+        "name": "willNotBeCalled",
     },
     "onDoublePressed": {
         // Will be called because there is no actionable below that defines this attribute
-        "action": "willBeCalled",
+        "_type": "listener",
+        "name": "willBeCalled",
     },
     "child": {
         "type": "actionable",
         "onPressed": {
-            "action": "willBeCalled",
+            "_type": "listener",
+            "name": "willBeCalled",
         },
         "child": {
             "type": "text",

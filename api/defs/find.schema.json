@@ -16,6 +16,10 @@
         "projection": {
             "description": "Filter data object.",
             "type": "object"
+        },
+        "options": {
+            "description": "Options to apply to the query.",
+            "type": "object"
         }
     },
     "required": [

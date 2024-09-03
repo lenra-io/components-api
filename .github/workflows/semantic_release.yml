@@ -63,7 +63,7 @@ jobs:
         run: zip -r lenra-api.zip api/
 
       - name: download-artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_GITHUB_TOKEN }}
